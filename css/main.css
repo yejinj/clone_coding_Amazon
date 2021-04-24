@@ -76,6 +76,7 @@ header{
 
 #layout01{
 	vertical-align: middle;
+	/* 가로정렬을 가능하게 */
 	text-align:center;
 }
 
