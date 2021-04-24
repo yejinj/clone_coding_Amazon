@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title> Amazon.com: Online Shopping </title>
+    <link rel="icon" href="favicon.ico" />
+
+</head>
+<html lang="en">
+<font color = "white"></font>
+
+<body topmargin="0"  leftmargin="0" marginwidth="0" marginheight="0" style="background-color: #eaeded;">
+<link rel="stylesheet" href="./css/main.css">
+
+<!-- 헤더 스타일 지정 -->
+<!-- 상단의 스타일-top_box로, 하단의 스타일은 bottom_box로 둔다 -->
+<style>
+    .top_box {
+        width: 100%;
+        height: 63px;
+        float: left;
+        background-color: #131921;
+        font : white;
+        margin: 0 auto;
+        }
+    .bottom_box {
+        margin-top: -22px;
+        top:-50px;
+        height: 35px;
+        font : white;
+        background: #232F3E;
+        }
+</style>
+
+<!-- HEADER -->
+<!-- 상단과 하단을 구분 -->
+<header>
+    <!-- 헤더의 상단 -->
+    <font color="white">
+    <div id="box">
+        <div class="top_box">
+
+        <!-- 로고 이미지를 클릭하면 해당 사이트로 다시 이동하도록 -->
+        <div class="logo" style="display: inline-block">
+                <a href="./" class="logo">
+                    <img src="./images/logo.JPG" width="110" height="46" vspace="10" hspace="10" style="vertical-align:middle" alt="로고">
+                </a>
+        </div>
+
+        <!-- location 아이콘 -->
+        <div id="location" style="display: inline-block">
+            <img src="./images/location.JPG" width="22" height="30" style="vertical-align:middle" alt="위치">
+            </div>
+        
+
+        <!-- 배송 글씨 -->
+        <div id="delivery" style="display: inline-block">
+            <font size = "2">
+                Deliver to<br>
+                <b>Republic of Korea</b>
+            </font>
+        </div>
+
+        <!-- 검색창 -->
+        <!-- 체크박스, input박스, button으로 검색창을 만든다. 이때 체크박스 안에 품목들이 나열되도록 한다
+        스타일시트를 불러와 여백을 바꾸고 아마존의 검색창과 비슷하게 보이도록 한다. -->
+        <div id="searchbox">
+            <link href="https://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet" />
+            <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+            <div class="input-group" style="width:5px;">
+                <span class="input-group-addon">
+                <select style="width: 62px;">
+                    <option>All departments</option>
+                    <option>Arts & Crafts</option>
+                    <option>Automative</option>
+                    <option>Beauty & Personal Care</option>
+                    <option>Books</option>
+                    <option>Computers</option>
+                    <option>Digital Music</option>
+                    <option> Electronics </option>
+                    <option> Kindle Store </option>
+                    <option> Prime Video </option>
+                    <option> Women's Fashion </option>
+                    <option> Men's Fashion </option>
+                    <option> Girl's Fashion </option>
+                    <option> Boy's Fashion </option>
+                    <option> Deals </option>
+                    <option> Health & Household </option>
+                    <option> Home & Kitchen</option>
+                    <option> Industrial & Scienticific </option>
+                    <option> Luggage </option>
+                    <option> Movies & TV </option>
+                    <option> Music, CDs & Vinyl </option>
+                    <option> Pet Supplies </option>
+                    <option> Software </option>
+                    <option> Sports & Outdoors </option>
+                    <option> Tools & Home Improvement </option>
+                    <option> Toys & Games </option>
+                    <option> Video Games </option>
+                </select>
+                </span>
+                <input type="text" class="form-control" style="width:730px;">
+                <span class="input-group-addon" style="background-color: #FFBD66;">
+                    <button>
+                        <img src="./images/searchbar.JPG" style="width: 20px; height:20px;">
+                    </button>
+                </span>
+            </div>
+            </div>
+            
+            </div>
+        </div>
+        </div>
+        
+        <!-- 오른쪽으로 정렬 위해 검색창을 제외한 나머지들은 rightalign css 속성으로 묶는다 -->
+        <div id="rightalign">
+            <!-- 언어 -->
+            <!-- 위처럼 체크박스를 사용 -->
+            <div id="language" style=" display: inline-block;" >
+                    <form  style="display: inline-block;" size="5">
+                            <div style=" display: inline-block" position:fixed;left:300;>
+                            <a>
+                                <img src="./images/language.JPG" style="width: 30px; height: 30px;">
+                            </a>
+                            </div>
+                            <select name = "language" style="width:20px">
+                            <option type>Change Language</option>
+                            <option type>English - EN</option>
+                            <option> <hr width = "100%" color = "black" size = "3"></option>
+                            <option type>Español - ES</option>
+                            <option type>简体中文 - ZH</option>
+                            <option type>Deutsch - DE</option>
+                            <option type>Português - PT</option>
+                            <option type>繁體中文 - ZH</option>
+                            <option type>한국어 - KO</option>
+                            <option type>עברית - HE</option>
+                            <option type>اللغة العربية - AR</option>
+                            <option> <hr width = "100%" color = "black" size = "3"></option>
+                            <option type>Change currency Learn more</option>
+                            <option> <hr width = "100%" color = "black" size = "3"></option>
+                            <option type>$ - USD - U.S. DollarChange</option>
+                            <option type>You are shopping on Amazon.com.</option>
+                            <option type>Change country/region.</option>
+                            </select>
+                    </form>
+            </div>
+
+            <!-- 배송할 지역 -->
+            <div id="whereto" style="margin:5px; display: inline-block;">
+                &nbsp;&nbsp;&nbsp;
+                <a href="https://www.amazon.com/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3Fref_%3Dnav_ya_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&" style="color: white;">
+                Hello, Sign in<br>
+                <b>Accounts & Lists</b>
+                </a>
+                
+            </div>
+            
+            <!-- 주문 -->
+            <div id="returnsAndOrders" style="margin:5px; display: inline-block">
+                <a href="https://www.amazon.com/ap/signin?clientContext=132-9349820-5691738&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fyour-orders%2Forders%2Fref%3Dyo_oh_gp_to_ov%3Fref_%3Dnav_orders_first%26_encoding%3DUTF8&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&marketPlaceId=ATVPDKIKX0DER&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=usflex&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.pape.max_auth_age=900&siteState=clientContext%3D145-0505373-6595463%2CsourceUrl%3Dhttps%253A%252F%252Fwww.amazon.com%252Fyour-orders%252Forders%252Fref%253Dyo_oh_gp_to_ov%253Fref_%253Dnav_orders_first%2526_encoding%253DUTF8%2Csignature%3Do0etbTMxWUKcj6Ck0MUf2NG0WK0j3D">
+                <font size = "2" color="white">
+                Returns<br>
+                <b>& Orders</b>
+                </font>
+                </a>
+            </div>
+
+            <!-- 장바구니 이미지와 문구 -->
+            <div id="carts" style="margin: 5px; display: inline-block">
+            <a href="https://www.amazon.com/gp/cart/view.html?ref_=nav_cart" style="color: white;">
+                <img src="./images/cart.JPG" style="vertical-align:middle;width: 40;height: 40;" alt="cart">
+                <font size = "4">
+                    <b>Cart</b><br>
+                </font>
+            </a>
+            </div>
+        </div>
+    </div>
+    </font>
+
+    <!-- 헤더의 하단 -->
+    <font size = "3" color="white"> &nbsp; 
+    <div id = "header_box">
+        <div class="bottom_box">
+        <!-- 사이드바 -->
+        <!-- checked 속성과 그렇지 않은 속성으로 나눈다. checked 속성은 마우스가 클릭됐을 때 보여질 화면을 미리 만들어놓은 것이다.
+        label span을 1,2,3으로 나누어 세 직선이 형태를 변화하면서 x 표시를 만들도록 한다.
+        요소의 위치를 이동시키는 transform 속성 이용
+        요소를 회전시킬 수 있는 rotate를 불러와 괄호 안 각도만큼 회전
+        div class="status-ico"밑에는 나열할 리스트를 적는다 -->
+            <div id="sidebar" style="z-index:9998; font: white;">
+                <style>
+                    input[id="menuicon"] {display:none;}
+                    input[id="menuicon"] + label {display:block;margin-top:5px;width:3px;height:3px;padding:9px;position:relative;cursor:pointer;}
+                    input[id="menuicon"] + label span {display:block;position:absolute;width:100%;height:5px;background:white;transition:all .35s;}
+                    input[id="menuicon"] + label span:nth-child(1) {top:0;}
+                    input[id="menuicon"] + label span:nth-child(2) {top:50%;transform:translateY(-50%);}
+                    input[id="menuicon"] + label span:nth-child(3) {bottom:0;}
+                    input[id="menuicon"]:checked + label {z-index:2;}
+                    input[id="menuicon"]:checked + label span {background:white;}
+                    input[id="menuicon"]:checked + label span:nth-child(1) {top:50%;transform:translateY(-50%) rotate(45deg);}
+                    input[id="menuicon"]:checked + label span:nth-child(2) {opacity:0;}
+                    input[id="menuicon"]:checked + label span:nth-child(3) {bottom:50%;transform:translateY(50%) rotate(-45deg);}
+                    div[class="sidebar"] {width:300px;height:100%;background:#232F3E;position:fixed;top:0;left:-300px;z-index:1;transition:all .35s;}
+                    input[id="menuicon"]:checked + label + div {left:0;}
+                </style>
+                <input type="checkbox" id="menuicon">
+                <label for="menuicon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="sidebar" style="list-style: none;">
+                    <div class="status-ico">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <ul>
+                        <li style="list-style: none;">&nbsp;
+                            Hello, Sign in<br><hr>
+                        </li>
+                        <li style="list-style: none;">&nbsp;
+                            Digital Content & Devices
+                        </li>
+                        <li style="list-style: none;">&nbsp;
+                            Amazon Music
+                        </li>
+                        <li style="list-style: none;">&nbsp;
+                            Kindle E-readers & Books
+                        </li>
+                        <li style="list-style: none;">&nbsp;
+                            Appstore for Android<br><hr>
+                        </li>
+                        <li style="list-style: none;">&nbsp;
+                            Shop By Department
+                        </li>
+                        <li style="list-style: none;">&nbsp;
+                            Electronics
+                        </li>
+                        <li style="list-style: none;">&nbsp;
+                            Computers
+                        </li>
+                        <li style="list-style: none;">&nbsp;
+                            Smart Home
+                        </li>
+                        <li style="list-style: none;">&nbsp;
+                            Arts & Crafts
+                        </li>
+                        <li style="list-style: none;">&nbsp;
+                            See All<br><hr>
+                        </li>
+                        <li style="list-style: none;">&nbsp;
+                            Programs & Features
+                        </li>
+                        <li style="list-style: none;">&nbsp;
+                            Gift Cards
+                        </li>
+                        <li style="list-style: none;">&nbsp;
+                                #FoundItOnAmazon
+                        </li>
+                        <li style="list-style: none;">&nbsp;
+                                Amazon Live
+                        </li>
+                        <li style="list-style: none;">&nbsp;
+                                International Shopping
+                        </li>
+                        <li style="list-style: none;">&nbsp;
+                                See All<br><hr>
+                        </li>
+                        <li style="list-style: none;">&nbsp;
+                                Help & Settings
+                        </li>
+                        <li style="list-style: none;">&nbsp;
+                                Your Account
+                        </li>
+                        <li style="list-style: none;">&nbsp;
+                                English
+                        </li>
+                        <li style="list-style: none;">&nbsp;
+                                United States
+                        </li>
+                        <li style="list-style: none;">&nbsp;
+                                Customer Service
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- 사이드바가 아닌 부분 -->
+            <div id="notsideBar">
+                <a href="https://www.amazon.com/international-sales-offers/b/?ie=UTF8&node=15529609011&ref_=nav_cs_gb_intl_52df97a2eee74206a8343034e85cd058" style="color:white">Today's Deals</a>&nbsp;&nbsp;&nbsp;
+                <a href="https://www.amazon.com/gp/help/customer/display.html?nodeId=508510&ref_=nav_cs_customerservice_2bf4fe8c5ec54e6bae2d1c24043f012b" style="color:white">Customer Service</a>&nbsp;&nbsp;&nbsp;
+                <a href="https://www.amazon.com/gift-cards/b/?ie=UTF8&node=2238192011&ref_=nav_cs_gc_4fb606b1a14b44e4823e00c03fc71f47" style="color:white">Gift Cards</a>&nbsp;&nbsp;&nbsp;
+                <a href="https://www.amazon.com/b/?_encoding=UTF8&ld=AZUSSOA-sell&node=12766669011&ref_=nav_cs_sell_9321d964d1ab428b8d83e204c043fc01" style="color:white">Today's Deals</a>&nbsp;&nbsp;&nbsp;
+                <a href="https://www.amazon.com/registries?_encoding=UTF8&redirect=true&ref_=nav_cs_registry_1c421982e26d4ec48ca364be68f201b5" style="color:white">Sell</a>&nbsp;&nbsp;&nbsp;
+                
+                <div id="amazonsResponse">
+                <a href="https://www.aboutamazon.com/company-news/amazons-actions-to-help-employees-communities-and-customers-affected-by-covid-19/?_encoding=UTF8&token=GW&utm_content=COVID-19_roundup&utm_medium=swm&utm_source=gateway&utm_term=gw03162020&ref_=nav_swm_undefined&pf_rd_p=cf6260e5-93a9-45ad-9653-d1fc95751fac&pf_rd_s=nav-sitewide-msg-text-export&pf_rd_t=4201&pf_rd_i=navbar-4201&pf_rd_m=ATVPDKIKX0DER&pf_rd_r=C045QSGNV9P6E7SYVE0S" style="color:white">Amazon's response to COVID-19</a>
+            </div>
+        </div>
+    </div>
+    </div>
+    </font>
+</header>
+
+<!-- LAYOUT, SECTION 1 ~ 4 -->
+<div id="layout">
+    <!-- SECTION 1, 슬라이드 배경이 바뀌는 부분-->
+    <div class="section01"><b>
+
+        <!-- 슬라이드 기본 설정 -->
+        <!-- 슬라이드가 넘어갈 수 있도록 스타일시트, 이미지, 스크립트를 차례로 삽입한다
+            스와이퍼 사이트를 소스로 걸어두면 swiper로 슬라이드를 만들수있다 -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+        <style type="text/css">
+        .swiper-container {
+            margin: 0;
+            width: 1520px;;
+            height: 230px;
+            border: 0px;
+        }
+        </style>
+
+        <!-- 슬라이드 이미지를 삽입 -->
+        <!-- 클릭했을 때 넘어가도록 스크립트를 작성한다. swiper-container > swiper-wrapper > swiper-slide 순으로 속성을 지정해야 슬라이드가 제대로 작동한다  -->
+        <div class="swiper-container myswiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./images/slides/1.jpg"></div>
+                <div class="swiper-slide"><img src="./images/slides/2.jpg"></div>
+                <div class="swiper-slide"><img src="./images/slides/3.jpg"></div>
+                <div class="swiper-slide"><img src="./images/slides/4.jpg"></div>
+                <div class="swiper-slide"><img src="./images/slides/5.jpg"></div>
+                <div class="swiper-slide"><img src="./images/slides/6.jpg"></div>
+            </div>
+            <div class="swiper-button-next swiper-button-black" id="button_next_second"></div>
+            <div class="swiper-button-prev swiper-button-black" id="button_prev_second"></div>
+        </div>
+        
+        <!-- 슬라이드 스크립트를 삽입 -->
+        <!-- 슬라이드를 넘겼을 때 넘어가는 속도를 지정한다. -->
+        <script>
+            new Swiper('.myswiper', {
+                speed : 1000,
+                navigation : {
+		            nextEl : '.swiper-button-next', // 다음 버튼 클래스명
+		            prevEl : '.swiper-button-prev', // 이번 버튼 클래스명
+	            },
+            });
+        </script>
+    </b></div>
+
+    <!-- SECTION 2, 8개의 레이아웃 -->
+    <!--하나의 박스는 설명과, 하이퍼링크가 탑재된 이미지와 설명으로 이루어져 있음 
+    8개의 레이아웃 중 두 번째 줄의 세 번째 박스은 다시 4개의 구역으로 나누어져 있음
+    이에 따른 div 속성을 각각 다르게 지정-->
+    <div class="section02">
+        <div id="sec02box01" style="border: 10px; float: left; ">
+            <h4><b>Find your ideal</b></h4>
+            <a href="https://www.amazon.com/b?node=16225007011&pf_rd_r=K0EFJMRDV25H536WJ0YS&pf_rd_p=a13f1949-dc1c-4090-9236-ef9627cd9724&pd_rd_r=7c60f949-73aa-4164-931e-41277b403ad3&pd_rd_w=8OUi2&pd_rd_wg=I12Zw&ref_=pd_gw_unk">
+            <img src="./images/sec2pic1.JPG" style="width: 280px; height: 330px;"><br>
+            <h5>See more</h5>
+            </a>
+        </div>
+
+        <div id="sec02box02" style="border: 10px; float: left;">
+            <h4><b>Computers & Accessories</b></h4>
+            <a href="https://www.amazon.com/b?node=16225007011&pf_rd_r=XTXXFF2WHRFJW7RDB25Q&pf_rd_p=a13f1949-dc1c-4090-9236-ef9627cd9724&pd_rd_r=90eab18f-8d6c-4fe0-86d5-d5da15f95cc9&pd_rd_w=VcpXw&pd_rd_wg=fDiSw&ref_=pd_gw_unk">
+            <img src="./images/sec2pic2.JPG" style="width: 280px; height: 330px;"><br>
+            <h5>See more</h5>
+            </a>
+        </div>
+
+        <div id="sec02box03" style="border: 10px; float: left;">
+            <h4><b>Beauty picks</b></h4>
+            <a href="https://www.amazon.com/b/?node=16225006011&pf_rd_r=K0EFJMRDV25H536WJ0YS&pf_rd_p=4a5ac24a-2f14-4296-8a03-0c034c0a7904&pd_rd_r=7c60f949-73aa-4164-931e-41277b403ad3&pd_rd_w=9puqs&pd_rd_wg=I12Zw&ref_=pd_gw_unk">
+            <img src="./images/sec2pic3.JPG" style="width: 280px; height: 330px;"><br>
+            <h5>See more</h5>
+            </a>
+        </div>
+
+        <div id="sec02box04-01" style="border: 10px; float: left; width: 320px; height: 170px;">
+                <h4><b>Sign in for the best experience</b></h4><br><br>
+                <button style="background-color: #F0C454; border-radius: 20px; width: 270px;"> Sign In Securely </button>
+        </div>
+
+        <div id="sec02box04-02">
+        <a href="https://www.amazon.com/b?node=20338496011&pf_rd_r=XTXXFF2WHRFJW7RDB25Q&pf_rd_p=696ad652-44a2-497e-883b-b1ed606f2732&pd_rd_r=90eab18f-8d6c-4fe0-86d5-d5da15f95cc9&pd_rd_w=UGwyp&pd_rd_wg=fDiSw&ref_=pd_gw_unk">
+            <img src="./images/sec2pic4.JPG" style="width: 250px; height: 255px; float: left; margin-left: 60px;"><br>
+        </a>
+        </div>
+
+        <div id="sec02box05" style="border: 10px; float: left;">
+            <h4><b>Shop by Category</b></h4>
+            <a href="https://www.amazon.com/b?node=16225005011&pf_rd_r=8DX63B2E64MB7D0Q2CBG&pf_rd_p=e5b0c85f-569c-4c90-a58f-0c0a260e45a0&pd_rd_r=7f3ec7f8-d9c0-4da2-8df3-98f286536ee1&pd_rd_w=qDY5I&pd_rd_wg=goFK4&ref_=pd_gw_unk">
+            <img src="./images/sec2pic5.JPG" style="width: 280px; height: 330px;"><br>
+            <h5>Shop now</h5>
+            </a>
+        </div>
+        
+        <div id="sec02box06" style="border: 10px; float: left;">
+            <h4><b>Amazon Basics</b></h4>
+            <a href="https://www.amazon.com/s?k=amazonbasics&pd_rd_r=7f3ec7f8-d9c0-4da2-8df3-98f286536ee1&pd_rd_w=Pjsfc&pd_rd_wg=goFK4&pf_rd_p=9349ffb9-3aaa-476f-8532-6a4a5c3da3e7&pf_rd_r=8DX63B2E64MB7D0Q2CBG&ref=pd_gw_unk">
+            <img src="./images/sec2pic6.JPG" style="width: 280px; height: 330px;"><br>
+            <h5>See more</h5>
+            </a>
+        </div>
+
+        <div id="sec02box07" style="width: 340px; height: 330px; float: left;">
+            <h4><b>Shop top categories</b></h4>
+            
+            <div id="sec02box0701" style="border: 10px; float: left;">
+                <a href="https://www.amazon.com/b?node=16225007011&pf_rd_r=CYYEQ1Q7RXV3KZCM63E6&pf_rd_p=e5b0c85f-569c-4c90-a58f-0c0a260e45a0&pd_rd_r=acb8390d-c811-4d0c-893d-95377f0b4cf8&pd_rd_w=nt8Wu&pd_rd_wg=FZuAt&ref_=pd_gw_unk">
+                <img src="./images/sec2part7-1.JPG" style="width: 140px; height: 130px;"><br>
+                </a>
+            </div>
+            
+            <div id="sec02box0702" style="border: 10px; float: left;">
+                <a href="https://www.amazon.com/b?node=16225016011&pf_rd_r=CYYEQ1Q7RXV3KZCM63E6&pf_rd_p=e5b0c85f-569c-4c90-a58f-0c0a260e45a0&pd_rd_r=acb8390d-c811-4d0c-893d-95377f0b4cf8&pd_rd_w=nt8Wu&pd_rd_wg=FZuAt&ref_=pd_gw_unk">
+                <img src="./images/sec2part7-2.JPG" style="width: 140px; height: 130px;"><br>
+                </a>
+            </div>
+            
+            <div id="sec02box0703" style="border: 10px; float: left;">
+                <a href="https://www.amazon.com/b?node=16225005011&pf_rd_r=CYYEQ1Q7RXV3KZCM63E6&pf_rd_p=e5b0c85f-569c-4c90-a58f-0c0a260e45a0&pd_rd_r=acb8390d-c811-4d0c-893d-95377f0b4cf8&pd_rd_w=nt8Wu&pd_rd_wg=FZuAt&ref_=pd_gw_unk">
+                <img src="./images/sec2part7-3.JPG" style="width: 140px; height: 130px;"><br>
+                </a>
+            </div>
+            
+            <div id="sec02box0704" style="border: 10px; float: left;">
+                <a href="https://www.amazon.com/b?node=16225015011&pf_rd_r=CYYEQ1Q7RXV3KZCM63E6&pf_rd_p=e5b0c85f-569c-4c90-a58f-0c0a260e45a0&pd_rd_r=acb8390d-c811-4d0c-893d-95377f0b4cf8&pd_rd_w=nt8Wu&pd_rd_wg=FZuAt&ref_=pd_gw_unk">
+                <img src="./images/sec2part7-4.JPG" style="width: 140px; height: 130px;"><br>
+                </a>
+            </div>
+            <a href="https://www.amazon.com/b?node=17938598011&pf_rd_r=S067HDBY13851MDCKHXP&pf_rd_p=e5b0c85f-569c-4c90-a58f-0c0a260e45a0&pd_rd_r=b98f9f93-03c9-41fe-878b-b41b81c02ce9&pd_rd_w=M51oW&pd_rd_wg=gF7Tu&ref_=pd_gw_unk">
+                <h5> Click each of them !<br><br><br><br><br>
+                    Shop Now</h5>
+            </a>
+        </div>
+
+        <div id="sec02box08" style="border: 10px; float: left; margin-right: 26px;">
+            <h4><b>Get fit at home</b></h4>
+            <a href="https://www.amazon.com/b?node=16225014011&pf_rd_r=2VDPNW7ZD0W6K8BW8H3S&pf_rd_p=152091c3-ff04-4c57-8721-f1423f1e428d&pd_rd_r=43eac8c5-9926-4a59-8664-a38b0024b9b3&pd_rd_w=ZJEbm&pd_rd_wg=aU9i0&ref_=pd_gw_unk">
+            <img src="./images/sec2pic8.JPG" style="width: 280px; height: 330px;"><br>
+            <h5>Explore now</h5>
+            </a>
+        </div>
+
+    </div>
+
+    <!-- SECTION 3, Discover Amazon 아이콘 슬라이드-->
+    <div id="section03" style="background-color: white;">
+        
+        <!-- 슬라이드 기본 설정 -->
+        <style type="text/css">
+            .swiper-container2 {
+                width: 1300px;;
+                height: 230px;
+                border: 0px;
+                float: left;
+                margin-left: 10px;
+                text-align: center;
+                background-color: #eaeded;
+                overflow: hidden;
+                }
+        </style>
+    
+        <!-- 아이콘 슬라이드 -->
+        <!-- 위의 슬라이드와 같은 형식으로 작성한다. swiper-container1이 아닌 2로 지정한다 -->
+            <font color="black" size="4px">&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            Discover Amazon
+            </font>&nbsp;
+            <a href="https://www.amazon.com/b?ie=UTF8&node=20338496011&ref=aistrustseemore&pf_rd_r=XTH3DT7P3XKY8NH45FF4&pf_rd_p=2286c657-220a-424c-866a-53ed3062937a&pd_rd_r=b58c862a-d015-4784-ac96-e9ebab56c189&pd_rd_w=g9qgb&pd_rd_wg=6TPuz&ref_=pd_gw_unk">
+            click to learn more
+            </a><br>&nbsp;<br>
+            <div class="swiper-container2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide swiper-slide-active">
+                        <a href="https://www.amazon.com/gp/customer-preferences/select-language/ref=aistrust2?pf_rd_r=JSJVJVPHZXJQCNXBSA36&pf_rd_p=2286c657-220a-424c-866a-53ed3062937a&pd_rd_r=aa1d3718-d9fe-4813-bce9-44ce68ec44b7&pd_rd_w=nVaXH&pd_rd_wg=5NxkY&ref_=pd_gw_unkhttps://www.amazon.com/gp/customer-preferences/select-language/ref=aistrust2?pf_rd_r=JSJVJVPHZXJQCNXBSA36&pf_rd_p=2286c657-220a-424c-866a-53ed3062937a&pd_rd_r=aa1d3718-d9fe-4813-bce9-44ce68ec44b7&pd_rd_w=nVaXH&pd_rd_wg=5NxkY&ref_=pd_gw_unk">
+                            <img src="./images/ama01.jpg" style="width:230px; height: 230px; margin-left: -1000px; box-shadow: none;">
+                        </a>
+                    </div>
+                        <div class="swiper-slide swiper-slide-active">
+                            <a href="https://www.amazon.com/gp/customer-preferences/select-currency/ref=aistrust3?pf_rd_r=JSJVJVPHZXJQCNXBSA36&pf_rd_p=2286c657-220a-424c-866a-53ed3062937a&pd_rd_r=aa1d3718-d9fe-4813-bce9-44ce68ec44b7&pd_rd_w=nVaXH&pd_rd_wg=5NxkY&ref_=pd_gw_unk">
+                                <img src="./images/ama02.jpg" style="width:230px; height: 230px; margin-left: -950px; box-shadow: none;">
+                            </a>
+                        </div>
+                        <div class="swiper-slide swiper-slide-active">
+                            <a href="https://www.amazon.com/gp/help/customer/display.html?nodeId=201132710&ref=aistrust4&pf_rd_r=JSJVJVPHZXJQCNXBSA36&pf_rd_p=2286c657-220a-424c-866a-53ed3062937a&pd_rd_r=aa1d3718-d9fe-4813-bce9-44ce68ec44b7&pd_rd_w=nVaXH&pd_rd_wg=5NxkY&ref_=pd_gw_unk">
+                                <img src="./images/ama03.jpg" style="width:230px; height: 230px; margin-left: -900px; box-shadow: none;">
+                            </a>
+                        </div>
+                        <div class="swiper-slide swiper-slide-active">
+                            <a href="https://www.amazon.com/gp/help/customer/display.html/ref=aistrust5?ie=UTF8&nodeId=201910710&pf_rd_r=JSJVJVPHZXJQCNXBSA36&pf_rd_p=2286c657-220a-424c-866a-53ed3062937a&pd_rd_r=aa1d3718-d9fe-4813-bce9-44ce68ec44b7&pd_rd_w=nVaXH&pd_rd_wg=5NxkY&ref_=pd_gw_unk">
+                                <img src="./images/ama04.jpg" style="width:230px; height: 230px; margin-left: -850px; box-shadow: none;">
+                            </a>
+                        </div>
+                        <div class="swiper-slide swiper-slide-active">
+                            <a href="https://www.amazon.com/ap/signin?_encoding=UTF8&accountStatusPolicy=P1&openid.assoc_handle=usflex&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fgp%2Fcss%2Forder-history%3Fie%3DUTF8%26pd_rd_r%3Daa1d3718-d9fe-4813-bce9-44ce68ec44b7%26pd_rd_w%3DnVaXH%26pd_rd_wg%3D5NxkY%26ref_%3Dpd_gw_unk&pageId=webcs-yourorder&showRmrMe=1">
+                                <img src="./images/ama05.jpg" style="width:230px; height: 230px; margin-left: -800px; box-shadow: none;">
+                            </a>
+                        </div>
+                        <div class="swiper-slide swiper-slide-active">
+                            <a href="https://www.amazon.com/gp/help/customer/display.html?nodeId=508510&ref=aistrust7&pf_rd_r=JSJVJVPHZXJQCNXBSA36&pf_rd_p=2286c657-220a-424c-866a-53ed3062937a&pd_rd_r=aa1d3718-d9fe-4813-bce9-44ce68ec44b7&pd_rd_w=nVaXH&pd_rd_wg=5NxkY&ref_=pd_gw_unk">
+                                <img src="./images/ama06.jpg" style="width:230px; height: 230px; margin-left: -750px; box-shadow: none;">
+                            </a>
+                        </div>
+                </div>
+                <div class="swiper-button-next swiper-button-black" style="margin-top: 1050px;"></div>
+                <div class="swiper-button-prev swiper-button-black" style="margin-top: 1050px;"></div>
+                    
+            <!-- 슬라이드 스크립트를 지정해준다. 슬라이드 화면을 가운데로 설정해주고
+            slidesPerView를 5로 설정해 한 화면에 슬라이드 5개가 보여지도록 한다
+            그리고 슬라이드가 보여지는 모습을 style type text/css로 꾸민다-->
+            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+            <script>
+                var swiper = new Swiper('.swiper-container2', {
+                slidesPerView: 6,
+                centeredSlides: true,
+                navigation : {
+		            nextEl : '.swiper-button-next', // 다음 버튼 클래스명
+		            prevEl : '.swiper-button-prev', // 이번 버튼 클래스명
+	            },
+                });
+            </script>
+            <style type="text/css">
+                .swiper-container2 {
+                margin: 0;
+                width: 1520px;;
+                height: 230px;
+                border: 0px;
+                background-color: white;
+                }
+            </style>
+            
+            </div>
+    </div>
+        
+    <!-- SECTION 4, 4개의 레이아웃 -->
+    <!-- 하나의 박스는 설명과, 하이퍼링크가 탑재된 이미지와 설명으로 이루어져 있음
+        1번째 박스는 다시 4개의 구역으로 나누어져 있음 -->
+    <div class="section04">
+        <div id="sec04box01" style="width: 340px; height: 330px; float: left;">
+            <h4><b>Comfy styles for her</b></h4>
+            
+            <div id="sec04box0101" style="border: 10px; float: left;">
+                <a href="https://www.amazon.com/s?k=sweatshirts&i=fashion-womens-intl-ship&pd_rd_r=a3b9205b-cc8b-4a75-b421-4daf2620eda4&pd_rd_w=ktOTU&pd_rd_wg=tNKS8&pf_rd_p=1db13ac4-e486-438e-a9a5-dd6867e4ea95&pf_rd_r=4MAVE29V3W1KHPQ0W6PW&ref=pd_gw_unk">
+                <img src="./images/sec4part1-1.JPG" style="width: 140px; height: 130px;"><br>
+                </a>
+            </div>
+            
+            <div id="sec04box0102" style="border: 10px; float: left;">
+                <a href="https://www.amazon.com/s?k=joggers&i=fashion-womens-intl-ship&pd_rd_r=a3b9205b-cc8b-4a75-b421-4daf2620eda4&pd_rd_w=ktOTU&pd_rd_wg=tNKS8&pf_rd_p=1db13ac4-e486-438e-a9a5-dd6867e4ea95&pf_rd_r=4MAVE29V3W1KHPQ0W6PW&ref=pd_gw_unk">
+                <img src="./images/sec4part1-2.JPG" style="width: 140px; height: 130px;"><br>
+                </a>
+            </div>
+            
+            <div id="sec04box0103" style="border: 10px; float: left;">
+                <a href="https://www.amazon.com/s?k=cardigans&i=fashion-womens-intl-ship&pd_rd_r=a3b9205b-cc8b-4a75-b421-4daf2620eda4&pd_rd_w=ktOTU&pd_rd_wg=tNKS8&pf_rd_p=1db13ac4-e486-438e-a9a5-dd6867e4ea95&pf_rd_r=4MAVE29V3W1KHPQ0W6PW&ref=pd_gw_unk">
+                <img src="./images/sec4part1-3.JPG" style="width: 140px; height: 130px;"><br>
+                </a>
+            </div>
+            
+            <div id="sec04box0104" style="border: 10px; float: left;">
+                <a href="https://www.amazon.com/s?k=tees&i=fashion-womens-intl-ship&pd_rd_r=a3b9205b-cc8b-4a75-b421-4daf2620eda4&pd_rd_w=ktOTU&pd_rd_wg=tNKS8&pf_rd_p=1db13ac4-e486-438e-a9a5-dd6867e4ea95&pf_rd_r=4MAVE29V3W1KHPQ0W6PW&ref=pd_gw_unk">
+                <img src="./images/sec4part1-4.JPG" style="width: 140px; height: 130px;"><br>
+                </a>
+            </div>
+            <a href="https://www.amazon.com/gp/browse.html?node=16225018011&pf_rd_r=4MAVE29V3W1KHPQ0W6PW&pf_rd_p=1db13ac4-e486-438e-a9a5-dd6867e4ea95&pd_rd_r=a3b9205b-cc8b-4a75-b421-4daf2620eda4&pd_rd_w=ktOTU&pd_rd_wg=tNKS8&ref_=pd_gw_unk">
+                <h5> Click each of them !<br><br><br><br><br>
+                    See More</h5>
+            </a>
+        </div>
+
+        <div id="sec04box02" style="border: 10px; float: left; ">
+            <h4><b>Shop Laptops & Tablets</b></h4>
+            <a href="https://www.amazon.com/s?bbn=16225007011&rh=n%3A16225007011%2Cn%3A13896617011&dc&fst=as%3Aoff&pd_rd_r=ef6a64fa-7b9b-41b8-9d0c-8f2f39640163&pd_rd_w=fYopd&pd_rd_wg=aHEoz&pf_rd_p=f95a41bf-1f82-4fca-9b37-32faaf59dd61&pf_rd_r=7MEYN0HSSZ9FM1XXE3HZ&qid=1602294815&rnid=16225007011&ref=pd_gw_unk">
+            <img src="./images/sec4pic2.JPG" style="width: 280px; height: 330px;"><br>
+            <h5>See more</h5>
+            </a>
+        </div>
+
+        <div id="sec04box03" style="border: 10px; float: left; ">
+            <h4><b>Explore home bedding</b></h4>
+            <a href="https://www.amazon.com/s?k=Home+bedding&i=kitchen-intl-ship&pd_rd_r=ef6a64fa-7b9b-41b8-9d0c-8f2f39640163&pd_rd_w=poZKb&pd_rd_wg=aHEoz&pf_rd_p=16ffc777-bfb6-4b2f-a079-eed4114eff9e&pf_rd_r=7MEYN0HSSZ9FM1XXE3HZ&ref=pd_gw_unk">
+            <img src="./images/sec4pic3.JPG" style="width: 280px; height: 330px;"><br>
+            <h5>See more</h5>
+            </a>
+        </div>
+
+        <div id="sec04box04" style="border: 10px; float: left; ">
+            <h4><b>Create with strip lights</b></h4>
+            <a href="https://www.amazon.com/s?k=strip+lighting&pd_rd_r=ef6a64fa-7b9b-41b8-9d0c-8f2f39640163&pd_rd_w=nvULw&pd_rd_wg=aHEoz&pf_rd_p=38228efa-5278-4c08-9c74-2a33c1be7ce5&pf_rd_r=7MEYN0HSSZ9FM1XXE3HZ&ref=pd_gw_unk">
+            <img src="./images/sec4pic4.JPG" style="width: 280px; height: 330px;"><br>
+            <h5>Shop Now</h5>
+            </a>
+        </div>
+        &nbsp;&nbsp;
+    </div>
+</div>
+
+
+<!-- FOOTER, SECTION 1 ~ 4  -->
+<font color="white">
+<footer id="footer">
+    <div id="backToTop">
+        <b>Back to top</b><br><br>
+    </div>
+
+    <!-- FOOTER - SECTION01 -->
+    <!-- bg이미지 포지션을 relative으로 고정시켜 배경 이미지를 만들고, 그 위에 FOOTER - SECTION01을 넣는다 -->
+    <div id="bgcolor1">
+        <a>
+            <img src="./images/bgcolor1.PNG" style="width: 1400px; height: 400px; z-index: 0;">
+        </a>
+    </div>
+
+    <div class="footer-section01" style="background-color: #232F3E; z-index: 1;">
+        <div id="fs01-01">
+        
+            <br><b>Get to Know Us</b><br><br>
+        
+
+        <a style="color: white;" href="https://www.amazon.jobs/en/">
+            Careers<br>
+        </a>
+
+        <a style="color: white;" href="https://www.aboutamazon.com/?utm_source=gateway&utm_medium=footer">
+            Blog<br>
+        </a>
+
+        <a style="color: white;" href="https://www.aboutamazon.com/?utm_source=gateway&utm_medium=footer">
+            About Amazon<br>
+        </a>
+
+        <a style="color: white;" href="https://ir.aboutamazon.com/overview/default.aspx">
+            Investor Relations<br>
+        </a>
+
+         <a style="color: white;" href="https://www.amazon.com/gp/browse.html?node=2102313011&ref_=footer_devices">
+            Amazon Devices<br>
+        </a>
+
+        <a style="color: white;" href="https://www.aboutamazon.com/workplace/tours?utm_source=gateway&utm_medium=footer&utm_campaign=fctours">
+            Amazon Tours<br>
+        </a>
+        </div>
+
+        <div id="fs01-02">
+            
+                <br><b>Make Money with Us</b><br><br>
+            
+
+            <a style="color: white;" href="https://sell.amazon.com/sell.html">
+                Sell products on Amazon<br>
+            </a>
+
+            <a style="color: white;" href="https://sell.amazon.com/programs/amazon-business.html?ref_=asus_soa_rd&ld=usb2bunifooter&ref_=footer_b2b">
+                Sell on Amazon Business<br>
+            </a>
+
+            <a style="color: white;" href="https://developer.amazon.com/">
+                Sell apps on Amazon Business<br>
+            </a>
+
+            <a style="color: white;" href="https://affiliate-program.amazon.com/">
+                Become an Affiliate<br>
+            </a>
+
+            <a style="color: white;" href="https://advertising.amazon.com/?ref=ext_amzn_ftr">
+                Advertise Your Products<br>
+            </a>
+
+            <a style="color: white;" href="https://www.amazon.com/gp/seller-account/mm-summary-page.html?ld=AZFooterSelfPublish&topic=200260520&ref_=footer_publishing">
+                Self-Publish with Us<br>
+            </a>
+
+            <a style="color: white;" href="https://go.thehub-amazon.com/amazon-hub-locker">
+                Host an Amazon Hub<br>
+            </a>
+
+            <a style="color: white;" href="https://www.amazon.com/b/?node=18190131011&ld=AZUSSOA-seemore&ref_=footer_seemore">
+                See More Make Money with Us<br>
+            </a>
+        </div>
+
+        <div id="fs01-03">
+        
+            <br><b>Amazon Payment Products</b><br><br>
+        
+
+        <a style="color: white;" href="https://www.amazon.com/dp/B07984JN3L?plattr=ACOMFO&ie=UTF-8">
+            Amazon Business Card<br>
+        </a>
+
+        <a style="color: white;" href="https://www.amazon.com/gp/browse.html?node=16218619011&ref_=footer_swp">
+            Shop with Points<br>
+        </a>
+
+        <a style="color: white;" href="https://www.amazon.com/gp/browse.html?node=10232440011&ref_=footer_reload_us">
+            Reload Your Balance<br>
+        </a>
+
+        <a style="color: white;" href="https://www.amazon.com/gp/browse.html?node=388305011&ref_=footer_tfx">
+            Amazon Currency Converter<br>
+        </a>
+        </div>
+
+        <div id="fs01-04">
+        <br><b>Let Us Help You</b><br><br>
+
+        <a style="color: white;" href="https://www.amazon.com/gp/help/customer/display.html?nodeId=GDFU3JS5AL6SYHRD&ref_=footer_covid">
+            Amazon and COVID-19<br>
+        </a>
+
+        <a style="color: white;" href="https://www.amazon.com/gp/css/homepage.html?ref_=footer_ya">
+            Your Account<br>
+        </a>
+
+        <a style="color: white;" href="https://www.amazon.com/ap/signin?clientContext=132-9349820-5691738&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fyour-orders%2Forders%2Fref%3Dyo_oh_gp_to_ov%3Fref_%3Dfooter_yo%26_encoding%3DUTF8&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&marketPlaceId=ATVPDKIKX0DER&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=usflex&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.pape.max_auth_age=900&siteState=clientContext%3D145-0505373-6595463%2CsourceUrl%3Dhttps%253A%252F%252Fwww.amazon.com%252Fyour-orders%252Forders%252Fref%253Dyo_oh_gp_to_ov%253Fref_%253Dfooter_yo%2526_encoding%253DUTF8%2Csignature%3DBmQ4w9VJmB0j2B3ZrsX5HjBrLBEBMj3D">
+            Your Orders<br>
+        </a>
+
+        <a style="color: white;" href="https://www.amazon.com/gp/help/customer/display.html?nodeId=468520&ref_=footer_shiprates">
+            Shipping Rates & Policies<br>
+        </a>
+
+        <a style="color: white;" href="https://www.amazon.com/ap/signin?clientContext=132-9349820-5691738&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fspr%2Freturns%2Fhomepage%2Fhomepage.html%3Fref_%3Dfooter_hy_f_4&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=amzn_psr_desktop_us&openid.mode=checkid_setup&marketPlaceId=ATVPDKIKX0DER&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=Amazon&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.pape.max_auth_age=3600&siteState=clientContext%3D145-0505373-6595463%2CsourceUrl%3Dhttps%253A%252F%252Fwww.amazon.com%252Fspr%252Freturns%252Fhomepage%252Fhomepage.html%253Fref_%253Dfooter_hy_f_4%2Csignature%3DckIj2BezrYN4bhHRj2BJHj2BhredF2OzUj3D">
+            Returns & Replacements<br>
+        </a>
+
+        <a style="color: white;" href="https://www.amazon.com/ap/signin?openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fmn%2Fdcw%2Fmyx.html%2Fref%3Dkinw_myk_redirect&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&">
+            Manage Your Content and Devices<br>
+        </a>
+
+        <a style="color: white;" href="https://www.amazon.com/aa?_encoding=UTF8&bitCampaignCode=A0029&ref_=footer_bit_v2_us_A0029">
+            Amazon Assistant<br>
+        </a>
+
+        <a style="color: white;" href="https://www.amazon.com/gp/help/customer/display.html?nodeId=508510&ref_=footer_gw_m_b_he">
+            Help<br>
+        </a>
+        </div>
+    </div>
+
+    <!-- FOOTER - SECTION02 -->
+    <!-- 위와 마찬가지로 bg이미지 포지션을 relative으로 고정시켜 배경 이미지를 만들고, 그 위에 FOOTER - SECTION02를 넣는다 -->
+    <div id="bgcolor2">
+        <a>
+            <img src="./images/bgcolor2.PNG" style="width: 1520px; height: 550px; z-index: 0;">
+        </a>
+    </div>
+
+    <div class="footer-section02">
+        <hr>
+        <div style="display: inline-block;" id="fs02-01">
+            <a>
+            <img src="./images/amazon.png">
+            </a>
+        </div>
+
+        <button type="button" id="fs02-02">
+            English
+        </button>
+
+        <button type="button" id="fs02-03">
+            $ USD - U.S. Dollar
+        </button>
+
+        <button type="button" id="fs02-04">
+            United States
+        </button>
+        <br><br><br><br><br>
+    </div>
+
+    <!-- FOOTER - SECTION03 -->
+    <!-- 푸터 섹션 3의 레이아웃은 가로 7칸, 세로 7칸으로 구성되어 있다
+    div 클래스 하나를 FOOTER - SECTION (숫자) 로 두고, 그 아래에 5개의 품목씩 나열되도록 코드를 짰다 -->
+    <div class="footer-section03" style="font-size: 2px;">
+        <div id="fs03-01">
+        <a style="color: white;" href="https://music.amazon.com/error?errorText=MarketplaceData+Error%3A%0A+Stratus+Call+Error%3A%0A+Cannot+read+property+%27webplayerServer%27+of+undefined&useHorizonte=true">
+        <br><b>Amazon Music<br></b>
+        Stream millions<br>
+        of songs<br><br>
+        </a>
+
+        <a style="color: white;" href="https://sell.amazon.com/?ld=AZUSSOA-footer-aff&ref_=footer_sell">
+        <br><b>Sell on<br>
+        Amazon<br></b>
+        Start a Selling<br>
+        Account<br><br>
+        </a>
+
+        <a style="color: white;" href="https://www.bookdepository.com/">
+            <br><b>Book<br>
+            Depository</b>
+            Books With Free<br>
+            Delivery<br>
+            Worldwide<br><br>
+        </a>
+
+        <a style="color: white;" href="https://www.imdb.com/">
+            <br><b>IMDb<br></b>
+            Movies, TV<br>
+            & Celebrities<br><br>
+        </a>
+
+        <a style="color: white;" href="https://ring.com/">
+            <br><b>Ring<br></b>
+            Smart Home<br>
+            Security<br>
+            Systems<br><br>
+        </a>
+    
+        </div>
+
+        <div id="fs03-02">
+        <a style="color: white;" href="https://advertising.amazon.com/?ref=footer_advtsing_amzn_com">
+            <br><b>Amazon<br>
+            Advertising</b><br>
+            Find, attract, and<br>
+            engage<br>
+            customers<br>
+        </a>
+
+        <a style="color: white;" href="https://business.amazon.com/en/home?ref_=footer_retail_b2b">
+            <br><b>Amazon
+            Business</b><br>
+            Everything For<br>
+            Your Business<br>
+        </a>
+
+        <a style="color: white;" href="https://www.boxofficemojo.com/?ref_=amzn_nav_ftr">
+            <br><b>Box Office
+            Mojo</b><br>
+            Find Movie<br>
+            Box Office Data<br>
+        </a>
+
+        <a style="color: white;" href="https://pro.imdb.com/signup/index.html?u=https%3A%2F%2Fpro.imdb.com%2F%3Fref_%3Damzn_nav_ftr">
+            <br><b>IMDbPro</b><br>
+            Find, attract, and<br>
+            engage<br>
+            customers<br>
+        </a>
+
+        <a style="color: white;" href="https://eero.com/">
+            <br><b>eero WiFi</b><br>
+            Stream 4K Video<br>
+            in Every Room<br>
+        </a>
+
+        </div>
+    
+        <div id="fs03-03">
+        <a style="color: white;" href="https://www.amazon.com/gp/browse.html?node=15547130011&ref_=_us_footer_drive">
+            <br><b>Amazon Drive</b><br>
+            Cloud storage<br>
+            from Amazon<br>
+        </a>
+
+        <a style="color: white;" href="https://www.amazon.com/gp/browse.html?node=230659011&ref_=footer_amazonglobal">
+            <br><b>AmazonGlobal</b><br>
+            Ship Orders<br>
+            Internationally<br>
+        </a>
+
+        <a style="color: white;" href="https://www.comixology.com/">
+            <br><b>ComiXology</b><br>
+            Thousands of<br>
+            Digital Comics<br>
+        </a>
+
+        <a style="color: white;" href="https://kdp.amazon.com/en_US/">
+            <br><b>Kindle Direct Publishing</b><br>
+            Indie Digital & Print<br>
+            Publishing<br>
+            Made Easy<br>
+        </a>
+
+        <a style="color: white;" href="https://blinkforhome.com/?ref=nav_footer">
+            <br><b>Blink</b><br>
+            Smart Security<br>
+            for Every Home<br>
+        </a>
+        </div>
+
+        <div id="fs03-04">
+        <a style="color: white;" href="https://www.6pm.com/">
+            <br><b>6pm</b><br>
+            Score deals<br>
+            on fashion<br>
+            brands<br>
+        </a>
+
+        <a style="color: white;" href="https://www.amazon.com/gp/browse.html/ref=vas_sf_load_?node=8098158011">
+            <br><b>Home Services</b><br>
+            Experienced<br>
+            Pros<br>
+            Happiness<br>
+            Guarantee<br>
+        </a>
+
+        <a style="color: white;" href="https://www.dpreview.com/">
+            <br><b>DPReview</b><br>
+            Digital<br>
+            Photography<br>
+        </a>
+
+        <a style="color: white;" href="https://videodirect.amazon.com/home/landing">
+            <br><b>Prime Video
+            Direct</b><br>
+            Video Distribution<br>
+            Made Easy<br>
+        </a>
+
+        <a style="color: white;" href="https://ring.com/neighbors">
+            <br><b>Neighbors
+            App</b><br>
+            Real-Time<br>
+            Crime<br>
+            & Safety Alerts<br>
+        </a>
+        </div>
+
+        <div id="fs03-05">
+        <a style="color: white;" href="https://www.abebooks.com/">
+            <br><b>AbeBooks</b><br>
+            Books, art<br>
+            & collectibles<br>
+        </a>
+
+        <a style="color: white;" href="https://ignite.amazon.com/?ref=amazon_footer_ignite#/">
+            <br><b>Amazon Ignite</b><br>
+            Sell your original<br>
+            Digital Educational<br>
+            Resources<br>
+        </a>
+
+        <a style="color: white;" href="https://www.eastdane.com/welcome">
+            <br><b>East Dane</b><br>
+            Designer Men's<br>
+            Fashion<br>
+        </a>
+
+        <a style="color: white;" href="https://www.shopbop.com/welcome">
+            <br><b>Shopbop</b><br>
+            Designer<br>
+            Fashion Brands<br>
+        </a>
+
+        <a style="color: white;" href="https://www.amazon.com/gp/browse.html?node=14498690011&ref_=amzn_nav_ftr_swa">
+            <br><b>Amazon Subscription Boxes</b><br>
+            Top subscription boxes – right<br>
+            to your door<br>
+        </a>
+        </div>
+
+        <div id="fs03-06">
+        <a style="color: white;" href="https://www.acx.com/">
+            <br><b>ACX</b><br>
+            Audiobook<br>
+            Publishing<br>
+            Made Easy<br>
+        </a>
+
+        <a style="color: white;" href="https://aws.amazon.com/ko/what-is-cloud-computing/?sc_channel=EL&sc_campaign=amazonfooter">
+            <br><b>Amazon Web Services</b><br>
+            Scalable Cloud<br>
+            Computing<br>
+            Services<br>
+        </a>
+
+        <a style="color: white;" href="https://www.fabric.com/">
+            <br><b>Fabric</b><br>
+            Sewing, Quilting<br>
+            & Knitting<br>
+        </a>
+
+        <a style="color: white;" href="https://www.woot.com/">
+            <br><b>Woot!</b><br>
+            Deals and<br>
+            Shenanigans<br>
+        </a>
+
+        <a style="color: white;" href="https://www.pillpack.com/">
+            <br><b>PillPack</b><br>
+            Pharmacy<br>
+            Simplified<br>
+        </a>
+        </div>
+
+        <div id="fs03-07">
+        <a style="color: white;" href="https://www.alexa.com/">
+            <br><b>Alexa</b><br>
+            Actionable<br>
+            Analytics<br>
+            for the Web<br>
+        </a>
+
+        <a style="color: white;" href="https://www.audible.com/">
+            <br><b>Audible</b><br>
+            Listen to Books &<br>
+            Original<br>
+            Audio<br>
+            Performances<br>
+        </a>
+
+        <a style="color: white;" href="https://www.goodreads.com/">
+            <br><b>Goodreads</b><br>
+            Book reviews<br>
+            &<br>
+            recommendations<br>
+        </a>
+
+        <a style="color: white;" href="https://www.zappos.com/">
+            <br><b>Zappos</b><br>
+            Shoes &<br>
+            Clothing<br>
+        </a>
+
+        <a style="color: white;" href="https://www.amazon.com/amsc?ref_=footer_asc">
+            <br><b>Amazon Second<br>
+            Chance</b>
+            Pass it on, trade it in,<br>
+            give it a second life<br>
+                
+        </a>
+        </div>
+    </div>
+
+    <!-- FOOTER - SECTION04 -->
+    <!-- 저작권 외 여러 설명들 추가 -->
+    <div class="footer-section04">
+        <a style="color: white;" href="https://www.amazon.com/gp/help/customer/display.html?nodeId=508088&ref_=footer_cou">
+            Conditions of Use
+        </a>&nbsp;&nbsp;&nbsp;
+        <a style="color: white;" href="https://www.amazon.com/gp/help/customer/display.html?nodeId=468496&ref_=footer_privacy">
+            Privacy Notice
+        </a>&nbsp;&nbsp;&nbsp;
+        <a style="color: white;" href="https://www.amazon.com/gp/help/customer/display.html?nodeId=202075050">
+            Interest-Based Ads
+        </a>&nbsp;&nbsp;&nbsp;
+        © 1996-2021, Amazon.com, Inc. or its affiliates
+    </div>
+
+</footer>
+</font>
+
+</body>
+</html>
