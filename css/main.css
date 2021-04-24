@@ -1,12 +1,19 @@
+/* 폰트 설정 */
+/* 아마존 사이트에서 다운받은 폰트를 기본으로 설정 */
 * { font-family: "amazonEmber" !important; }
+
+body{
+	background-color: #EAEDED;
+}
+
 #searchbox{
 	position: relative;
 	margin-top: -60px;
 	margin-left: 20px;
 }
 
-body{
-	background-color: #EAEDED;
+.input-group-addon {
+	padding: 0!important;
 }
 
 .swiper-container {
@@ -147,19 +154,14 @@ header{
 }
 
 
-
 #swiper-wrapper{
 	background-color: white;
 }
 
 #sidebar{
 	  position: absolute;
-	  size: fixed;
-	  width: 10px;
-	  height: 10px;
-	  font: white;
 	  text-decoration-line: none;
-
+	  margin-left: 10px;
 }
 
 a{
@@ -167,7 +169,8 @@ a{
 }
 
 #notsideBar{
-	margin-left: 40px;
+	margin-left: 70px;
+	padding-top: 3px;
 }
 
 select {
@@ -182,14 +185,11 @@ button {
 	border: none;
 }
 
-.input-group-addon {
-	padding: 0!important;
-}
 
 
 #rightalign{
 	position:absolute;
-	right: 35px;
+	right: 15px;
 	overflow: hidden;
 }
 

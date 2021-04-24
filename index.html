@@ -40,20 +40,20 @@
         <div class="top_box">
 
         <!-- 로고 이미지를 클릭하면 해당 사이트로 다시 이동하도록 -->
-        <div class="logo" style="display: inline-block">
+        <div class="logo" style="display: inline-block; margin-top:5px;">
                 <a href="./" class="logo">
-                    <img src="./images/logo.JPG" width="110" height="46" vspace="10" hspace="10" style="vertical-align:middle" alt="로고">
+                    <img src="./images/logo.JPG" width="110" height="46" style="vertical-align:middle" alt="로고">
                 </a>
         </div>
 
         <!-- location 아이콘 -->
-        <div id="location" style="display: inline-block">
-            <img src="./images/location.JPG" width="22" height="30" style="vertical-align:middle" alt="위치">
+        <div id="location" style="display: inline-block; margin-top:5px;">
+            <img src="./images/location.JPG" width="22" height="30" style="vertical-align:middle;" alt="위치">
             </div>
         
 
         <!-- 배송 글씨 -->
-        <div id="delivery" style="display: inline-block">
+        <div id="delivery" style="display: inline-block; margin-top:5px; position: fixed;">
             <font size = "2">
                 Deliver to<br>
                 <b>Republic of Korea</b>
@@ -63,7 +63,7 @@
         <!-- 검색창 -->
         <!-- 체크박스, input박스, button으로 검색창을 만든다. 이때 체크박스 안에 품목들이 나열되도록 한다
         스타일시트를 불러와 여백을 바꾸고 아마존의 검색창과 비슷하게 보이도록 한다. -->
-        <div id="searchbox">
+        <div id="searchbox" style="margin-top: -35px; left: 10px;">
             <link href="https://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet" />
             <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
             <div class="row">
@@ -115,7 +115,7 @@
         </div>
         
         <!-- 오른쪽으로 정렬 위해 검색창을 제외한 나머지들은 rightalign css 속성으로 묶는다 -->
-        <div id="rightalign">
+        <div id="rightalign" style="margin-top: 5px;">
             <!-- 언어 -->
             <!-- 위처럼 체크박스를 사용 -->
             <div id="language" style=" display: inline-block;" >
@@ -170,7 +170,7 @@
             <!-- 장바구니 이미지와 문구 -->
             <div id="carts" style="margin: 5px; display: inline-block">
             <a href="https://www.amazon.com/gp/cart/view.html?ref_=nav_cart" style="color: white;">
-                <img src="./images/cart.JPG" style="vertical-align:middle;width: 40;height: 40;" alt="cart">
+                <img src="./images/cart.JPG" style="vertical-align:middle; width: 30;height: 30; margin-top: -20px;" alt="cart">
                 <font size = "4">
                     <b>Cart</b><br>
                 </font>
@@ -184,125 +184,142 @@
     <font size = "3" color="white"> &nbsp; 
     <div id = "header_box">
         <div class="bottom_box">
-        <!-- 사이드바 -->
-        <!-- checked 속성과 그렇지 않은 속성으로 나눈다. checked 속성은 마우스가 클릭됐을 때 보여질 화면을 미리 만들어놓은 것이다.
-        label span을 1,2,3으로 나누어 세 직선이 형태를 변화하면서 x 표시를 만들도록 한다.
-        요소의 위치를 이동시키는 transform 속성 이용
-        요소를 회전시킬 수 있는 rotate를 불러와 괄호 안 각도만큼 회전
-        div class="status-ico"밑에는 나열할 리스트를 적는다 -->
-            <div id="sidebar" style="z-index:9998; font: white;">
+            <!-- 사이드바 -->
+            <div id="sidebar" style="display:inline-block;">
+            
+                <!-- 사이드바 스타일 지정 -->
                 <style>
-                    input[id="menuicon"] {display:none;}
-                    input[id="menuicon"] + label {display:block;margin-top:5px;width:3px;height:3px;padding:9px;position:relative;cursor:pointer;}
-                    input[id="menuicon"] + label span {display:block;position:absolute;width:100%;height:5px;background:white;transition:all .35s;}
-                    input[id="menuicon"] + label span:nth-child(1) {top:0;}
-                    input[id="menuicon"] + label span:nth-child(2) {top:50%;transform:translateY(-50%);}
-                    input[id="menuicon"] + label span:nth-child(3) {bottom:0;}
-                    input[id="menuicon"]:checked + label {z-index:2;}
-                    input[id="menuicon"]:checked + label span {background:white;}
-                    input[id="menuicon"]:checked + label span:nth-child(1) {top:50%;transform:translateY(-50%) rotate(45deg);}
-                    input[id="menuicon"]:checked + label span:nth-child(2) {opacity:0;}
-                    input[id="menuicon"]:checked + label span:nth-child(3) {bottom:50%;transform:translateY(50%) rotate(-45deg);}
-                    div[class="sidebar"] {width:300px;height:100%;background:#232F3E;position:fixed;top:0;left:-300px;z-index:1;transition:all .35s;}
-                    input[id="menuicon"]:checked + label + div {left:0;}
+                    .sidenav {
+                        height: 100%;
+                        width: 0;
+                        position: fixed;
+                        z-index: 9999;
+                        top: 0;
+                        left: 0;
+                        background-color: white;
+                        overflow: hidden;
+                        transition: 0.5s;
+                        padding-top: 30px;
+                    }
+                    .sidenav .closebtn {
+                        position: absolute;
+                        top: 0;
+                        right: 25px;
+                        font-size: 36px;
+                        margin-left: 50px;
+                        color: black;
+                    }
+                    li {
+                        list-style: none;
+                        padding: 2px 2px 2px 25px;
+                        text-decoration: none;
+                        font-size: 13px;
+                        color: black;
+                        display: block;
+                        margin-left: -40px;
+                        
+                        }
                 </style>
-                <input type="checkbox" id="menuicon">
-                <label for="menuicon">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </label>
-                <div class="sidebar" style="list-style: none;">
-                    <div class="status-ico">
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <ul>
-                        <li style="list-style: none;">&nbsp;
-                            Hello, Sign in<br><hr>
+
+                <!-- 사이드바 글자 지정 -->
+                <div id="mySidenav" class="sidenav" style="color: black; list-style:none;">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <ul padding-left:0; margin-left:0;>
+                        <a style="color: black" href="https://www.amazon.com/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3F_encoding%3DUTF8%26ref_%3Dnav_em_hd_re_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&&ref_%3Dnav_em_hd_clc_signin">
+                            <h4><b> Hello, Sign in </b></h4>
+                        </a>
+                        <li>
+                            <hr><b>Digital Content & Devices</b>
                         </li>
-                        <li style="list-style: none;">&nbsp;
-                            Digital Content & Devices
-                        </li>
-                        <li style="list-style: none;">&nbsp;
+                        <li>
                             Amazon Music
                         </li>
-                        <li style="list-style: none;">&nbsp;
+                        <li>
                             Kindle E-readers & Books
                         </li>
-                        <li style="list-style: none;">&nbsp;
-                            Appstore for Android<br><hr>
+                        <li>
+                            Appstore for Android
                         </li>
-                        <li style="list-style: none;">&nbsp;
-                            Shop By Department
+                        <li>
+                            <hr><b>Shop By Department</b>
                         </li>
-                        <li style="list-style: none;">&nbsp;
+                        <li>
                             Electronics
                         </li>
-                        <li style="list-style: none;">&nbsp;
+                        <li>
                             Computers
                         </li>
-                        <li style="list-style: none;">&nbsp;
+                        <li>
                             Smart Home
                         </li>
-                        <li style="list-style: none;">&nbsp;
+                        <li>
                             Arts & Crafts
                         </li>
-                        <li style="list-style: none;">&nbsp;
-                            See All<br><hr>
+                        <li>
+                            See All
                         </li>
-                        <li style="list-style: none;">&nbsp;
-                            Programs & Features
+                        <li>
+                            <hr><b>Programs & Features</b>
                         </li>
-                        <li style="list-style: none;">&nbsp;
+                        <li>
                             Gift Cards
                         </li>
-                        <li style="list-style: none;">&nbsp;
-                                #FoundItOnAmazon
+                        <li>
+                            #FoundItOnAmazon
                         </li>
-                        <li style="list-style: none;">&nbsp;
-                                Amazon Live
+                        <li>
+                            Amazon Live
                         </li>
-                        <li style="list-style: none;">&nbsp;
-                                International Shopping
+                        <li>
+                            International Shopping
                         </li>
-                        <li style="list-style: none;">&nbsp;
-                                See All<br><hr>
+                        <li>
+                            See All
                         </li>
-                        <li style="list-style: none;">&nbsp;
-                                Help & Settings
+                        <li>
+                            <hr><b>Help & Settings</b>
                         </li>
-                        <li style="list-style: none;">&nbsp;
-                                Your Account
+                        <li>
+                            Your Account
                         </li>
-                        <li style="list-style: none;">&nbsp;
-                                English
+                        <li>
+                            English
                         </li>
-                        <li style="list-style: none;">&nbsp;
-                                United States
+                        <li>
+                            United States
                         </li>
-                        <li style="list-style: none;">&nbsp;
-                                Customer Service
+                        <li>
+                            Customer Service
                         </li>
                     </ul>
-                    </div>
                 </div>
+                
+                <!-- 클릭하기 전엔 햄버거바, 클릭하면 x표시로 바뀌게 설정 -->
+                <span style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776;All</span>
+                <script>
+                function openNav() {
+                    document.getElementById("mySidenav").style.width = "300px";
+                }
+                
+                function closeNav() {
+                    document.getElementById("mySidenav").style.width = "0";
+                }
+                </script>
             </div>
-        
-            <!-- 사이드바가 아닌 부분 -->
+            
+            <!-- 사이드바가 아닌 부분을 묶어 css 속성을 지정 -->
             <div id="notsideBar">
                 <a href="https://www.amazon.com/international-sales-offers/b/?ie=UTF8&node=15529609011&ref_=nav_cs_gb_intl_52df97a2eee74206a8343034e85cd058" style="color:white">Today's Deals</a>&nbsp;&nbsp;&nbsp;
                 <a href="https://www.amazon.com/gp/help/customer/display.html?nodeId=508510&ref_=nav_cs_customerservice_2bf4fe8c5ec54e6bae2d1c24043f012b" style="color:white">Customer Service</a>&nbsp;&nbsp;&nbsp;
                 <a href="https://www.amazon.com/gift-cards/b/?ie=UTF8&node=2238192011&ref_=nav_cs_gc_4fb606b1a14b44e4823e00c03fc71f47" style="color:white">Gift Cards</a>&nbsp;&nbsp;&nbsp;
                 <a href="https://www.amazon.com/b/?_encoding=UTF8&ld=AZUSSOA-sell&node=12766669011&ref_=nav_cs_sell_9321d964d1ab428b8d83e204c043fc01" style="color:white">Today's Deals</a>&nbsp;&nbsp;&nbsp;
                 <a href="https://www.amazon.com/registries?_encoding=UTF8&redirect=true&ref_=nav_cs_registry_1c421982e26d4ec48ca364be68f201b5" style="color:white">Sell</a>&nbsp;&nbsp;&nbsp;
-                
+                    
                 <div id="amazonsResponse">
                 <a href="https://www.aboutamazon.com/company-news/amazons-actions-to-help-employees-communities-and-customers-affected-by-covid-19/?_encoding=UTF8&token=GW&utm_content=COVID-19_roundup&utm_medium=swm&utm_source=gateway&utm_term=gw03162020&ref_=nav_swm_undefined&pf_rd_p=cf6260e5-93a9-45ad-9653-d1fc95751fac&pf_rd_s=nav-sitewide-msg-text-export&pf_rd_t=4201&pf_rd_i=navbar-4201&pf_rd_m=ATVPDKIKX0DER&pf_rd_r=C045QSGNV9P6E7SYVE0S" style="color:white">Amazon's response to COVID-19</a>
             </div>
+            </div>
         </div>
-    </div>
     </div>
     </font>
 </header>
@@ -454,7 +471,6 @@
 
     <!-- SECTION 3, Discover Amazon 아이콘 슬라이드-->
     <div id="section03" style="background-color: white;">
-        
         <!-- 슬라이드 기본 설정 -->
         <style type="text/css">
             .swiper-container2 {
@@ -536,8 +552,7 @@
                 background-color: white;
                 }
             </style>
-            
-            </div>
+        </div>
     </div>
         
     <!-- SECTION 4, 4개의 레이아웃 -->
