@@ -6,10 +6,65 @@ body{
 	background-color: #EAEDED;
 }
 
+header{
+	overflow: hidden;
+    height: 20%;
+    width: auto;
+    font-size: 20%
+
+}
+
+.top_box {
+	width: 100%;
+	height: 63px;
+	float: left;
+	background-color: #131921;
+	font : white;
+	margin: 0 auto;
+    font-size: 10px;
+}
+
+.logo{
+	width: 30%;
+	height: auto;
+	display: inline-block;
+	vertical-align: middle;
+	margin-top:5px;
+}
+
+
+#logoimage{
+	width: 110px;
+	height: 46px;
+	vertical-align:middle 
+}
+
 #searchbox{
 	position: relative;
-	margin-top: -60px;
-	margin-left: 20px;
+	margin-left: 230px;
+    margin-top: -53px;
+	left: 10px;
+}
+
+
+#checkbox_form{
+	width:160px;
+}
+
+#delivery{
+	display: inline-block;
+	margin-top:7px;
+	position: relative;
+	font-size: 2px;
+}
+
+.bottom_box {
+	margin-top: -22px;
+	top:-50px;
+	height: 35px;
+	font : white;
+	background: #232F3E;
+    font-size: 10px;
 }
 
 .input-group-addon {
@@ -46,12 +101,6 @@ body{
 
 .section2 #section2{
 	float:left;
-}
-
-
-header{
-	overflow: hidden;
-
 }
 
 .swiper-container1 {
@@ -159,11 +208,6 @@ header{
 	background-color: white;
 }
 
-#sidebar{
-	  position: absolute;
-	  text-decoration-line: none;
-	  margin-left: 10px;
-}
 
 a{
 	text-decoration: none;
