@@ -549,7 +549,8 @@ a{
 
 .footer-section01{
 	width: 750px;
-	transform: scale(0.8, 0.8);
+	transform: scale(0.8, 0.8); 
+	/* transform은 크기를 축소시켜주는 또 하나의 방식 */
 	background: #232F3E;
 	font-size: 13px;
 	position: absolute;
