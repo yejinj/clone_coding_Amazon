@@ -1,6 +1,22 @@
-/* 폰트 */
-* { font-family: "amazonEmber" !important; }
+@font-face {
+    src : url("./../fonts/amazonEmber.ttf");
+    font-family: "amazon-font"
+}
 
+.hovereffect:hover{
+	border: white 1px solid; 
+	text-decoration: none
+}
+
+.hovereffect2:hover{
+	color:#B77A1C;
+	text-decoration: none
+}
+
+.hovereffect3:hover{
+	content: "Sign in Amazon!";
+
+}
 
 /* 인쇄를 누르면 흑백으로 */
 @media print {
@@ -15,14 +31,14 @@
 
 body{
 	background-color: #EAEDED;
-	font-family: "amazonEmber"
+	font-family: "amazon-font"
 }
 
 
 /* 헤더 */
 header{
 	overflow: hidden;
-	font-family: "amazonEmber"
+	font-family: "amazon-font"
 }
 
 
@@ -111,7 +127,8 @@ header{
 }
 
 #language-select{
-	width:20px
+	width:20px;	
+	background: #131921;
 }
 
 #whereto{
@@ -251,6 +268,7 @@ button {
 
 
 .section02{
+	font-family: "amazon-font";
 	overflow: hidden;
 	font: black;
 	background-color: #EAEDED;
@@ -358,6 +376,7 @@ a{
 
 
 #section03{
+	font-family: "amazon-font";
 	background-color: white;
 }
 
@@ -408,6 +427,7 @@ a{
 
 
 .section04{
+	font-family: "amazon-font";
 	overflow: hidden;
 	font: black;
 	background-color: #EAEDED;
@@ -446,6 +466,7 @@ a{
 #footer{
 	text-align: center;
 	background-color: #232F3E;
+	font-family: "amazon-font"
 }
 
 #backToTop{

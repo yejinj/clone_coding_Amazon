@@ -13,7 +13,6 @@
 	text-decoration: none
 }
 
-
 /* 인쇄를 누르면 흑백으로 */
 @media print {
     body {
