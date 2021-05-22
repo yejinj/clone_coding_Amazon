@@ -472,6 +472,9 @@ a{
 #backToTop{
 	background-color: #485769;
 	text-align:center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	width: 1519px;
 }
 
 #bgcolor1{

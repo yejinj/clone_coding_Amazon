@@ -29,3 +29,13 @@ function openNav() {
 function closeNav() {
 	document.getElementById("mySidenav").style.width = "0";
 }
+
+const $backToTop = document.querySelector(".backToTop");
+
+$backToTop.addEventListener("click", function () {
+	window.scroll({
+	  top: 0,
+	  left: 0,
+	  behavior: "smooth",
+	});
+  });
