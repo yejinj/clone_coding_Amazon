@@ -5,12 +5,16 @@
 
 .hovereffect:hover{
 	border: white 1px solid; 
-	text-decoration: none
+	text-decoration: none;
+}
+
+.hovereffect{
+	text-decoration: none;
 }
 
 .hovereffect2:hover{
 	color:#B77A1C;
-	text-decoration: none
+	text-decoration: none;
 }
 
 .hovereffect3:hover{
@@ -52,7 +56,8 @@ header{
 	margin: 0 auto;
 }
 
-.logo{
+#logo{
+	margin-top: -15px;
 	display: inline-block;
 	vertical-align: middle;
 }
@@ -227,6 +232,41 @@ button {
 	text-align: center;
 }
 
+/* 회원가입 탭에 마우스오버시 숨겨졌던 div 등장 */
+
+#hidden_div{
+	position: absolute;
+	z-index:2;
+	display:none;
+	margin-left: 850px;
+	margin-top: -32px;
+}
+
+#hidden_div_lower_level{
+	text-align: center;
+	border-radius: 5px;
+	width: 500px;
+	height: 350px;
+	background:white;
+	font: black;
+}
+
+#hidden_div_button{
+	background-color: #F0C454;
+	border-radius: 3px;
+	width: 270px;
+	margin-top: 20px;
+}
+
+#hidden_div_lower_level_left{
+	float: left;
+	margin-left: 30px;
+}
+
+#hidden_div_lower_level_right{
+	float: right;
+	margin-right: 30px;
+}
 
 /* 레이아웃*/
 
@@ -568,4 +608,30 @@ a{
 	margin-left: 370px;
 	position: absolute;
 	margin-top: -150px;
+}
+
+/* 첨가 */
+.menu a{
+	text-decoration: none;
+	color: black;
+	cursor:pointer;
+	font-size: 16px;
+}
+.menu .hide{
+	display:none;
+}
+.menu-sign-in{
+	font-size: 17px;
+	background-color: #232F3E;
+	color: white;
+	margin-left: -26px;
+	margin-top: 5px;
+	height: 80px;
+}
+.menu-title{
+	font-size: 17px;
+}
+
+.menu{
+	list-style: none;
 }

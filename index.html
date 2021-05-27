@@ -13,6 +13,7 @@
     <!-- 디바이스가 스마트폰일 때 연결할 스타일시트 -->
     <link rel="stylesheet" href="./css/mobile.css" media="screen and (min-width: 1px) and (max-width: 767px)">
     <script defer src="./js/main.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 </head>
 
 <html lang="en">
@@ -28,7 +29,7 @@
         <div class="top_box">
 
         <!-- 로고 이미지를 클릭하면 해당 사이트로 다시 이동하도록 -->
-        <div class="logo">
+        <div id="logo">
                 <a href="./">
                     <img src="./images/logo.JPG" id="logoImage" alt="로고">
                 </a>
@@ -37,8 +38,8 @@
         <!-- location 아이콘 -->
         <div id="location">
             <img src="./images/location.JPG" id="locationImage" alt="위치">
-            </div>
-        
+        </div>
+            
 
         <!-- 배송 글씨 -->
         <div id="delivery">
@@ -104,7 +105,7 @@
         <div id="rightalign" >
             <!-- 언어 -->
             <!-- 위처럼 체크박스를 사용 -->
-            <div id="language" >
+            <div id="language" class="hovereffect">
                     <form id="language-form">
                             <div style="display: inline-block;" position:fixed;left:300;>
                             <a>
@@ -134,7 +135,7 @@
             </div>
 
             <!-- 배송할 지역 -->
-            <div id="whereto">
+            <div id="whereto" class="hovereffect" onmouseover="view(true)" onmouseout="view(false)">
                 &nbsp;&nbsp;&nbsp;
                 <a href="https://www.amazon.com/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3Fref_%3Dnav_ya_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&" style="color: white;">
                     Hello, Sign in<br>
@@ -143,7 +144,7 @@
             </div>
             
             <!-- 주문 -->
-            <div id="returnsAndOrders">
+            <div id="returnsAndOrders" class="hovereffect">
                 <a href="https://www.amazon.com/ap/signin?clientContext=132-9349820-5691738&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fyour-orders%2Forders%2Fref%3Dyo_oh_gp_to_ov%3Fref_%3Dnav_orders_first%26_encoding%3DUTF8&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&marketPlaceId=ATVPDKIKX0DER&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=usflex&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.pape.max_auth_age=900&siteState=clientContext%3D145-0505373-6595463%2CsourceUrl%3Dhttps%253A%252F%252Fwww.amazon.com%252Fyour-orders%252Forders%252Fref%253Dyo_oh_gp_to_ov%253Fref_%253Dnav_orders_first%2526_encoding%253DUTF8%2Csignature%3Do0etbTMxWUKcj6Ck0MUf2NG0WK0j3D">
                 <font size = "2" color="white">
                 Returns<br>
@@ -153,7 +154,7 @@
             </div>
 
             <!-- 장바구니 이미지와 문구 -->
-            <div id="carts">
+            <div id="carts" class="hovereffect">
             <a href="https://www.amazon.com/gp/cart/view.html?ref_=nav_cart" style="color: white;">
                 <img src="./images/cart.JPG" id="cart-image" alt="cart">
                 <font size = "4">
@@ -172,76 +173,127 @@
             <!-- 사이드바 -->
             <div id="sidebar" class="hovereffect">
                 <!-- 사이드바 글자 지정 -->
-                <div id="mySidenav" class="sidenav">
+                <div id="mySidenav" class="sidenav" style="overflow: scroll;">
                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                    <ul padding-left:0; margin-left:0;>
-                        <li style="font-size: 17px; color: white; background: #232F3E; margin-top: 5px;">
-                        <a style="color: white;" href="https://www.amazon.com/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3F_encoding%3DUTF8%26ref_%3Dnav_em_hd_re_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&&ref_%3Dnav_em_hd_clc_signin">
-                            <h4><b> Hello, Sign in </b></h4>
-                        </a>
-                        </li>
-                        <li style="font-size: 17px;">
-                            <hr><b>Digital Content & Devices</b>
-                        </li>
-                        <li style="font-size: 15px;">
-                            Amazon Music
-                        </li>
-                        <li style="font-size: 15px;">
-                            Kindle E-readers & Books
-                        </li>
-                        <li  style="font-size: 15px;">
-                            Appstore for Android
-                        </li>
-                        <li style="font-size: 17px;">
-                            <hr><b>Shop By Department</b>
-                        </li>
-                        <li style="font-size: 15px;">
-                            Electronics
-                        </li>
-                        <li style="font-size: 15px;">
-                            Computers
-                        </li>
-                        <li style="font-size: 15px;">
-                            Smart Home
-                        </li>
-                        <li style="font-size: 15px;">
-                            Arts & Crafts
-                        </li>
-                        <li style="font-size: 15px;">
-                            See All
-                        </li>
-                        <li style="font-size: 17px;">
-                            <hr><b>Programs & Features</b>
-                        </li>
-                        <li style="font-size: 15px;">
-                            Gift Cards
-                        </li>
-                        <li style="font-size: 15px;">
-                            #FoundItOnAmazon
-                        </li>
-                        <li style="font-size: 15px;">
-                            Amazon Live
-                        </li>
-                        <li style="font-size: 15px;">
-                            International Shopping
-                        </li>
-                        <li style="font-size: 15px;">
-                            See All
-                        </li>
-                        <li style="font-size: 17px;">
-                            <hr><b>Help & Settings</b>
-                        </li>
-                        <li style="font-size: 15px;">
-                            Your Account
-                        </li>
-                        <li style="font-size: 15px;">
-                            English
-                        </li>
-                        <li style="font-size: 15px;">
-                            United States
-                        </li>
-                        <li style="font-size: 15px;">
-                            Customer Service
+                    <ul>
+                        <li class="menu">
+                            <div class="menu-sign-in"><b> <br>
+                            <img src="./images/sign-in.JPG">
+                            Hello, Sign In<br><br> </b></div><br>
+                            <font class="menu-title"><b>Digital Content & Devices</b></font>
+                            <br>
+                            <a>Amazon Music</a>
+                            <ul class="hide">
+                                <li><b>Stream Music</b></li>
+                                <li>Amazon Music Unlimited</li>
+                                <li>Amazon Music HD</li>
+                                <li>Amazon Music Prime</li>
+                                <li>Free Streaming Music</li>
+                                <li>Podcasts</li>
+                                <li>Open Web Player</li><br>
+                                <li><b>Buy Music</b></li>
+                                <li>CDs & Vinyl</li>
+                                <li>Download Store</li>
+                                <li>Artist Merch Shop</li>
+                            </ul><br>
+                            <a>Kindle E-readers & Books</a>
+                            <ul class="hide">
+                                <li><b>Kindle E-Readers</b></li>
+                                <li>Kindle Kids Edition</li>
+                                <li>Kindle</li>
+                                <li>Kindle Paperwhite</li>
+                                <li>Kindle Oasis</li>
+                                <li>Accessories</li>
+                                <li>See all Kindle E-Readers</li><br>
+                                <li><b>Kindle Store</b></li>
+                                <li>Kindle Books</li>
+                                <li>Kindle Unlimited</li>
+                                <li>Prime Reading</li><br>
+                                <li><b>Apps & Resources</b></li>
+                                <li>Free Kindle Reading Apps</li>
+                                <li>Kindle Cloud Reader</li>
+                                <li>Manage Your Content and Devices</li>
+                            </ul><br>
+                            <a>Appstore for Android</a>
+                            <ul class="hide">
+                                <li>메뉴1-1</li>
+                                <li>메뉴1-2</li>
+                                <li>메뉴1-3</li>
+                            </ul>
+                        </li><hr>
+                 
+                        <li class="menu">
+                            <font class="menu-title"><b>Shop By Department</b></font>
+                            <br>
+                            <a>Electronics</a>
+                            <ul class="hide">
+                                <li>메뉴1-1</li>
+                                <li>메뉴1-2</li>
+                                <li>메뉴1-3</li>
+                            </ul><br>
+                            <a>Computers</a>
+                            <ul class="hide">
+                                <li>메뉴1-1</li>
+                                <li>메뉴1-2</li>
+                                <li>메뉴1-3</li>
+                            </ul><br>
+                            <a>Smart Home</a>
+                            <ul class="hide">
+                                <li>메뉴1-1</li>
+                                <li>메뉴1-2</li>
+                                <li>메뉴1-3</li>
+                            </ul><br>
+                            <a>Arts & Crafts</a>
+                            <ul class="hide">
+                                <li>메뉴1-1</li>
+                                <li>메뉴1-2</li>
+                                <li>메뉴1-3</li>
+                            </ul><br>
+                            <a>See All</a>
+                            <ul class="hide">
+                                <li>메뉴1-1</li>
+                                <li>메뉴1-2</li>
+                                <li>메뉴1-3</li>
+                            </ul><hr>
+
+                            <font class="menu-title"><b>Programs & Features</b></font>
+                            <br>
+                            <a>Gift Cards</a>
+                            <ul class="hide">
+                                <li>메뉴1-1</li>
+                                <li>메뉴1-2</li>
+                                <li>메뉴1-3</li>
+                            </ul><br>
+                            <a>#FoundItOnAmazon</a><br>
+                            <a>Amazon Live</a>
+                            <ul class="hide">
+                                <li>메뉴1-1</li>
+                                <li>메뉴1-2</li>
+                                <li>메뉴1-3</li>
+                            </ul><br>
+                            <a>International Shopping</a>
+                            <ul class="hide">
+                                <li>메뉴1-1</li>
+                                <li>메뉴1-2</li>
+                                <li>메뉴1-3</li>
+                            </ul><br>
+                            <a>See All</a>
+                            <ul class="hide">
+                                <li>메뉴1-1</li>
+                                <li>메뉴1-2</li>
+                                <li>메뉴1-3</li>
+                            </ul>
+                        </li><hr>
+
+                            <li class="menu">
+                                <font class="menu-title"><b>Help & Settings</b></font>
+                                <br>
+                                <a>Your Account</a><br>
+                                <a>English</a><br>
+                                <a>United States</a><br>
+                                <a>Customer Service</a><br>
+                                <a>Sign In</a>
+                            </li>
                         </li>
                     </ul>
                 </div>
@@ -259,13 +311,46 @@
                 <a class="hovereffect" href="https://www.amazon.com/registries?_encoding=UTF8&redirect=true&ref_=nav_cs_registry_1c421982e26d4ec48ca364be68f201b5" style="color:white">Registry</a>&nbsp;&nbsp;&nbsp;
                     
                 <div id="amazonsResponse">
-                <a href="https://www.aboutamazon.com/company-news/amazons-actions-to-help-employees-communities-and-customers-affected-by-covid-19/?_encoding=UTF8&token=GW&utm_content=COVID-19_roundup&utm_medium=swm&utm_source=gateway&utm_term=gw03162020&ref_=nav_swm_undefined&pf_rd_p=cf6260e5-93a9-45ad-9653-d1fc95751fac&pf_rd_s=nav-sitewide-msg-text-export&pf_rd_t=4201&pf_rd_i=navbar-4201&pf_rd_m=ATVPDKIKX0DER&pf_rd_r=C045QSGNV9P6E7SYVE0S" style="color:white">Amazon's response to COVID-19</a>
+                <a class="hovereffect" href="https://www.aboutamazon.com/company-news/amazons-actions-to-help-employees-communities-and-customers-affected-by-covid-19/?_encoding=UTF8&token=GW&utm_content=COVID-19_roundup&utm_medium=swm&utm_source=gateway&utm_term=gw03162020&ref_=nav_swm_undefined&pf_rd_p=cf6260e5-93a9-45ad-9653-d1fc95751fac&pf_rd_s=nav-sitewide-msg-text-export&pf_rd_t=4201&pf_rd_i=navbar-4201&pf_rd_m=ATVPDKIKX0DER&pf_rd_r=C045QSGNV9P6E7SYVE0S" style="color:white">Amazon's response to COVID-19</a>
             </div>
             </div>
         </div>
     </div>
     </font>
 </header>
+
+<!-- 회원가입 탭에 마우스오버시 숨겨졌던 div 등장 -->
+<div id="hidden_div">
+    <div id="hidden_div_lower_level">
+        <div>
+            <button id="hidden_div_button">
+                <a style="color: black; text-decoration: none;">
+                Sign In</a> </button><br>
+                new customer?
+                <font style="color: blue;"> start here </font><br>
+                    <div id="hidden_div_lower_level_left">
+                        <font size="3px;"><b>Your Lists</b></font><br>
+                        Create a List<br>
+                        Find a List or Registry<br>
+                        AmazonSmile Charity Lists
+                    </div>
+                    <div id="hidden_div_lower_level_right">
+                        <font size="3px;"><b>Your Account</b></font><br>
+                        Account<br>
+                        Orders<br>
+                        Recommendations<br>
+                        Browsing History<br>
+                        Watchlist<br>
+                        Video Purchases & Rentals<br>
+                        Kindle Unlimited<br>
+                        Content & Devices<br>
+                        Subscribe & Save Items<br>
+                        Memberships & Subscriptions<br>
+                        Music Library
+                    </div>
+            </div>
+    </div>
+</div>
 
 <!-- LAYOUT, SECTION 1 ~ 4 -->
 <div id="layout">
