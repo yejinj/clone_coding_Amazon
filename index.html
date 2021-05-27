@@ -102,40 +102,18 @@
         </div>
         
         <!-- 오른쪽으로 정렬 위해 검색창을 제외한 나머지들은 rightalign css 속성으로 묶는다 -->
-        <div id="rightalign" >
+        <div id="rightalign">
             <!-- 언어 -->
             <!-- 위처럼 체크박스를 사용 -->
-            <div id="language" class="hovereffect">
-                    <form id="language-form">
-                            <div style="display: inline-block;" position:fixed;left:300;>
-                            <a>
-                                <img src="./images/language.JPG" id="language-image">
-                            </a>
-                            </div>
-                            <select name = "language" id="language-select">
-                            <option type>Change Language</option>
-                            <option type>English - EN</option>
-                            <option> <hr width = "100%" color = "black" size = "3"></option>
-                            <option type>Español - ES</option>
-                            <option type>简体中文 - ZH</option>
-                            <option type>Deutsch - DE</option>
-                            <option type>Português - PT</option>
-                            <option type>繁體中文 - ZH</option>
-                            <option type>한국어 - KO</option>
-                            <option type>עברית - HE</option>
-                            <option type>اللغة العربية - AR</option>
-                            <option> <hr width = "100%" color = "black" size = "3"></option>
-                            <option type>Change currency Learn more</option>
-                            <option> <hr width = "100%" color = "black" size = "3"></option>
-                            <option type>$ - USD - U.S. DollarChange</option>
-                            <option type>You are shopping on Amazon.com.</option>
-                            <option type>Change country/region.</option>
-                            </select>
-                    </form>
+            <div id="language" class="hovereffect" onmouseover="view(true)" onmouseout="view(false)">
+                <a>
+                    <img src="./images/language.JPG" id="language-image">
+                </a>
+                ▼
             </div>
 
             <!-- 배송할 지역 -->
-            <div id="whereto" class="hovereffect" onmouseover="view(true)" onmouseout="view(false)">
+            <div id="whereto" class="hovereffect" onmouseover="view_language(true)" onmouseout="view_language(false)">
                 &nbsp;&nbsp;&nbsp;
                 <a href="https://www.amazon.com/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3Fref_%3Dnav_ya_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&" style="color: white;">
                     Hello, Sign in<br>
@@ -294,7 +272,6 @@
                                 <a>Customer Service</a><br>
                                 <a>Sign In</a>
                             </li>
-                        </li>
                     </ul>
                 </div>
                 
@@ -327,7 +304,7 @@
                 <a style="color: black; text-decoration: none;">
                 Sign In</a> </button><br>
                 new customer?
-                <font style="color: blue;"> start here </font><br>
+                <font style="color: rgb(134, 134, 190);"> start here </font><br>
                     <div id="hidden_div_lower_level_left">
                         <font size="3px;"><b>Your Lists</b></font><br>
                         Create a List<br>
@@ -349,6 +326,41 @@
                         Music Library
                     </div>
             </div>
+    </div>
+</div>
+
+<div id="hidden_div_language">
+    <div id="hidden_div_language_lower_level">
+            Change Language
+            <font style="color: #405096; font-size: 11px;"> Learn more </font><br>
+            <input type="checkbox">
+            English - EN
+            <hr style="color: black; border: 5;">
+            <input type="checkbox">
+            Español - ES <br>
+            <input type="checkbox">
+            简体中文 - ZH <br>
+            <input type="checkbox">
+            Deutsch - DE <br>
+            <input type="checkbox">
+            Português - PT <br>
+            <input type="checkbox">
+            繁體中文 - ZH <br>
+            <input type="checkbox">
+            한국어 - KO <br>
+            <input type="checkbox">
+            עברית - HE <br>
+            <input type="checkbox">
+            اللغة العربية - AR
+            <hr style="color: black;">
+            Change currency
+            <font style="color: #405096; font-size: 11px;"> Learn more </font><br>
+            <hr style="color: black;">
+            $ - USD - U.S. Dollar
+            <font style="color: #405096; font-size: 12px;"> Change </font> <br>
+            <img src="./images/us_logo.JPG" style="width:30px; height:30px; margin-left: -10px">
+            <font style="font-size :13px">You are shopping on Amazon.com.</font><br>
+            <font style="color: rgb(59, 59, 117); margin-left: 37px;">Change country/region.</font>
     </div>
 </div>
 

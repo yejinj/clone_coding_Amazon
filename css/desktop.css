@@ -113,12 +113,14 @@ header{
 #rightalign{
 	position:absolute;
 	right: 15px;
-	overflow: hidden;
 	margin-top: 5px;
 }
 
 #language{
 	display: inline-block;
+	z-index: 9999;
+	display: inline-block;
+	margin-left: -60px;
 }
 
 #language-form{
@@ -127,8 +129,8 @@ header{
 }
 
 #language-image{
-	width: 30px;
-	height: 30px;
+	width: 40px;
+	height: 40px;
 }
 
 #language-select{
@@ -266,6 +268,26 @@ button {
 #hidden_div_lower_level_right{
 	float: right;
 	margin-right: 30px;
+}
+
+#hidden_div_language{
+	position: absolute;
+	z-index:2;
+	display:none;
+	margin-left: 1150px;
+	margin-top: -32px;
+}
+
+#hidden_div_language_lower_level{
+	padding-left: 10px;
+	padding-top: 20px;
+	border-radius: 5px;
+	width: 250px;
+	height: 500px;
+	background:white;
+	font: black;
+	font-size: 15px;
+	border: 1px;
 }
 
 /* 레이아웃*/
