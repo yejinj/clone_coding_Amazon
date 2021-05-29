@@ -2,7 +2,7 @@
 new Swiper('.myswiper', {
 	infinite : true, 
 	autoplay : true,
-	autoplaySpeed: 5000,
+	autoplaySpeed: 12000,
 	navigation : {
 		nextEl : '.swiper-button-next', // 다음 버튼 클래스명
 		prevEl : '.swiper-button-prev', // 이번 버튼 클래스명
@@ -68,7 +68,7 @@ function view_language_2(opt) {
 	}
 }
 
-// cj
+// adding
 
 // html dom 이 다 로딩된 후 실행된다.
 $(document).ready(function(){
