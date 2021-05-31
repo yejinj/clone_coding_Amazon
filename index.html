@@ -5,9 +5,11 @@
     <link rel="icon" href="favicon.ico" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 뷰포트 연결 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- 디바이스가 데스크탑일 때 연결할 스타일시트 -->
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/desktop.css" media="screen and (min-width : 960px)">
+    <link rel="stylesheet" href="./css/tablet.css" media="screen and (min-width : 768px) and (max-width: 959px)">
+    <link rel="stylesheet" href="./css/tablet.css" media="screen and (max-width : 767px)">
     <script defer src="./js/main.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 </head>
@@ -159,7 +161,7 @@
                         Amazon Music<br>
                         Kindle E-readers & Books<br>
                         Appstore for Android<br>
-                        <hr style="margin-left: -100px;">
+                        <hr class="sidebar-hr-margin">
                         <font class="menu-title"><b>Shop By Department</b></font>
                         <br>
                         Electronics<br>
@@ -167,7 +169,7 @@
                         Smart Home<br>
                         Arts & Crafts<br>
                         See All<br>
-                        <hr style="margin-left: -100px;">
+                        <hr class="sidebar-hr-margin">
                         <font class="menu-title"><b>Programs & Features</b></font>
                         <br>
                         Gift Cards<br>
@@ -175,7 +177,7 @@
                         Amazon Live<br>
                         International Shopping<br>
                         See All<br>
-                        <hr style="margin-left: -100px;">
+                        <hr class="sidebar-hr-margin">
                         <font class="menu-title"><b>Help & Settings</b></font>
                         <br>
                         Your Account<br>
@@ -187,7 +189,7 @@
                 </div>
                 
                 <!-- 클릭하기 전엔 햄버거바, 클릭하면 x표시로 바뀌게 설정 -->
-                <span style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776;All</span>
+                <span id="sidebar-span" onclick="openNav()">&#9776;All</span>
             </div>
             
             <!-- 사이드바가 아닌 부분을 묶어 css 속성을 지정 -->
@@ -212,18 +214,18 @@
     <div id="hidden_div_lower_level">
         <div>
             <button id="hidden_div_button">
-                <a style="color: black; text-decoration: none;">
+                <a id="hidden_div_button_a">
                 Sign In</a> </button><br>
                 new customer?
                 <font style="color: rgb(134, 134, 190);"> start here </font><br>
                     <div id="hidden_div_lower_level_left">
-                        <font size="3px;"><b>Your Lists</b></font><br>
+                        <font class="hidden_div_lower_level_font"><b>Your Lists</b></font><br>
                         Create a List<br>
                         Find a List or Registry<br>
                         AmazonSmile Charity Lists
                     </div>
                     <div id="hidden_div_lower_level_right">
-                        <font size="3px;"><b>Your Account</b></font><br>
+                        <font class="hidden_div_lower_level_font"><b>Your Account</b></font><br>
                         Account<br>
                         Orders<br>
                         Recommendations<br>
@@ -243,7 +245,7 @@
 <div id="hidden_div_language">
     <div id="hidden_div_language_lower_level">
             Change Language
-            <font style="color: #405096; font-size: 11px;"> Learn more </font><br>
+            <font class="hidden_language_font"> Learn more </font><br>
             <input type="checkbox">
             English - EN
             <hr style="color: black; border: 5;">
@@ -265,13 +267,13 @@
             اللغة العربية - AR
             <hr style="color: black;">
             Change currency
-            <font style="color: #405096; font-size: 11px;"> Learn more </font><br>
+            <font class="hidden_language_font"> Learn more </font><br>
             <hr style="color: black;">
             $ - USD - U.S. Dollar
-            <font style="color: #405096; font-size: 12px;"> Change </font> <br>
-            <img src="./images/us_logo.JPG" style="width:30px; height:30px; margin-left: -10px">
-            <font style="font-size :13px">You are shopping on Amazon.com.</font><br>
-            <font style="color: rgb(59, 59, 117); margin-left: 37px;">Change country/region.</font>
+            <font class="hidden_language_font_2"> Change </font> <br>
+            <img src="./images/us_logo.JPG" id="us_logo">
+            <font class="hidden_language_font_3">You are shopping on Amazon.com.</font><br>
+            <font class="hidden_language_font_4">Change country/region.</font>
     </div>
 </div>
 
@@ -286,14 +288,13 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
         <style type="text/css">
-        .swiper-container {
-            margin: 0;
-            width: 1520px;;
-            height: 230px;
-            border: 0px;
-        }
+            .swiper-container {
+                margin: 0;
+                width: 1520px;;
+                height: 230px;
+                border: 0px;
+            }
         </style>
-
         <!-- 슬라이드 이미지를 삽입 -->
         <!-- 클릭했을 때 넘어가도록 스크립트를 작성한다. swiper-container > swiper-wrapper > swiper-slide 순으로 속성을 지정해야 슬라이드가 제대로 작동한다  -->
         <div class="swiper-container myswiper">
@@ -470,7 +471,7 @@
                 <div class="swiper-button-next swiper-button-black" style="margin-top: 1050px;"></div>
                 <div class="swiper-button-prev swiper-button-black" style="margin-top: 1050px;"></div>
                     
-            <!-- 슬라이드 스크립트를 지정해준다. 슬라이드 화면을 가운데로 설정해주고
+            <!-- 슬라이드 스크립트를 설정. 슬라이드 화면을 가운데로 설정해주고
             slidesPerView를 5로 설정해 한 화면에 슬라이드 5개가 보여지도록 한다
             그리고 슬라이드가 보여지는 모습을 style type text/css로 꾸민다-->
             <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -715,7 +716,7 @@
     </div>
 
     <div class="footer-section02">
-        <hr style="width: 1567px; margin-left: -500px;">
+        <hr id="footer-sec2-hr">
         <div style="display: inline-block;" id="fs02-01">
             <a>
             <img src="./images/amazon.png">
@@ -742,8 +743,8 @@
     <div class="footer-section03">
         <div id="fs03-01">
         <a style="color: white;" href="https://music.amazon.com/error?errorText=MarketplaceData+Error%3A%0A+Stratus+Call+Error%3A%0A+Cannot+read+property+%27webplayerServer%27+of+undefined&useHorizonte=true">
-        <br><b>Amazon Music<br></b>
-        Stream millions<br>
+        <br><b>Amazon Music<br>
+        Stream millions<br></b>
         of songs<br><br>
         </a>
 
