@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./css/tablet.css" media="screen and (min-width : 768px) and (max-width: 959px)">
     <link rel="stylesheet" href="./css/mobile.css" media="screen and (max-width : 767px)">
     <script defer src="./js/main.js"></script>
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 </head>
 
@@ -32,23 +33,21 @@
                 <img src="./images/logo.JPG" id="logoImage" class="hovereffect" alt="로고">
             </a>
         </div>
-
-        <div id="delivery_section_in_header" class="hovereffect">
-        <!-- location 아이콘 -->
-        <div id="location">
-            <img src="./images/location.JPG" id="locationImage" alt="위치">
-        </div>
-
-        <!-- 배송 글씨 -->
-        <div id="delivery">
-                Deliver to<br>
-                <b>Republic of Korea</b>
-        </div>
+        
+        <div id="delivery_section_in_header" class="hovereffect" onclick="ClickFunction('deliver_button'); return false;">
+            <!-- location 아이콘 -->
+            <div id="location">
+                <img src="./images/location.JPG" id="locationImage" alt="위치">
+            </div>
+    
+            <!-- 배송 글씨 -->
+            <div id="delivery">
+                    Deliver to<br>
+                    <b>Republic of Korea</b>
+            </div>
         </div>
 
         <!-- 검색창 -->
-        <!-- 체크박스, input박스, button으로 검색창을 만든다. 이때 체크박스 안에 품목들이 나열되도록 한다
-        스타일시트를 불러와 여백을 바꾸고 아마존의 검색창과 비슷하게 보이도록 한다. -->
         <div id="searchbox">
             <link href="https://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet" />
             <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
@@ -104,7 +103,7 @@
         <div id="rightalign">
             <!-- 언어 -->
             <!-- 위처럼 체크박스를 사용 -->
-            <div id="language" class="hovereffect" onmouseover="view_language(true)" onmouseout="view_language(false)">
+            <div id="language" style="cursor: pointer;" class="hovereffect" onmouseover="view_language(true)" onmouseout="view_language(false)" onclick="location.href='https://www.amazon.com/gp/customer-preferences/select-language/ref=topnav_lang_ais?preferencesReturnUrl=%2F'">
                 <a>
                     <img src="./images/language.JPG" id="language-image">
                 </a>
@@ -112,7 +111,7 @@
             </div>
 
             <!-- 배송할 지역 -->
-            <div id="whereto" class="hovereffect" onmouseover="view(true)" onmouseout="view(false)">
+            <div id="whereto" style="cursor: pointer;" class="hovereffect" onmouseover="view(true)" onmouseout="view(false)" onclick="location.href='https://www.amazon.com/gp/customer-preferences/select-language/ref=topnav_lang_ais?preferencesReturnUrl=%2Fref%3Dnav_logo'">
                 <a href="https://www.amazon.com/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3Fref_%3Dnav_ya_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&" style="color: white;">
                 </a>
                 Hello, Sign in<br>
@@ -120,7 +119,7 @@
             </div>
             
             <!-- 주문 -->
-            <div id="returnsAndOrders" class="hovereffect">
+            <div id="returnsAndOrders" style="cursor: pointer;" class="hovereffect" onclick="location.href='https://www.amazon.com/ap/signin?_encoding=UTF8&accountStatusPolicy=P1&openid.assoc_handle=usflex&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fgp%2Fcss%2Forder-history%3Fie%3DUTF8%26ref_%3Dnav_orders_first&pageId=webcs-yourorder&showRmrMe=1'">
                 <a href="https://www.amazon.com/ap/signin?clientContext=132-9349820-5691738&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fyour-orders%2Forders%2Fref%3Dyo_oh_gp_to_ov%3Fref_%3Dnav_orders_first%26_encoding%3DUTF8&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&marketPlaceId=ATVPDKIKX0DER&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=usflex&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.pape.max_auth_age=900&siteState=clientContext%3D145-0505373-6595463%2CsourceUrl%3Dhttps%253A%252F%252Fwww.amazon.com%252Fyour-orders%252Forders%252Fref%253Dyo_oh_gp_to_ov%253Fref_%253Dnav_orders_first%2526_encoding%253DUTF8%2Csignature%3Do0etbTMxWUKcj6Ck0MUf2NG0WK0j3D">
                 </a>
                 <font size = "2" color="white">
@@ -130,7 +129,7 @@
             </div>
 
             <!-- 장바구니 이미지와 문구 -->
-            <div id="carts" class="hovereffect">
+            <div id="carts" style="cursor: pointer;" class="hovereffect" onclick="location.href='https://www.amazon.com/gp/cart/view.html?ref_=nav_cart'">
             <a href="https://www.amazon.com/gp/cart/view.html?ref_=nav_cart" style="color: white;">
                 <img src="./images/cart.JPG" id="cart-image" alt="cart">
             </a>
@@ -209,7 +208,34 @@
     </font>
 </header>
 
-<!-- 회원가입 탭에 마우스오버시 숨겨졌던 div 등장 -->
+<!-- input박스에 잘못 입력하면 문구 뜨게 하고, delivery클릭시 버벅거리는 문제 해결 ㄱ, 뷰포트도 가다듬기 -->
+<div class="singo_view" id="deliver_button">
+    <div id="btn_view_01">
+    <h4><b><br> &nbsp;&nbsp; Choose your location </b></h4><br><br>
+    </div>
+    <font id="deliver_button_font"> Delivery options and delivery speeds may vary for different locations </font><br>
+    <button id="btn_view_02" onclick="location.href='https://www.amazon.com/ap/signin?_encoding=UTF8&openid.assoc_handle=usflex&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3F_encoding%3DUTF8%26path%3D%252F%26useRedirectOnSuccess%3D1'">
+        Sign in to see your addresses </button><br><br>
+    <div class="hr-sect"> or enter a US zip code </div>
+    <input id="btn_view_03"> <button id="apply"> Apply </button>
+    <div class="hr-sect"> or </div><br>
+    <select id="btn_view_04">
+        <option disabled> Ship outside the US </option>
+        <option> Argentina </option>
+        <option> Australia </option>
+        <option> Canada </option>
+        <option> China </option>
+        <option> Japan </option>
+        <option> Mexico </option>
+        <option> Singapore </option>
+        <option> United Kingdom </option>
+        <option> Afghanistan </option>
+        <option> Aland Islands </option>
+   </select>
+    <button id="done" onclick="this.parentElement.style.display='none'"> Done </button>
+</div>
+
+<!-- 마우스오버시 숨겨졌던 div 1 등장 -->
 <div id="hidden_div">
     <div id="hidden_div_lower_level">
         <div>
@@ -242,6 +268,7 @@
     </div>
 </div>
 
+<!-- 마우스오버시 숨겨졌던 div 2 등장 -->
 <div id="hidden_div_language">
     <div id="hidden_div_language_lower_level">
             Change Language
@@ -277,6 +304,15 @@
     </div>
 </div>
 
+<!-- 서서히 나타났다가 사라지는 div -->
+<div class="fi">
+    <button id="fi-btn" onclick="location.href='https://www.amazon.com/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3Fref_%3Dnav_custrec_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&' ">
+    Sign in </button><br> 
+    New customer?
+
+    <a href="https://www.amazon.com/ap/register?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3F_encoding%3DUTF8%26ref_%3Dnav_custrec_newcust&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&">
+    <font style="color: #3da7d1;">Start here.</font></a>
+</div>
 <!-- LAYOUT, SECTION 1 ~ 4 -->
 <div id="layout">
     <!-- SECTION 1, 슬라이드 배경이 바뀌는 부분-->

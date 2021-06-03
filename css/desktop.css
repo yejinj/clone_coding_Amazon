@@ -12,6 +12,7 @@
 
 .hovereffect{
 	text-decoration: none;
+	cursor: pointer;
 }
 
 .hovereffect2:hover{
@@ -20,8 +21,7 @@
 }
 
 .hovereffect3:hover{
-	content: "Sign in Amazon!";
-
+	border: #F0C454 2px;
 }
 
 /* 인쇄를 누르면 흑백으로 */
@@ -101,6 +101,7 @@ header{
 	left: 10px;
 }
 
+
 .input-group{
 	width:5px;
 }
@@ -121,6 +122,10 @@ header{
 #checkbox_form{
 	width:745px;
 	height: 36px;
+}
+
+.form-control:hover{
+	border: 100px yellow;
 }
 
 #rightalign{
@@ -717,4 +722,133 @@ a{
 	margin-left: 370px;
 	position: absolute;
 	margin-top: -150px;
+}
+
+/* 첨가 */
+div.fi {
+	font: "amazon-font" !important;
+	padding: 15px;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: center;
+	background-color: white;
+	display: none;
+	position: absolute;
+	z-index: 9999;
+	margin-left: 1200px;
+	margin-top: -35px;
+	font-size: 12px;
+	box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.5);
+  }
+
+.fi:after {
+	border-top:0px solid transparent;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid white;
+	content:"";
+	position: absolute;
+	top:-10px;
+	left:70px;
+   }
+
+#fi-btn{
+	font-size: 15px;
+	border-radius: 5px;
+	background-color: #F0C454;
+	width: 100px;
+	height: 30px;
+}
+
+.hidden_div, .hidden_div_language{
+	font: "amazon-font" !important;
+}
+
+.singo_view {
+	line-height: 170%;
+	box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.5);
+	overflow: hidden;
+	border-radius: 10px;
+	padding: 20px;
+	z-index: 9998;
+	position: absolute;
+	width: 350px;
+	height: 400px;
+	font: "amazon-font" !important;
+	background-color: white;
+	margin-left: 570px;
+	margin-top: 10px;
+	display: none;
+}
+
+#btn_view_01{
+	overflow: hidden;
+	margin-top: -30px;
+	margin-left: -20px;
+	width: 350px;
+	height: 70px;
+	background-color: #F0F0F0;
+}
+
+#btn_view_02{
+	font-size: 15px;
+	border-radius: 5px;
+	background-color: #F0C454;
+	width: 300px;
+	height: 30px;
+}
+
+.hr-sect {
+	display: flex;
+	flex-basis: 100%;
+	align-items: center;
+	color: rgba(0, 0, 0, 0.35);
+	font-size: 12px;
+	margin: 8px 0px;
+  }
+
+.hr-sect::before, .hr-sect::after {
+	content: "";
+	flex-grow: 1;
+	background: rgba(0, 0, 0, 0.35);
+	height: 1px;
+	font-size: 0px;
+	line-height: 0px;
+	margin: 0px 16px;
+  }
+
+#btn_view_03{
+	width: 200px;
+} 
+
+#apply{
+	width: 80px;
+	margin-left: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
+	box-shadow: 0 1px 1px 0 rgba(141, 141, 141, 0.5);
+	background-color: #E3E6E6;
+	border-radius: 3px;
+}
+
+#btn_view_04{
+	border: 1px solid rgb(146, 146, 146);
+	width: 294px;
+	height: 50px;
+}
+
+#deliver_button_font{
+	color: gray;
+	font-size: 12px;
+}
+
+#done{
+	width: 80px;
+	margin-top: 10px;
+	margin-left: 214px;
+	padding-left: 10px;
+	padding-right: 10px;
+	box-shadow: 0 2px 2px 0 rgba(141, 141, 141, 0.5);
+	background-color: #F0C454;
+	border-radius: 3px;
 }

@@ -76,3 +76,20 @@ $(document).ready(function(){
 		$(this).next("ul").toggleClass("hide");
 	});
 });
+
+// 페이드인 효과
+$( document ).ready( function() {
+	$( 'div.fi' ).fadeIn( 2000 );
+  } );
+
+// 페이드아웃 효과
+$( document ).ready( function() {
+	$( 'div.fi' ).fadeOut( 6000 );
+  } );
+
+// div 클릭하면 회원가입 섹션 등장
+function ClickFunction(idMyDiv){
+	var objDiv = document.getElementById(idMyDiv);
+	if(objDiv.style.display=="block"){ objDiv.style.display = "none"; }
+	 else{ objDiv.style.display = "block"; }
+}
