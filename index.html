@@ -208,17 +208,19 @@
     </font>
 </header>
 
-<!-- input박스에 잘못 입력하면 문구 뜨게 하고, delivery클릭시 버벅거리는 문제 해결 ㄱ, 뷰포트도 가다듬기 -->
 <div class="singo_view" id="deliver_button">
     <div id="btn_view_01">
     <h4><b><br> &nbsp;&nbsp; Choose your location </b></h4><br><br>
     </div>
     <font id="deliver_button_font"> Delivery options and delivery speeds may vary for different locations </font><br>
     <button id="btn_view_02" onclick="location.href='https://www.amazon.com/ap/signin?_encoding=UTF8&openid.assoc_handle=usflex&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3F_encoding%3DUTF8%26path%3D%252F%26useRedirectOnSuccess%3D1'">
-        Sign in to see your addresses </button><br><br>
+        Sign in to see your addresses </button><br>
     <div class="hr-sect"> or enter a US zip code </div>
-    <input id="btn_view_03"> <button id="apply"> Apply </button>
-    <div class="hr-sect"> or </div><br>
+
+    <input type="text" id="btn_view_03"> <button id="apply"> Apply </button>
+    <font id="deliver_button_font_2"> Please enter a valid US zip code </font>
+
+    <div class="hr-sect"> or </div>
     <select id="btn_view_04">
         <option disabled> Ship outside the US </option>
         <option> Argentina </option>

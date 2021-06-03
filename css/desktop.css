@@ -301,6 +301,7 @@ button {
 /* 회원가입 탭에 마우스오버시 숨겨졌던 div 등장 */
 
 #hidden_div{
+	font-family: "amazon-font";
 	position: absolute;
 	z-index:2;
 	display:none;
@@ -341,10 +342,11 @@ button {
 
 
 .hidden_div_lower_level_font{
-	font-size: 3px;
+	font-size: 15x;
 }
 
 #hidden_div_language{
+	font-family: "amazon-font";
 	position: absolute;
 	z-index:2;
 	display:none;
@@ -382,6 +384,7 @@ button {
 
 .hidden_language_font_3{
 	color: rgb(59, 59, 117);
+	font-size: smaller;
 }
 
 /* 레이아웃*/
@@ -726,7 +729,7 @@ a{
 
 /* 첨가 */
 div.fi {
-	font: "amazon-font" !important;
+	font-family: "amazon-font";
 	padding: 15px;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -760,11 +763,8 @@ div.fi {
 	height: 30px;
 }
 
-.hidden_div, .hidden_div_language{
-	font: "amazon-font" !important;
-}
-
 .singo_view {
+	font-family: "amazon-font";
 	line-height: 170%;
 	box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.5);
 	overflow: hidden;
@@ -774,7 +774,6 @@ div.fi {
 	position: absolute;
 	width: 350px;
 	height: 400px;
-	font: "amazon-font" !important;
 	background-color: white;
 	margin-left: 570px;
 	margin-top: 10px;
@@ -839,6 +838,11 @@ div.fi {
 
 #deliver_button_font{
 	color: gray;
+	font-size: 12px;
+}
+
+#deliver_button_font_2{
+	color: rgb(173, 29, 29);
 	font-size: 12px;
 }
 
