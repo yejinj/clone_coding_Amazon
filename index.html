@@ -6,7 +6,6 @@
     <link rel="icon" href="favicon.ico" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- 뷰포트 연결 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/desktop.css" media="screen and (min-width : 960px)">
     <link rel="stylesheet" href="./css/tablet.css" media="screen and (min-width : 768px) and (max-width: 959px)">
@@ -17,9 +16,7 @@
 </head>
 
 <body topmargin="0"  leftmargin="0" marginwidth="0" marginheight="0" style="background-color: #eaeded;">
-
-<!-- HEADER -->
-<!-- HEADER의 상단, 하단을 구분합니다 -->
+<!-- HEADER, 상단 / 하단 -->
 <header>
     <!-- 헤더의 상단 -->
     <font color="white">
@@ -33,20 +30,20 @@
             </div>
             
             <!-- 2. Deliver to Republic of Korea -->
-            <div id="delivery_section_in_header" class="hovereffect" onclick="ClickFunction('deliver_button'); return false;">
+            <div id="delivery_section_in_header" class="hovereffect" style="cursor: pointer;" onclick="ClickFunction('deliver_button'); return false;">
                 <div id="location">
                     <img src="./images/location.JPG" id="locationImage" alt="위치">
                 </div>
                 <div id="delivery">
                         Deliver to<br>
-                        <b>Republic of Korea</b>
+                        <b>Republic of Korea</b><br>
                 </div>
             </div>
 
             <!-- 3. 검색창 -->
             <div id="searchbox">
-                <link href="https://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet" />
-                <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+            <link href="https://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet" />
+            <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
                 <div class="row">
                     <div class="col-md-2"></div>
                     <div class="col-md-8">
@@ -94,6 +91,7 @@
                 </div>
             </div>
         </div>
+        
 
         <!-- 상단 헤더에서 검색창을 제외한 부분은 오른쪽으로 정렬 -->
         <div id="rightalign">
@@ -115,13 +113,13 @@
             </div>
                 
             <!--6. Returns & Orders -->
-            <div id="returnsAndOrders" style="cursor: pointer;" class="hovereffect" onclick="location.href='https://www.amazon.com/ap/signin?_encoding=UTF8&accountStatusPolicy=P1&openid.assoc_handle=usflex&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fgp%2Fcss%2Forder-history%3Fie%3DUTF8%26ref_%3Dnav_orders_first&pageId=webcs-yourorder&showRmrMe=1'">
+            <div id="returnsAndOrders" style="cursor: pointer;" class="hovereffect" >
                     <a href="https://www.amazon.com/ap/signin?clientContext=132-9349820-5691738&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fyour-orders%2Forders%2Fref%3Dyo_oh_gp_to_ov%3Fref_%3Dnav_orders_first%26_encoding%3DUTF8&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&marketPlaceId=ATVPDKIKX0DER&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=usflex&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.pape.max_auth_age=900&siteState=clientContext%3D145-0505373-6595463%2CsourceUrl%3Dhttps%253A%252F%252Fwww.amazon.com%252Fyour-orders%252Forders%252Fref%253Dyo_oh_gp_to_ov%253Fref_%253Dnav_orders_first%2526_encoding%253DUTF8%2Csignature%3Do0etbTMxWUKcj6Ck0MUf2NG0WK0j3D">
                     </a>
                     <font size = "2" color="white">
                         Returns<br>
                         <b>& Orders</b>
-                        </font>
+                    </font>
             </div>
 
             <!-- 7. Cart -->
@@ -204,117 +202,121 @@
     </font>
 </header>
 
-<div class="singo_view" id="deliver_button">
-    <div id="btn_view_01">
-    <h4><b><br> &nbsp;&nbsp; Choose your location </b></h4><br><br>
+<!-- HIDDEN DIV, 1 ~ 4 -->
+<div class="hiddenDiv">
+    <div class="singo_view" id="deliver_button">
+        <div id="btn_view_01">
+        <h4><b><br> &nbsp;&nbsp; Choose your location </b></h4><br><br>
+        </div>
+        <font id="deliver_button_font"> Delivery options and delivery speeds may vary for different locations </font><br>
+        <button id="btn_view_02" onclick="location.href='https://www.amazon.com/ap/signin?_encoding=UTF8&openid.assoc_handle=usflex&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3F_encoding%3DUTF8%26path%3D%252F%26useRedirectOnSuccess%3D1'">
+            Sign in to see your addresses </button><br>
+        <div class="hr-sect"> or enter a US zip code </div>
+
+        <input id="btn_view_03" placeholder="Enter zip code" onkeyup="printName()"> <button id="apply"> Apply </button>
+        <div id="result"></div>
+
+        <div class="hr-sect"> or </div>
+        <select id="btn_view_04">
+            <option disabled> Ship outside the US </option>
+            <option> Republic of Korea </option>
+            <option> Argentina </option>
+            <option> Australia </option>
+            <option> Canada </option>
+            <option> China </option>
+            <option> Japan </option>
+            <option> Mexico </option>
+            <option> Singapore </option>
+            <option> United Kingdom </option>
+            <option> Afghanistan </option>
+            <option> Aland Islands </option>
+    </select>
+        <button id="done" onclick="this.parentElement.style.display='none'"> Done </button>
     </div>
-    <font id="deliver_button_font"> Delivery options and delivery speeds may vary for different locations </font><br>
-    <button id="btn_view_02" onclick="location.href='https://www.amazon.com/ap/signin?_encoding=UTF8&openid.assoc_handle=usflex&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3F_encoding%3DUTF8%26path%3D%252F%26useRedirectOnSuccess%3D1'">
-        Sign in to see your addresses </button><br>
-    <div class="hr-sect"> or enter a US zip code </div>
 
-    <input id="btn_view_03" placeholder="Enter zip code" onkeyup="printName()"> <button id="apply"> Apply </button>
-    <div id="result"></div>
+    <!-- 마우스오버시 숨겨졌던 div 1 등장 -->
+    <div id="hidden_div">
+        <div id="hidden_div_lower_level">
+            <div>
+                <button id="hidden_div_button">
+                    <a id="hidden_div_button_a">
+                    Sign In</a> </button><br>
+                    new customer?
+                    <font style="color: rgb(134, 134, 190);"> start here </font><br>
+                        <div id="hidden_div_lower_level_left">
+                            <font class="hidden_div_lower_level_font"><b>Your Lists</b></font><br>
+                            Create a List<br>
+                            Find a List or Registry<br>
+                            AmazonSmile Charity Lists
+                        </div>
+                        <div id="hidden_div_lower_level_right">
+                            <font class="hidden_div_lower_level_font"><b>Your Account</b></font><br>
+                            Account<br>
+                            Orders<br>
+                            Recommendations<br>
+                            Browsing History<br>
+                            Watchlist<br>
+                            Video Purchases & Rentals<br>
+                            Kindle Unlimited<br>
+                            Content & Devices<br>
+                            Subscribe & Save Items<br>
+                            Memberships & Subscriptions<br>
+                            Music Library
+                        </div>
+                </div>
+        </div>
+    </div>
 
-    <div class="hr-sect"> or </div>
-    <select id="btn_view_04">
-        <option disabled> Ship outside the US </option>
-        <option> Republic of Korea </option>
-        <option> Argentina </option>
-        <option> Australia </option>
-        <option> Canada </option>
-        <option> China </option>
-        <option> Japan </option>
-        <option> Mexico </option>
-        <option> Singapore </option>
-        <option> United Kingdom </option>
-        <option> Afghanistan </option>
-        <option> Aland Islands </option>
-   </select>
-    <button id="done" onclick="this.parentElement.style.display='none'"> Done </button>
-</div>
+    <!-- 마우스오버시 숨겨졌던 div 2 등장 -->
+    <div id="hidden_div_language">
+        <div id="hidden_div_language_lower_level">
+                Change Language
+                <font class="hidden_language_font"> Learn more </font><br>
+                <input type="checkbox">
+                English - EN
+                <hr style="color: black; border: 5;">
+                <input type="checkbox">
+                Español - ES <br>
+                <input type="checkbox">
+                简体中文 - ZH <br>
+                <input type="checkbox">
+                Deutsch - DE <br>
+                <input type="checkbox">
+                Português - PT <br>
+                <input type="checkbox">
+                繁體中文 - ZH <br>
+                <input type="checkbox">
+                한국어 - KO <br>
+                <input type="checkbox">
+                עברית - HE <br>
+                <input type="checkbox">
+                اللغة العربية - AR
+                <hr style="color: black;">
+                Change currency
+                <font class="hidden_language_font"> Learn more </font><br>
+                <hr style="color: black;">
+                $ - USD - U.S. Dollar
+                <font class="hidden_language_font_2"> Change </font> <br>
+                <img src="./images/us_logo.JPG" id="us_logo">
+                <font class="hidden_language_font_3">You are shopping on Amazon.com.</font><br>
+                <font class="hidden_language_font_4">Change country/region.</font>
+        </div>
+    </div>
 
-<!-- 마우스오버시 숨겨졌던 div 1 등장 -->
-<div id="hidden_div">
-    <div id="hidden_div_lower_level">
-        <div>
-            <button id="hidden_div_button">
-                <a id="hidden_div_button_a">
-                Sign In</a> </button><br>
-                new customer?
-                <font style="color: rgb(134, 134, 190);"> start here </font><br>
-                    <div id="hidden_div_lower_level_left">
-                        <font class="hidden_div_lower_level_font"><b>Your Lists</b></font><br>
-                        Create a List<br>
-                        Find a List or Registry<br>
-                        AmazonSmile Charity Lists
-                    </div>
-                    <div id="hidden_div_lower_level_right">
-                        <font class="hidden_div_lower_level_font"><b>Your Account</b></font><br>
-                        Account<br>
-                        Orders<br>
-                        Recommendations<br>
-                        Browsing History<br>
-                        Watchlist<br>
-                        Video Purchases & Rentals<br>
-                        Kindle Unlimited<br>
-                        Content & Devices<br>
-                        Subscribe & Save Items<br>
-                        Memberships & Subscriptions<br>
-                        Music Library
-                    </div>
-            </div>
+    <!-- 서서히 나타났다가 사라지는 div -->
+    <div class="fi">
+        <button id="fi-btn" onclick="location.href='https://www.amazon.com/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3Fref_%3Dnav_custrec_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&' ">
+        Sign in </button><br> 
+        New customer?
+
+        <a href="https://www.amazon.com/ap/register?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3F_encoding%3DUTF8%26ref_%3Dnav_custrec_newcust&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&">
+        <font style="color: #3da7d1;">Start here.</font></a>
     </div>
 </div>
 
-<!-- 마우스오버시 숨겨졌던 div 2 등장 -->
-<div id="hidden_div_language">
-    <div id="hidden_div_language_lower_level">
-            Change Language
-            <font class="hidden_language_font"> Learn more </font><br>
-            <input type="checkbox">
-            English - EN
-            <hr style="color: black; border: 5;">
-            <input type="checkbox">
-            Español - ES <br>
-            <input type="checkbox">
-            简体中文 - ZH <br>
-            <input type="checkbox">
-            Deutsch - DE <br>
-            <input type="checkbox">
-            Português - PT <br>
-            <input type="checkbox">
-            繁體中文 - ZH <br>
-            <input type="checkbox">
-            한국어 - KO <br>
-            <input type="checkbox">
-            עברית - HE <br>
-            <input type="checkbox">
-            اللغة العربية - AR
-            <hr style="color: black;">
-            Change currency
-            <font class="hidden_language_font"> Learn more </font><br>
-            <hr style="color: black;">
-            $ - USD - U.S. Dollar
-            <font class="hidden_language_font_2"> Change </font> <br>
-            <img src="./images/us_logo.JPG" id="us_logo">
-            <font class="hidden_language_font_3">You are shopping on Amazon.com.</font><br>
-            <font class="hidden_language_font_4">Change country/region.</font>
-    </div>
-</div>
-
-<!-- 서서히 나타났다가 사라지는 div -->
-<div class="fi">
-    <button id="fi-btn" onclick="location.href='https://www.amazon.com/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3Fref_%3Dnav_custrec_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&' ">
-    Sign in </button><br> 
-    New customer?
-
-    <a href="https://www.amazon.com/ap/register?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3F_encoding%3DUTF8%26ref_%3Dnav_custrec_newcust&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&">
-    <font style="color: #3da7d1;">Start here.</font></a>
-</div>
 <!-- LAYOUT, SECTION 1 ~ 4 -->
 <div class="layout">
-    <!-- SECTION 1, 슬라이드 배경이 바뀌는 부분-->
+    <!-- SECTION 1-->
     <div class="section01"><b>
 
         <!-- 슬라이드 기본 설정 -->
@@ -335,12 +337,10 @@
             <div class="swiper-button-next swiper-button-black" id="button_next_second"></div>
             <div class="swiper-button-prev swiper-button-black" id="button_prev_second"></div>
         </div>
-    </b></div>
+    </b>
+    </div>
 
-    <!-- SECTION 2, 8개의 레이아웃 -->
-    <!--하나의 박스는 설명과, 하이퍼링크가 탑재된 이미지와 설명으로 이루어져 있음 
-    8개의 레이아웃 중 두 번째 줄의 세 번째 박스은 다시 4개의 구역으로 나누어져 있음
-    이에 따른 div 속성을 각각 다르게 지정-->
+    <!-- SECTION 2 -->
     <div class="section02">
         <div id="sec02box01">
             <h4><b>Find your ideal</b></h4>
@@ -438,7 +438,7 @@
 
     </div>
 
- <!-- SECTION 3, Discover Amazon 아이콘 슬라이드-->
+    <!-- SECTION 3-->
     <div id="section03"> &nbsp;<br>
         <font color="black" size="4px">
         Discover Amazon
@@ -484,21 +484,13 @@
                     </a>
                 </div>
             </div>
-            <div class="swiper-button-next swiper-button-black" style="margin-top: 1050px;"></div>
-            <div class="swiper-button-prev swiper-button-black" style="margin-top: 1050px;"></div>
-                
-        <!-- 슬라이드 스크립트를 설정. 슬라이드 화면을 가운데로 설정해주고
-        slidesPerView를 5로 설정해 한 화면에 슬라이드 5개가 보여지도록 한다
-        그리고 슬라이드가 보여지는 모습을 style type text/css로 꾸민다-->
+            <div class="swiper-button-next swiper-button-black" style="margin-top: 1065px;"></div>
+            <div class="swiper-button-prev swiper-button-black" style="margin-top: 1065px;"></div>
         
         </div>
     </div>
-            
-        
-        
-    <!-- SECTION 4, 4개의 레이아웃 -->
-    <!-- 하나의 박스는 설명과, 하이퍼링크가 탑재된 이미지와 설명으로 이루어져 있음
-        1번째 박스는 다시 4개의 구역으로 나누어져 있음 -->
+
+    <!-- SECTION 4 -->
     <div class="section04">
         <div id="sec04box01">
             <h4><b>Comfy styles for her</b></h4>
@@ -559,10 +551,9 @@
     </div>
 </div>
 
-
 <!-- FOOTER, SECTION 1 ~ 4  -->
-<font color="white">
-<footer id="footer">
+<footer class="footer">
+    <font color="white">
     <div id="backToTop" class="btn backToTop">
         <a style="color: white;">
         <b> Back to top </b></a>
@@ -1003,8 +994,9 @@
         © 1996-2021, Amazon.com, Inc. or its affiliates
     </div>
 
-</footer>
+
 </font>
+</footer>
 
 </body>
 </html>
