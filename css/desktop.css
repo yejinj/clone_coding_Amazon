@@ -136,31 +136,23 @@ header{
 }
 
 #language{
-	padding: 1px;
+	/* height: 40px; */
+	/* padding: 5px;
+	padding-top: 15px; */
 	display: inline-block;
-	z-index: 9999;
-	margin-left: -60px;
-}
-
-#language-form{
-	left: -100px;
-	display: inline-block;
-	size: 5
+	/* z-index: 9999;
+	margin-left: -60px; */
 }
 
 #language-image{
-	width: 40px;
 	height: 40px;
-}
-
-#language-select{
-	width:20px;	
-	background: #131921;
+	width: 40px;
+	/* margin-top: -5px; */
 }
 
 #whereto{
-	padding: 3px;
-	height: max-content;
+	height: 45px;
+	padding: 5px;
 	font-size:14px;
 	line-height:120%;
 	margin:5px;
@@ -168,7 +160,8 @@ header{
 }
 
 #returnsAndOrders{
-	padding: 3px;
+	height: 45px;
+	padding: 5px;
 	font-size:15px;
 	line-height:120%;
 	margin:5px;
@@ -176,15 +169,17 @@ header{
 }
 
 #carts{
-	padding: 3px;
+	height: 45px;
+	padding: 5px;
+	padding-top: 15px;
 	display: inline-block;
 }
 
 #cart-image{
 	margin-top: -15px;
-	width: 30;
-	height: 30;
-	margin-top: -20px;
+	display: inline-block;
+	width: 30px; 
+	height: 30px;
 }
 
 
