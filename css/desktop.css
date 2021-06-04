@@ -604,83 +604,63 @@ a{
 	text-align:center;
 	padding-top: 20px;
 	padding-bottom: 20px;
-	width: 1519px;
-}
-
-#bgcolor1{
-	position: relative;
-}
-
-#bgcolor1-image{
-	width: 1400px;
-	height: 400px;
-	z-index: 0;
+	width: 1520px;
 }
 
 .footer-section01{
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 140px;
+	width: 1520px;
+	height: fit-content;
 	background: #232F3E;
 	font-size: 15px;
-	position: absolute;
-	margin-left: 250px;
-	margin-top: -400px;
-	text-align: left;
+	text-align: center;
 	z-index: 1;
 }
 
-
 #fs01-01, #fs01-02, #fs01-03, #fs01-04{
+	text-align: left;
+	margin-left: 100px;
 	float: left;
 	background: #232F3E;
-	margin-left: 30px;
-	margin-right: 30px;
+	padding-bottom: 130px;
 }
 
 
 /* SECTION02 */
-
-
-#bgcolor2{
-	position: relative;
-}
-
-#bgcolor2-image{
-	width: 1520px;
-	height: 550px;
-	z-index: 0;
-}
-
 .footer-section02{
-	float: left;
-	background: #232F3E;
-	position: relative;
-	margin-left: 450px;
-	margin-top: -720px;
+	float: none;
+	padding-top: 30px;
+	margin-right: 100px;
+	width: 1520px;
 }
 
 #footer-sec2-hr{
-	width: 1567px;
-	margin-left: -500px;
+	border: rgb(184, 184, 184) 1px solid;
+	width: 1520px;
 }
 
-#fs02-01, #fs02-02, #fs02-03, #fs02-04{
-	float: left;
+#fs02-01{
+	display: inline-block;
 	background: #232F3E;
-	margin-left: 15px;
-	margin-right: 15px;
+}
+
+#fs02-02, #fs02-03, #fs02-04{
+	background: #232F3E;
+	border: 1px white solid;
+	margin-left: 20px;
 }
 
 
 /* SECTION03 */
-
-
 .footer-section03{
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 140px;
 	float: left;
+	width: 1520px;
 	background: #131A22;
-	position: relative;
-	text-align: left;
-	margin-left: 120px;
-	position: absolute;
-	margin-top: -550px;
 	font-size: 2px;
 }
 
@@ -689,20 +669,15 @@ a{
 	background: #131A22; 
 	margin-left: 35px;
 	margin-right: 35px;
+	text-align: left;
 }
 
 
 /* SECTION 04 */
-
-
 .footer-section04{
-	float: left;
 	background: #131A22;
-	position: relative;
-	padding: 50px;
-	margin-left: 370px;
-	position: absolute;
-	margin-top: -150px;
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 
 /* 첨가 */
