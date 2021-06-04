@@ -10,7 +10,7 @@ new Swiper('.myswiper', {
 });
 
 
-// 검색창에 무언가를 검색했을 때 alert와 같은 문구가 등장
+// 검색창에 무언가를 검색했을 때 문구가 등장
 var btn = document.getElementById('input-group-addon-button');
 
 btn.onclick = function() {
@@ -54,7 +54,6 @@ function view(opt) {
 	}
   }
 
-
 // 클릭하면 등장하는 div (언어)
 function view_language(opt) {
 	if(opt) {
@@ -64,7 +63,6 @@ function view_language(opt) {
 		hidden_div_language.style.display = "none";
 	}
 }
-
 
 // html dom 이 다 로딩된 후 실행된다.
 $(document).ready(function(){
@@ -93,3 +91,13 @@ function ClickFunction(idMyDiv){
 	if(objDiv.style.display=="block"){ objDiv.style.display = "none"; }
 	 else{ objDiv.style.display = "block"; }
 }
+
+input.oninput = function() {
+	result.innerHTML = "put an exact value";
+};
+
+// 첨가
+function printName()  {
+	const btn_view_03 = document.getElementById('btn_view_03').value;
+	document.getElementById("result").innerText = "! Please enter a valid US zip code";
+  }

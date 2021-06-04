@@ -764,6 +764,7 @@ div.fi {
 }
 
 .singo_view {
+	overflow: scroll;
 	font-family: "amazon-font";
 	line-height: 170%;
 	box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.5);
@@ -818,7 +819,15 @@ div.fi {
 
 #btn_view_03{
 	width: 200px;
-} 
+}
+
+#btn_view_03::placeholder{
+	color: #bbbbbb;
+}
+
+#result{
+	color: #CC1C39
+}
 
 #apply{
 	width: 80px;
@@ -843,7 +852,7 @@ div.fi {
 
 #deliver_button_font_2{
 	color: rgb(173, 29, 29);
-	font-size: 12px;
+	font-size: 14px;
 }
 
 #done{

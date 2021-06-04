@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title> Amazon.com: Online Shopping </title>
@@ -15,127 +16,122 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 </head>
 
-<html lang="en">
-<font color = "white"></font>
-
 <body topmargin="0"  leftmargin="0" marginwidth="0" marginheight="0" style="background-color: #eaeded;">
+
 <!-- HEADER -->
-<!-- 상단과 하단을 구분 -->
+<!-- HEADER의 상단, 하단을 구분합니다 -->
 <header>
     <!-- 헤더의 상단 -->
     <font color="white">
     <div class="header_box">
         <div class="top_box">
-
-        <!-- 로고 이미지를 클릭하면 해당 사이트로 다시 이동하도록 -->
-        <div id="logo">
-            <a href="./">
-                <img src="./images/logo.JPG" id="logoImage" class="hovereffect" alt="로고">
-            </a>
-        </div>
-        
-        <div id="delivery_section_in_header" class="hovereffect" onclick="ClickFunction('deliver_button'); return false;">
-            <!-- location 아이콘 -->
-            <div id="location">
-                <img src="./images/location.JPG" id="locationImage" alt="위치">
-            </div>
-    
-            <!-- 배송 글씨 -->
-            <div id="delivery">
-                    Deliver to<br>
-                    <b>Republic of Korea</b>
-            </div>
-        </div>
-
-        <!-- 검색창 -->
-        <div id="searchbox">
-            <link href="https://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet" />
-            <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
-            <div class="row">
-                <div class="col-md-2"></div>
-                <div class="col-md-8">
-            <div class="input-group">
-                <span class="input-group-addon">
-                <select id="input-group-addon-select">
-                    <option>All departments</option>
-                    <option>Arts & Crafts</option>
-                    <option>Automative</option>
-                    <option>Beauty & Personal Care</option>
-                    <option>Books</option>
-                    <option>Computers</option>
-                    <option>Digital Music</option>
-                    <option> Electronics </option>
-                    <option> Kindle Store </option>
-                    <option> Prime Video </option>
-                    <option> Women's Fashion </option>
-                    <option> Men's Fashion </option>
-                    <option> Girl's Fashion </option>
-                    <option> Boy's Fashion </option>
-                    <option> Deals </option>
-                    <option> Health & Household </option>
-                    <option> Home & Kitchen</option>
-                    <option> Industrial & Scienticific </option>
-                    <option> Luggage </option>
-                    <option> Movies & TV </option>
-                    <option> Music, CDs & Vinyl </option>
-                    <option> Pet Supplies </option>
-                    <option> Software </option>
-                    <option> Sports & Outdoors </option>
-                    <option> Tools & Home Improvement </option>
-                    <option> Toys & Games </option>
-                    <option> Video Games </option>
-                </select>
-                </span>
-                <input type="text" class="form-control" id="checkbox_form">
-                <span class="input-group-addon" style="background-color: #FFBD66;">
-                    <button>
-                        <img src="./images/searchbar.JPG" id="input-group-addon-button">
-                    </button>
-                </span>
-            </div>
+            <!-- 1. amazon logo -->
+            <div id="logo">
+                <a href="./">
+                    <img src="./images/logo.JPG" id="logoImage" class="hovereffect" alt="로고">
+                </a>
             </div>
             
+            <!-- 2. Deliver to Republic of Korea -->
+            <div id="delivery_section_in_header" class="hovereffect" onclick="ClickFunction('deliver_button'); return false;">
+                <div id="location">
+                    <img src="./images/location.JPG" id="locationImage" alt="위치">
+                </div>
+                <div id="delivery">
+                        Deliver to<br>
+                        <b>Republic of Korea</b>
+                </div>
+            </div>
+
+            <!-- 3. 검색창 -->
+            <div id="searchbox">
+                <link href="https://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet" />
+                <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8">
+                <div class="input-group">
+                    <span class="input-group-addon">
+                    <select id="input-group-addon-select">
+                        <option>All departments</option>
+                        <option>Arts & Crafts</option>
+                        <option>Automative</option>
+                        <option>Beauty & Personal Care</option>
+                        <option>Books</option>
+                        <option>Computers</option>
+                        <option>Digital Music</option>
+                        <option> Electronics </option>
+                        <option> Kindle Store </option>
+                        <option> Prime Video </option>
+                        <option> Women's Fashion </option>
+                        <option> Men's Fashion </option>
+                        <option> Girl's Fashion </option>
+                        <option> Boy's Fashion </option>
+                        <option> Deals </option>
+                        <option> Health & Household </option>
+                        <option> Home & Kitchen</option>
+                        <option> Industrial & Scienticific </option>
+                        <option> Luggage </option>
+                        <option> Movies & TV </option>
+                        <option> Music, CDs & Vinyl </option>
+                        <option> Pet Supplies </option>
+                        <option> Software </option>
+                        <option> Sports & Outdoors </option>
+                        <option> Tools & Home Improvement </option>
+                        <option> Toys & Games </option>
+                        <option> Video Games </option>
+                    </select>
+                    </span>
+                    <input type="text" class="form-control" id="checkbox_form">
+                    <span class="input-group-addon" style="background-color: #FFBD66;">
+                        <button>
+                            <img src="./images/searchbar.JPG" id="input-group-addon-button">
+                        </button>
+                    </span>
+                </div>
+                </div>
+                
+                </div>
             </div>
         </div>
-        </div>
-        
-        <!-- 오른쪽으로 정렬 위해 검색창을 제외한 나머지들은 rightalign css 속성으로 묶는다 -->
+
+        <!-- 상단 헤더에서 검색창을 제외한 부분은 오른쪽으로 정렬 -->
         <div id="rightalign">
-            <!-- 언어 -->
-            <!-- 위처럼 체크박스를 사용 -->
+
+            <!-- 4. 언어 -->
             <div id="language" style="cursor: pointer;" class="hovereffect" onmouseover="view_language(true)" onmouseout="view_language(false)" onclick="location.href='https://www.amazon.com/gp/customer-preferences/select-language/ref=topnav_lang_ais?preferencesReturnUrl=%2F'">
-                <a>
-                    <img src="./images/language.JPG" id="language-image">
-                </a>
-                ▼
+                    <a>
+                        <img src="./images/language.JPG" id="language-image">
+                    </a>
+                    ▼
             </div>
 
-            <!-- 배송할 지역 -->
+            <!-- 5. Account & Lists -->
             <div id="whereto" style="cursor: pointer;" class="hovereffect" onmouseover="view(true)" onmouseout="view(false)" onclick="location.href='https://www.amazon.com/gp/customer-preferences/select-language/ref=topnav_lang_ais?preferencesReturnUrl=%2Fref%3Dnav_logo'">
-                <a href="https://www.amazon.com/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3Fref_%3Dnav_ya_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&" style="color: white;">
-                </a>
-                Hello, Sign in<br>
-                <b>Accounts & Lists</b>                
+                    <a href="https://www.amazon.com/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3Fref_%3Dnav_ya_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&" style="color: white;">
+                    </a>
+                    Hello, Sign in<br>
+                    <b>Accounts & Lists</b>                
             </div>
-            
-            <!-- 주문 -->
+                
+            <!--6. Returns & Orders -->
             <div id="returnsAndOrders" style="cursor: pointer;" class="hovereffect" onclick="location.href='https://www.amazon.com/ap/signin?_encoding=UTF8&accountStatusPolicy=P1&openid.assoc_handle=usflex&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fgp%2Fcss%2Forder-history%3Fie%3DUTF8%26ref_%3Dnav_orders_first&pageId=webcs-yourorder&showRmrMe=1'">
-                <a href="https://www.amazon.com/ap/signin?clientContext=132-9349820-5691738&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fyour-orders%2Forders%2Fref%3Dyo_oh_gp_to_ov%3Fref_%3Dnav_orders_first%26_encoding%3DUTF8&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&marketPlaceId=ATVPDKIKX0DER&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=usflex&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.pape.max_auth_age=900&siteState=clientContext%3D145-0505373-6595463%2CsourceUrl%3Dhttps%253A%252F%252Fwww.amazon.com%252Fyour-orders%252Forders%252Fref%253Dyo_oh_gp_to_ov%253Fref_%253Dnav_orders_first%2526_encoding%253DUTF8%2Csignature%3Do0etbTMxWUKcj6Ck0MUf2NG0WK0j3D">
-                </a>
-                <font size = "2" color="white">
-                    Returns<br>
-                    <b>& Orders</b>
-                    </font>
+                    <a href="https://www.amazon.com/ap/signin?clientContext=132-9349820-5691738&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fyour-orders%2Forders%2Fref%3Dyo_oh_gp_to_ov%3Fref_%3Dnav_orders_first%26_encoding%3DUTF8&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&marketPlaceId=ATVPDKIKX0DER&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=usflex&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.pape.max_auth_age=900&siteState=clientContext%3D145-0505373-6595463%2CsourceUrl%3Dhttps%253A%252F%252Fwww.amazon.com%252Fyour-orders%252Forders%252Fref%253Dyo_oh_gp_to_ov%253Fref_%253Dnav_orders_first%2526_encoding%253DUTF8%2Csignature%3Do0etbTMxWUKcj6Ck0MUf2NG0WK0j3D">
+                    </a>
+                    <font size = "2" color="white">
+                        Returns<br>
+                        <b>& Orders</b>
+                        </font>
             </div>
 
-            <!-- 장바구니 이미지와 문구 -->
+            <!-- 7. Cart -->
             <div id="carts" style="cursor: pointer;" class="hovereffect" onclick="location.href='https://www.amazon.com/gp/cart/view.html?ref_=nav_cart'">
-            <a href="https://www.amazon.com/gp/cart/view.html?ref_=nav_cart" style="color: white;">
-                <img src="./images/cart.JPG" id="cart-image" alt="cart">
-            </a>
-            <font size = "4">
-                <b>Cart</b><br>
-            </font>
+                <a href="https://www.amazon.com/gp/cart/view.html?ref_=nav_cart" style="color: white;">
+                    <img src="./images/cart.JPG" id="cart-image" alt="cart">
+                </a>
+                <font size = "4">
+                    <b>Cart</b><br>
+                </font>
             </div>
         </div>
     </div>
@@ -145,7 +141,8 @@
     <font size="3px" color="white"> &nbsp; 
         <div class = "header_box">
             <div class="bottom_box">
-                <!-- 사이드바 -->
+
+                <!-- 1. All (사이드바인 부분) -->
                 <div id="sidebar" class="hovereffect">
                     <!-- 사이드바 글자 지정 -->
                     <div id="mySidenav" class="sidenav" style="overflow: scroll;">
@@ -189,22 +186,21 @@
                 
                 <!-- 클릭하기 전엔 햄버거바, 클릭하면 x표시로 바뀌게 설정 -->
                 <span id="sidebar-span" onclick="openNav()">&#9776;All</span>
-            </div>
+                </div>
             
-            <!-- 사이드바가 아닌 부분을 묶어 css 속성을 지정 -->
-            <div id="notsideBar">
-                <a class="hovereffect" href="https://www.amazon.com/international-sales-offers/b/?ie=UTF8&node=15529609011&ref_=nav_cs_gb_intl_52df97a2eee74206a8343034e85cd058" style="color:white">Today's Deals</a>&nbsp;&nbsp;&nbsp;
-                <a class="hovereffect" href="https://www.amazon.com/gp/help/customer/display.html?nodeId=508510&ref_=nav_cs_customerservice_2bf4fe8c5ec54e6bae2d1c24043f012b" style="color:white">Customer Service</a>&nbsp;&nbsp;&nbsp;
-                <a class="hovereffect" href="https://www.amazon.com/gift-cards/b/?ie=UTF8&node=2238192011&ref_=nav_cs_gc_4fb606b1a14b44e4823e00c03fc71f47" style="color:white">Gift Cards</a>&nbsp;&nbsp;&nbsp;
-                <a class="hovereffect" href="https://www.amazon.com/b/?_encoding=UTF8&ld=AZUSSOA-sell&node=12766669011&ref_=nav_cs_sell_9321d964d1ab428b8d83e204c043fc01" style="color:white">Sell</a>&nbsp;&nbsp;&nbsp;
-                <a class="hovereffect" href="https://www.amazon.com/registries?_encoding=UTF8&redirect=true&ref_=nav_cs_registry_1c421982e26d4ec48ca364be68f201b5" style="color:white">Registry</a>&nbsp;&nbsp;&nbsp;
-                    
-                <div id="amazonsResponse">
-                <a class="hovereffect" href="https://www.aboutamazon.com/company-news/amazons-actions-to-help-employees-communities-and-customers-affected-by-covid-19/?_encoding=UTF8&token=GW&utm_content=COVID-19_roundup&utm_medium=swm&utm_source=gateway&utm_term=gw03162020&ref_=nav_swm_undefined&pf_rd_p=cf6260e5-93a9-45ad-9653-d1fc95751fac&pf_rd_s=nav-sitewide-msg-text-export&pf_rd_t=4201&pf_rd_i=navbar-4201&pf_rd_m=ATVPDKIKX0DER&pf_rd_r=C045QSGNV9P6E7SYVE0S" style="color:white">Amazon's response to COVID-19</a>
-            </div>
+                <!-- 사이드바가 아닌 부분을 묶어 속성을 지정 -->
+                <div id="notsideBar">
+                    <a class="hovereffect" href="https://www.amazon.com/international-sales-offers/b/?ie=UTF8&node=15529609011&ref_=nav_cs_gb_intl_52df97a2eee74206a8343034e85cd058" style="color:white">Today's Deals</a>&nbsp;&nbsp;&nbsp;
+                    <a class="hovereffect" href="https://www.amazon.com/gp/help/customer/display.html?nodeId=508510&ref_=nav_cs_customerservice_2bf4fe8c5ec54e6bae2d1c24043f012b" style="color:white">Customer Service</a>&nbsp;&nbsp;&nbsp;
+                    <a class="hovereffect" href="https://www.amazon.com/gift-cards/b/?ie=UTF8&node=2238192011&ref_=nav_cs_gc_4fb606b1a14b44e4823e00c03fc71f47" style="color:white">Gift Cards</a>&nbsp;&nbsp;&nbsp;
+                    <a class="hovereffect" href="https://www.amazon.com/b/?_encoding=UTF8&ld=AZUSSOA-sell&node=12766669011&ref_=nav_cs_sell_9321d964d1ab428b8d83e204c043fc01" style="color:white">Sell</a>&nbsp;&nbsp;&nbsp;
+                    <a class="hovereffect" href="https://www.amazon.com/registries?_encoding=UTF8&redirect=true&ref_=nav_cs_registry_1c421982e26d4ec48ca364be68f201b5" style="color:white">Registry</a>&nbsp;&nbsp;&nbsp;
+                    <div id="amazonsResponse">
+                    <a class="hovereffect" href="https://www.aboutamazon.com/company-news/amazons-actions-to-help-employees-communities-and-customers-affected-by-covid-19/?_encoding=UTF8&token=GW&utm_content=COVID-19_roundup&utm_medium=swm&utm_source=gateway&utm_term=gw03162020&ref_=nav_swm_undefined&pf_rd_p=cf6260e5-93a9-45ad-9653-d1fc95751fac&pf_rd_s=nav-sitewide-msg-text-export&pf_rd_t=4201&pf_rd_i=navbar-4201&pf_rd_m=ATVPDKIKX0DER&pf_rd_r=C045QSGNV9P6E7SYVE0S" style="color:white">Amazon's response to COVID-19</a>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
     </font>
 </header>
 
@@ -217,12 +213,13 @@
         Sign in to see your addresses </button><br>
     <div class="hr-sect"> or enter a US zip code </div>
 
-    <input type="text" id="btn_view_03"> <button id="apply"> Apply </button>
-    <font id="deliver_button_font_2"> Please enter a valid US zip code </font>
+    <input id="btn_view_03" placeholder="Enter zip code" onkeyup="printName()"> <button id="apply"> Apply </button>
+    <div id="result"></div>
 
     <div class="hr-sect"> or </div>
     <select id="btn_view_04">
         <option disabled> Ship outside the US </option>
+        <option> Republic of Korea </option>
         <option> Argentina </option>
         <option> Australia </option>
         <option> Canada </option>
