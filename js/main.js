@@ -32,6 +32,15 @@ function closeNav() {
 	document.getElementById("mySidenav").style.width = "0";
 }
 
+// 두번째 슬라이드
+var swiper = new Swiper('.swiper-container2', {
+	slidesPerView: 5,
+	navigation : {
+		nextEl : '.swiper-button-next', // 다음 버튼 클래스명
+		prevEl : '.swiper-button-prev', // 이번 버튼 클래스명
+	},
+	});
+
 
 // 백투탑 (scroll to Top)버튼 속성 지정
 const $backToTop = document.querySelector(".backToTop");

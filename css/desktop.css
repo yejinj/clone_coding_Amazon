@@ -391,8 +391,11 @@ button {
 
 
 /* SECTION 01 */
-#swiper-wrapper{
-	background-color: white;
+.swiper-container {
+	margin: 0;
+	width: 1520px;;
+	height: 230px;
+	border: 0px;
 }
 
 .swiper-slide {
@@ -528,56 +531,33 @@ a{
 
 
 #section03{
+	float: left;
+	padding-left: 30px;
 	font-family: "amazon-font";
 	background-color: white;
 }
 
-#ama01{
+.swiper-container2 {
+	background: white;
+	float: left;
+}
+
+#ama01, #ama02, #ama03, #ama04, #ama05, #ama06{
 	width:230px;
-	height: 230px;
-	margin-left: -1000px;
+	height:230px;
 	box-shadow: none;
 }
 
-#ama02{
-	width:230px;
+.swiper-container2 {
+	width: 1520px;;
 	height: 230px;
-	margin-left: -950px;
-	box-shadow: none;
-}
-
-#ama03{
-	width:230px;
-	height: 230px;
-	margin-left: -900px;
-	box-shadow: none;
-}
-
-#ama04{
-	width:230px;
-	height: 230px;
-	margin-left: -850px;
-	box-shadow: none;
-}
-
-#ama05{
-	width:230px;
-	height: 230px;
-	margin-left: -800px;
-	box-shadow: none;
-}
-
-#ama06{
-	width:230px;
-	height: 230px;
-	margin-left: -750px;
-	box-shadow: none;
-}
-
+	border: 0px;
+	float: left;
+	text-align: center;
+	overflow: hidden;
+	}
 
 /* SECTION 04 */
-
-
 .section04{
 	font-family: "amazon-font";
 	overflow: hidden;
@@ -613,8 +593,6 @@ a{
 
 
 /* SECTION01 */
-
-
 #footer{
 	text-align: center;
 	background-color: #232F3E;
