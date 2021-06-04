@@ -70,7 +70,6 @@ header{
 
 #location{
 	display: inline-block;
-	margin-top:5px;
 }
 
 #locationImage{
@@ -80,16 +79,20 @@ header{
 }
 
 #delivery_section_in_header{
-	padding: 8px;
+	padding: 5px;
 	display: inline-block;
-	margin-top: 6px;
+	margin-top: 15px;
 }
 
 #delivery{
 	display: inline-block;
 	position: relative;
 	font-size: 13px;
-	line-height:120%;
+	line-height: 20%;
+}
+
+#language_chosen{
+	margin-top: 10px;
 }
 
 #searchbox{
@@ -133,6 +136,7 @@ header{
 }
 
 #language{
+	padding: 1px;
 	display: inline-block;
 	z-index: 9999;
 	margin-left: -60px;
@@ -155,6 +159,8 @@ header{
 }
 
 #whereto{
+	padding: 3px;
+	height: max-content;
 	font-size:14px;
 	line-height:120%;
 	margin:5px;
@@ -162,6 +168,7 @@ header{
 }
 
 #returnsAndOrders{
+	padding: 3px;
 	font-size:15px;
 	line-height:120%;
 	margin:5px;
@@ -169,12 +176,12 @@ header{
 }
 
 #carts{
-	margin: 5px;
+	padding: 3px;
 	display: inline-block;
 }
 
 #cart-image{
-	vertical-align:middle;
+	margin-top: -15px;
 	width: 30;
 	height: 30;
 	margin-top: -20px;

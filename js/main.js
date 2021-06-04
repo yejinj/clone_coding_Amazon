@@ -110,3 +110,12 @@ function printName()  {
 	const btn_view_03 = document.getElementById('btn_view_03').value;
 	document.getElementById("result").innerText = "! Please enter a valid US zip code";
   }
+
+  function language_function(e) {
+	// 선택된 데이터 가져오기
+	const value = e.value;
+	
+	// 데이터 출력
+	document.getElementById('language_chosen').innerText
+	  = value;
+  }

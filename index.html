@@ -35,8 +35,8 @@
                     <img src="./images/location.JPG" id="locationImage" alt="위치">
                 </div>
                 <div id="delivery">
-                        Deliver to<br>
-                        <b>Republic of Korea</b><br>
+                    Deliver to<br>
+                    <b><div id="language_chosen"> Republic of Korea </div></b><br>
                 </div>
             </div>
 
@@ -206,18 +206,23 @@
 <div class="hiddenDiv">
     <div class="singo_view" id="deliver_button">
         <div id="btn_view_01">
-        <h4><b><br> &nbsp;&nbsp; Choose your location </b></h4><br><br>
+        <h4> <b><br> &nbsp;&nbsp; Choose your location </b></h4><br><br>
         </div>
+
         <font id="deliver_button_font"> Delivery options and delivery speeds may vary for different locations </font><br>
+
         <button id="btn_view_02" onclick="location.href='https://www.amazon.com/ap/signin?_encoding=UTF8&openid.assoc_handle=usflex&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3F_encoding%3DUTF8%26path%3D%252F%26useRedirectOnSuccess%3D1'">
-            Sign in to see your addresses </button><br>
+            Sign in to see your addresses
+        </button><br>
+
         <div class="hr-sect"> or enter a US zip code </div>
 
         <input id="btn_view_03" placeholder="Enter zip code" onkeyup="printName()"> <button id="apply"> Apply </button>
         <div id="result"></div>
 
         <div class="hr-sect"> or </div>
-        <select id="btn_view_04">
+
+        <select id="btn_view_04" onchange="language_function(this)">
             <option disabled> Ship outside the US </option>
             <option> Republic of Korea </option>
             <option> Argentina </option>
@@ -230,7 +235,10 @@
             <option> United Kingdom </option>
             <option> Afghanistan </option>
             <option> Aland Islands </option>
-    </select>
+        </select>
+
+        <font style="color: brown;"> Try to Change Location :) </font>
+
         <button id="done" onclick="this.parentElement.style.display='none'"> Done </button>
     </div>
 
