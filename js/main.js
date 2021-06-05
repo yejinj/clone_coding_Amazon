@@ -9,6 +9,14 @@ new Swiper('.myswiper', {
 	},
 });
 
+// 슬라이드를 사용하기 위해 myswiper을 초기화한다
+new Swiper('.myswiper2', {
+	infinite : true, 
+	navigation : {
+		nextEl : '.swiper-button-next', // 다음 버튼 클래스명
+		prevEl : '.swiper-button-prev', // 이번 버튼 클래스명
+	},
+});
 
 // 검색창에 무언가를 검색했을 때 문구가 등장
 var btn = document.getElementById('input-group-addon-button');
@@ -87,11 +95,6 @@ $(document).ready(function(){
 // 페이드인 효과
 $( document ).ready( function() {
 	$( 'div.fi' ).fadeIn( 2000 );
-  } );
-
-// 페이드아웃 효과
-$( document ).ready( function() {
-	$( 'div.fi' ).fadeOut( 6000 );
   } );
 
 // div 클릭하면 회원가입 섹션 등장

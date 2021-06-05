@@ -42,65 +42,46 @@
 
             <!-- 3. 검색창 -->
             <div id="searchbox">
-            <link href="https://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet" />
-            <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
-                <div class="row">
-                    <div class="col-md-2"></div>
-                    <div class="col-md-8">
-                <div class="input-group">
-                    <span class="input-group-addon">
-                    <select id="input-group-addon-select">
-                        <option>All departments</option>
-                        <option>Arts & Crafts</option>
-                        <option>Automative</option>
-                        <option>Beauty & Personal Care</option>
-                        <option>Books</option>
-                        <option>Computers</option>
-                        <option>Digital Music</option>
-                        <option> Electronics </option>
-                        <option> Kindle Store </option>
-                        <option> Prime Video </option>
-                        <option> Women's Fashion </option>
-                        <option> Men's Fashion </option>
-                        <option> Girl's Fashion </option>
-                        <option> Boy's Fashion </option>
-                        <option> Deals </option>
-                        <option> Health & Household </option>
-                        <option> Home & Kitchen</option>
-                        <option> Industrial & Scienticific </option>
-                        <option> Luggage </option>
-                        <option> Movies & TV </option>
-                        <option> Music, CDs & Vinyl </option>
-                        <option> Pet Supplies </option>
-                        <option> Software </option>
-                        <option> Sports & Outdoors </option>
-                        <option> Tools & Home Improvement </option>
-                        <option> Toys & Games </option>
-                        <option> Video Games </option>
-                    </select>
-                    </span>
-                    <input type="text" class="form-control" id="checkbox_form">
-                    <span class="input-group-addon" style="background-color: #FFBD66;">
-                        <button>
-                            <img src="./images/searchbar.JPG" id="input-group-addon-button">
-                        </button>
-                    </span>
-                </div>
-                </div>
-                
-                </div>
+                <select id="searchbox_select">
+                    <option>All departments</option>
+                    <option>Arts & Crafts</option>
+                    <option>Automative</option>
+                    <option>Beauty & Personal Care</option>
+                    <option>Books</option>
+                    <option>Computers</option>
+                    <option>Digital Music</option>
+                    <option> Electronics </option>
+                    <option> Kindle Store </option>
+                    <option> Prime Video </option>
+                    <option> Women's Fashion </option>
+                    <option> Men's Fashion </option>
+                    <option> Girl's Fashion </option>
+                    <option> Boy's Fashion </option>
+                    <option> Deals </option>
+                    <option> Health & Household </option>
+                    <option> Home & Kitchen</option>
+                    <option> Industrial & Scienticific </option>
+                    <option> Luggage </option>
+                    <option> Movies & TV </option>
+                    <option> Music, CDs & Vinyl </option>
+                    <option> Pet Supplies </option>
+                    <option> Software </option>
+                    <option> Sports & Outdoors </option>
+                    <option> Tools & Home Improvement </option>
+                    <option> Toys & Games </option>
+                    <option> Video Games </option>
+                </select>
+                <input type="text" id="searchbox_input">
+                <button id="searchbox_btn">
+                    <img src="./images/searchbar.JPG" id="searchbox_btn_img">
+                </button>
             </div>
-        </div>
-        
-
-        <!-- 상단 헤더에서 검색창을 제외한 부분은 오른쪽으로 정렬 -->
-        <div id="rightalign">
 
             <!-- 4. 언어 -->
             <div id="language" style="cursor: pointer;" class="hovereffect" onmouseover="view_language(true)" onmouseout="view_language(false)" onclick="location.href='https://www.amazon.com/gp/customer-preferences/select-language/ref=topnav_lang_ais?preferencesReturnUrl=%2F'">
-                    <a>
-                        <img src="./images/language.JPG" id="language-image">
-                    </a>
+                <a>
+                    <img src="./images/language.JPG" id="language-image">
+                </a>
             </div>
 
             <!-- 5. Account & Lists -->
@@ -110,15 +91,13 @@
                     Hello, Sign in<br>
                     <b>Accounts & Lists</b>                
             </div>
-                
+            
             <!--6. Returns & Orders -->
             <div id="returnsAndOrders" style="cursor: pointer;" class="hovereffect" >
                     <a href="https://www.amazon.com/ap/signin?clientContext=132-9349820-5691738&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fyour-orders%2Forders%2Fref%3Dyo_oh_gp_to_ov%3Fref_%3Dnav_orders_first%26_encoding%3DUTF8&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&marketPlaceId=ATVPDKIKX0DER&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=usflex&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.pape.max_auth_age=900&siteState=clientContext%3D145-0505373-6595463%2CsourceUrl%3Dhttps%253A%252F%252Fwww.amazon.com%252Fyour-orders%252Forders%252Fref%253Dyo_oh_gp_to_ov%253Fref_%253Dnav_orders_first%2526_encoding%253DUTF8%2Csignature%3Do0etbTMxWUKcj6Ck0MUf2NG0WK0j3D">
                     </a>
-                    <font size = "2" color="white">
-                        Returns<br>
-                        <b>& Orders</b>
-                    </font>
+                    Returns<br>
+                    <b>& Orders</b>
             </div>
 
             <!-- 7. Cart -->
@@ -192,9 +171,9 @@
                     <a class="hovereffect" href="https://www.amazon.com/gift-cards/b/?ie=UTF8&node=2238192011&ref_=nav_cs_gc_4fb606b1a14b44e4823e00c03fc71f47" style="color:white; padding: 3px;">Gift Cards</a>&nbsp;&nbsp;&nbsp;
                     <a class="hovereffect" href="https://www.amazon.com/b/?_encoding=UTF8&ld=AZUSSOA-sell&node=12766669011&ref_=nav_cs_sell_9321d964d1ab428b8d83e204c043fc01" style="color:white; padding: 3px;">Sell</a>&nbsp;&nbsp;&nbsp;
                     <a class="hovereffect" href="https://www.amazon.com/registries?_encoding=UTF8&redirect=true&ref_=nav_cs_registry_1c421982e26d4ec48ca364be68f201b5" style="color:white; padding: 3px;">Registry</a>&nbsp;&nbsp;&nbsp;
-                    <div id="amazonsResponse">
+                </div>
+                <div id="amazonsResponse">
                     <a class="hovereffect" href="https://www.aboutamazon.com/company-news/amazons-actions-to-help-employees-communities-and-customers-affected-by-covid-19/?_encoding=UTF8&token=GW&utm_content=COVID-19_roundup&utm_medium=swm&utm_source=gateway&utm_term=gw03162020&ref_=nav_swm_undefined&pf_rd_p=cf6260e5-93a9-45ad-9653-d1fc95751fac&pf_rd_s=nav-sitewide-msg-text-export&pf_rd_t=4201&pf_rd_i=navbar-4201&pf_rd_m=ATVPDKIKX0DER&pf_rd_r=C045QSGNV9P6E7SYVE0S" style="color:white; padding: 3px;">Amazon's response to COVID-19</a>
-                    </div>
                 </div>
             </div>
         </div>
@@ -203,9 +182,9 @@
 
 <!-- HIDDEN DIV, 1 ~ 4 -->
 <div class="hiddenDiv">
-    <div class="singo_view" id="deliver_button">
-        <div id="btn_view_01">
-        <h4> <b><br> &nbsp;&nbsp; Choose your location </b></h4><br><br>
+    <div class="hidden_div_1" id="deliver_button">
+        <div id="hidden_div_1_font">
+        <h4> <b><br>  Choose your location </b></h4><br><br>
         </div>
 
         <font id="deliver_button_font"> Delivery options and delivery speeds may vary for different locations </font><br>
@@ -310,28 +289,24 @@
         </div>
     </div>
 
-    <!-- 서서히 나타났다가 사라지는 div -->
     <div class="fi">
         <button id="fi-btn" onclick="location.href='https://www.amazon.com/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3Fref_%3Dnav_custrec_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&' ">
         Sign in </button><br> 
         New customer?
 
         <a href="https://www.amazon.com/ap/register?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3F_encoding%3DUTF8%26ref_%3Dnav_custrec_newcust&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&">
-        <font style="color: #3da7d1;">Start here.</font></a>
-    </div>
+        <font style="color: #3da7d1;">Start here.</font></a></div>
 </div>
 
 <!-- LAYOUT, SECTION 1 ~ 4 -->
 <div class="layout">
     <!-- SECTION 1-->
     <div class="section01"><b>
-
         <!-- 슬라이드 기본 설정 -->
         <!-- 슬라이드가 넘어갈 수 있도록 스타일시트, 이미지, 스크립트를 차례로 삽입한다
             스와이퍼 사이트를 소스로 걸어두면 swiper로 슬라이드를 만들수있다 -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
-        <!-- 슬라이드 이미지를 삽입 -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
         <!-- 클릭했을 때 넘어가도록 스크립트를 작성한다. swiper-container > swiper-wrapper > swiper-slide 순으로 속성을 지정해야 슬라이드가 제대로 작동한다  -->
         <div class="swiper-container myswiper">
             <div class="swiper-wrapper">
@@ -350,31 +325,31 @@
     <!-- SECTION 2 -->
     <div class="section02">
         <div id="sec02box01">
-            <h4><b>Find your ideal</b></h4>
+            <h3>Find your ideal</h3>
             <a href="https://www.amazon.com/b?node=16225007011&pf_rd_r=K0EFJMRDV25H536WJ0YS&pf_rd_p=a13f1949-dc1c-4090-9236-ef9627cd9724&pd_rd_r=7c60f949-73aa-4164-931e-41277b403ad3&pd_rd_w=8OUi2&pd_rd_wg=I12Zw&ref_=pd_gw_unk">
             <img src="./images/sec2pic1.JPG" class="section02-image"><br>
-            <h5>See more</h5>
+            See more
             </a>
         </div>
 
         <div id="sec02box02">
-            <h4><b>Computers & Accessories</b></h4>
+            <h3>Computers & Accessories</h3>
             <a href="https://www.amazon.com/b?node=16225007011&pf_rd_r=XTXXFF2WHRFJW7RDB25Q&pf_rd_p=a13f1949-dc1c-4090-9236-ef9627cd9724&pd_rd_r=90eab18f-8d6c-4fe0-86d5-d5da15f95cc9&pd_rd_w=VcpXw&pd_rd_wg=fDiSw&ref_=pd_gw_unk">
             <img src="./images/sec2pic2.JPG" class="section02-image"><br>
-            <h5>See more</h5>
+            See more
             </a>
         </div>
 
         <div id="sec02box03">
-            <h4><b>Beauty picks</b></h4>
+            <h3>Beauty picks</h3>
             <a href="https://www.amazon.com/b/?node=16225006011&pf_rd_r=K0EFJMRDV25H536WJ0YS&pf_rd_p=4a5ac24a-2f14-4296-8a03-0c034c0a7904&pd_rd_r=7c60f949-73aa-4164-931e-41277b403ad3&pd_rd_w=9puqs&pd_rd_wg=I12Zw&ref_=pd_gw_unk">
             <img src="./images/sec2pic3.JPG" class="section02-image"><br>
-            <h5>See more</h5>
+            See more
             </a>
         </div>
 
         <div id="sec02box04-01">
-                <h4><b>Sign in for the best experience</b></h4><br><br>
+                <h3>Sign in for the best experience</h3><br><br>
                 <div onclick="location.href = 'https://www.amazon.com/ap/signin?openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fref%3Dgw_sgn_ib&openid.assoc_handle=usflex&openid.pape.max_auth_age=0&pf_rd_r=ZXM3XE2HHSAM9FYFS3D1&pf_rd_p=93836207-c6d5-4b80-b256-29d2e4fa4306&pd_rd_r=5bf89c43-62c1-42a9-8637-a3430e8b7f24&pd_rd_w=wdC3h&pd_rd_wg=PrOYz&ref_=pd_gw_unk'">
                 <button id="sec02box04-01-button" class="hovereffect2">
                 <a style="color: black; text-decoration: none;">
@@ -388,23 +363,23 @@
         </div>
 
         <div id="sec02box05">
-            <h4><b>Shop by Category</b></h4>
+            <h3>Shop by Category</h3>
             <a href="https://www.amazon.com/b?node=16225005011&pf_rd_r=8DX63B2E64MB7D0Q2CBG&pf_rd_p=e5b0c85f-569c-4c90-a58f-0c0a260e45a0&pd_rd_r=7f3ec7f8-d9c0-4da2-8df3-98f286536ee1&pd_rd_w=qDY5I&pd_rd_wg=goFK4&ref_=pd_gw_unk">
             <img src="./images/sec2pic5.JPG" class="section02-image"><br>
-            <h5>Shop now</h5>
+            Shop now
             </a>
         </div>
         
         <div id="sec02box06">
-            <h4><b>Amazon Basics</b></h4>
+            <h3>Amazon Basics</h3>
             <a href="https://www.amazon.com/s?k=amazonbasics&pd_rd_r=7f3ec7f8-d9c0-4da2-8df3-98f286536ee1&pd_rd_w=Pjsfc&pd_rd_wg=goFK4&pf_rd_p=9349ffb9-3aaa-476f-8532-6a4a5c3da3e7&pf_rd_r=8DX63B2E64MB7D0Q2CBG&ref=pd_gw_unk">
             <img src="./images/sec2pic6.JPG" class="section02-image"><br>
-            <h5>See more</h5>
+            See more
             </a>
         </div>
 
         <div id="sec02box07">
-            <h4><b>Shop top categories</b></h4>
+            <h3>Shop top categories</h3>
             
             <div id="sec02box0701">
                 <a href="https://www.amazon.com/b?node=16225007011&pf_rd_r=CYYEQ1Q7RXV3KZCM63E6&pf_rd_p=e5b0c85f-569c-4c90-a58f-0c0a260e45a0&pd_rd_r=acb8390d-c811-4d0c-893d-95377f0b4cf8&pd_rd_w=nt8Wu&pd_rd_wg=FZuAt&ref_=pd_gw_unk">
@@ -429,17 +404,16 @@
                 <img src="./images/sec2part7-4.JPG" class="section02-image-02"><br>
                 </a>
             </div>
-            <a id="click-each-of-them" href="https://www.amazon.com/b?node=17938598011&pf_rd_r=S067HDBY13851MDCKHXP&pf_rd_p=e5b0c85f-569c-4c90-a58f-0c0a260e45a0&pd_rd_r=b98f9f93-03c9-41fe-878b-b41b81c02ce9&pd_rd_w=M51oW&pd_rd_wg=gF7Tu&ref_=pd_gw_unk">
-                <h5> Click each of them !<br><br><br><br><br>
-                    Shop Now</h5>
+            <a href="https://www.amazon.com/b?node=17938598011&pf_rd_r=S067HDBY13851MDCKHXP&pf_rd_p=e5b0c85f-569c-4c90-a58f-0c0a260e45a0&pd_rd_r=b98f9f93-03c9-41fe-878b-b41b81c02ce9&pd_rd_w=M51oW&pd_rd_wg=gF7Tu&ref_=pd_gw_unk">
+                Shop Now
             </a>
         </div>
 
         <div id="sec02box08">
-            <h4><b>Get fit at home</b></h4>
+            <h3>Get fit at home</h3>
             <a href="https://www.amazon.com/b?node=16225014011&pf_rd_r=2VDPNW7ZD0W6K8BW8H3S&pf_rd_p=152091c3-ff04-4c57-8721-f1423f1e428d&pd_rd_r=43eac8c5-9926-4a59-8664-a38b0024b9b3&pd_rd_w=ZJEbm&pd_rd_wg=aU9i0&ref_=pd_gw_unk">
-            <img src="./images/sec2pic8.JPG" id="sec02box08-image"><br>
-            <h5>Explore now</h5>
+            <img src="./images/sec2pic8.JPG" class="section02-image"><br>
+            Explore now
             </a>
         </div>
 
@@ -453,46 +427,46 @@
         <a href="https://www.amazon.com/b?ie=UTF8&node=20338496011&ref=aistrustseemore&pf_rd_r=XTH3DT7P3XKY8NH45FF4&pf_rd_p=2286c657-220a-424c-866a-53ed3062937a&pd_rd_r=b58c862a-d015-4784-ac96-e9ebab56c189&pd_rd_w=g9qgb&pd_rd_wg=6TPuz&ref_=pd_gw_unk">
         click to learn more
         </a><br>&nbsp;<br>
-        <div class="swiper-container2">
+        <div class="swiper-container2 myswiper2">
             <div class="swiper-wrapper">
                 <div class="swiper-slide swiper-slide-active">
                     <a href="https://www.amazon.com/gp/customer-preferences/select-language/ref=aistrust2?pf_rd_r=JSJVJVPHZXJQCNXBSA36&pf_rd_p=2286c657-220a-424c-866a-53ed3062937a&pd_rd_r=aa1d3718-d9fe-4813-bce9-44ce68ec44b7&pd_rd_w=nVaXH&pd_rd_wg=5NxkY&ref_=pd_gw_unkhttps://www.amazon.com/gp/customer-preferences/select-language/ref=aistrust2?pf_rd_r=JSJVJVPHZXJQCNXBSA36&pf_rd_p=2286c657-220a-424c-866a-53ed3062937a&pd_rd_r=aa1d3718-d9fe-4813-bce9-44ce68ec44b7&pd_rd_w=nVaXH&pd_rd_wg=5NxkY&ref_=pd_gw_unk">
-                        <img src="./images/icon_slide (1).jpg" id="icon_slide_01">
+                        <img src="./images/icon_slide_1.jpg" id="icon_slide_01">
                     </a>
                 </div>
 
                 <div class="swiper-slide swiper-slide-active">
                     <a href="https://www.amazon.com/gp/customer-preferences/select-currency/ref=aistrust3?pf_rd_r=JSJVJVPHZXJQCNXBSA36&pf_rd_p=2286c657-220a-424c-866a-53ed3062937a&pd_rd_r=aa1d3718-d9fe-4813-bce9-44ce68ec44b7&pd_rd_w=nVaXH&pd_rd_wg=5NxkY&ref_=pd_gw_unk">
-                        <img src="./images/icon_slide (2).jpg" id="icon_slide_02">
+                        <img src="./images/icon_slide_2.jpg" id="icon_slide_02">
                     </a>
                 </div>
 
                 <div class="swiper-slide swiper-slide-active">
                     <a href="https://www.amazon.com/gp/help/customer/display.html?nodeId=201132710&ref=aistrust4&pf_rd_r=JSJVJVPHZXJQCNXBSA36&pf_rd_p=2286c657-220a-424c-866a-53ed3062937a&pd_rd_r=aa1d3718-d9fe-4813-bce9-44ce68ec44b7&pd_rd_w=nVaXH&pd_rd_wg=5NxkY&ref_=pd_gw_unk">
-                        <img src="./images/icon_slide (3).jpg" id="icon_slide_03">
+                        <img src="./images/icon_slide_3.jpg" id="icon_slide_03">
                     </a>
                 </div>
 
                 <div class="swiper-slide swiper-slide-active">
                     <a href="https://www.amazon.com/gp/help/customer/display.html/ref=aistrust5?ie=UTF8&nodeId=201910710&pf_rd_r=JSJVJVPHZXJQCNXBSA36&pf_rd_p=2286c657-220a-424c-866a-53ed3062937a&pd_rd_r=aa1d3718-d9fe-4813-bce9-44ce68ec44b7&pd_rd_w=nVaXH&pd_rd_wg=5NxkY&ref_=pd_gw_unk">
-                        <img src="./images/icon_slide (4).jpg" id="icon_slide_04">
+                        <img src="./images/icon_slide_4.jpg" id="icon_slide_04">
                     </a>
                 </div>
 
                 <div class="swiper-slide swiper-slide-active">
                     <a href="https://www.amazon.com/ap/signin?_encoding=UTF8&accountStatusPolicy=P1&openid.assoc_handle=usflex&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fgp%2Fcss%2Forder-history%3Fie%3DUTF8%26pd_rd_r%3Daa1d3718-d9fe-4813-bce9-44ce68ec44b7%26pd_rd_w%3DnVaXH%26pd_rd_wg%3D5NxkY%26ref_%3Dpd_gw_unk&pageId=webcs-yourorder&showRmrMe=1">
-                        <img src="./images/icon_slide (5).jpg" id="icon_slide_05">
+                        <img src="./images/icon_slide_5.jpg" id="icon_slide_05">
                     </a>
                 </div>
 
                 <div class="swiper-slide swiper-slide-active">
                     <a href="https://www.amazon.com/gp/help/customer/display.html?nodeId=508510&ref=aistrust7&pf_rd_r=JSJVJVPHZXJQCNXBSA36&pf_rd_p=2286c657-220a-424c-866a-53ed3062937a&pd_rd_r=aa1d3718-d9fe-4813-bce9-44ce68ec44b7&pd_rd_w=nVaXH&pd_rd_wg=5NxkY&ref_=pd_gw_unk">
-                        <img src="./images/icon_slide (6).jpg" id="icon_slide_06">
+                        <img src="./images/icon_slide_6.jpg" id="icon_slide_06">
                     </a>
                 </div>
             </div>
-            <div class="swiper-button-next swiper-button-black" style="margin-top: 1065px;"></div>
-            <div class="swiper-button-prev swiper-button-black" style="margin-top: 1065px;"></div>
+            <div class="swiper-button-next swiper-button-black" style="margin-top: 1140px;"></div>
+            <div class="swiper-button-prev swiper-button-black" style="margin-top: 1140px;"></div>
         
         </div>
     </div>
@@ -500,79 +474,71 @@
     <!-- SECTION 4 -->
     <div class="section04">
         <div id="sec04box01">
-            <h4><b>Comfy styles for her</b></h4>
+            <h3>Comfy styles for her</h3>
             
             <div id="sec04box0101" class="section04-basic-setting">
                 <a href="https://www.amazon.com/s?k=sweatshirts&i=fashion-womens-intl-ship&pd_rd_r=a3b9205b-cc8b-4a75-b421-4daf2620eda4&pd_rd_w=ktOTU&pd_rd_wg=tNKS8&pf_rd_p=1db13ac4-e486-438e-a9a5-dd6867e4ea95&pf_rd_r=4MAVE29V3W1KHPQ0W6PW&ref=pd_gw_unk">
-                <img src="./images/sec4part1-1.JPG" class="sec04-box04-image"><br>
+                <img src="./images/sec4part1-1.JPG" class="section02-image-02"><br>
                 </a>
             </div>
             
             <div id="sec04box0102" class="section04-basic-setting">
                 <a href="https://www.amazon.com/s?k=joggers&i=fashion-womens-intl-ship&pd_rd_r=a3b9205b-cc8b-4a75-b421-4daf2620eda4&pd_rd_w=ktOTU&pd_rd_wg=tNKS8&pf_rd_p=1db13ac4-e486-438e-a9a5-dd6867e4ea95&pf_rd_r=4MAVE29V3W1KHPQ0W6PW&ref=pd_gw_unk">
-                <img src="./images/sec4part1-2.JPG" class="sec04-box04-image"><br>
+                <img src="./images/sec4part1-2.JPG" class="section02-image-02"><br>
                 </a>
             </div>
             
             <div id="sec04box0103" class="section04-basic-setting">
                 <a href="https://www.amazon.com/s?k=cardigans&i=fashion-womens-intl-ship&pd_rd_r=a3b9205b-cc8b-4a75-b421-4daf2620eda4&pd_rd_w=ktOTU&pd_rd_wg=tNKS8&pf_rd_p=1db13ac4-e486-438e-a9a5-dd6867e4ea95&pf_rd_r=4MAVE29V3W1KHPQ0W6PW&ref=pd_gw_unk">
-                <img src="./images/sec4part1-3.JPG" class="sec04-box04-image"><br>
+                <img src="./images/sec4part1-3.JPG" class="section02-image-02"><br>
                 </a>
             </div>
             
             <div id="sec04box0104" class="section04-basic-setting">
                 <a href="https://www.amazon.com/s?k=tees&i=fashion-womens-intl-ship&pd_rd_r=a3b9205b-cc8b-4a75-b421-4daf2620eda4&pd_rd_w=ktOTU&pd_rd_wg=tNKS8&pf_rd_p=1db13ac4-e486-438e-a9a5-dd6867e4ea95&pf_rd_r=4MAVE29V3W1KHPQ0W6PW&ref=pd_gw_unk">
-                <img src="./images/sec4part1-4.JPG" class="sec04-box04-image"><br>
+                <img src="./images/sec4part1-4.JPG" class="section02-image-02"><br>
                 </a>
             </div>
             <a href="https://www.amazon.com/gp/browse.html?node=16225018011&pf_rd_r=4MAVE29V3W1KHPQ0W6PW&pf_rd_p=1db13ac4-e486-438e-a9a5-dd6867e4ea95&pd_rd_r=a3b9205b-cc8b-4a75-b421-4daf2620eda4&pd_rd_w=ktOTU&pd_rd_wg=tNKS8&ref_=pd_gw_unk">
-                <h5> Click each of them !<br><br><br><br><br>
-                    See More</h5>
+                See More
             </a>
         </div>
 
         <div id="sec04box02" class="section04-basic-setting">
-            <h4><b>Shop Laptops & Tablets</b></h4>
+            <h3>Shop Laptops & Tablets</h3>
             <a href="https://www.amazon.com/s?bbn=16225007011&rh=n%3A16225007011%2Cn%3A13896617011&dc&fst=as%3Aoff&pd_rd_r=ef6a64fa-7b9b-41b8-9d0c-8f2f39640163&pd_rd_w=fYopd&pd_rd_wg=aHEoz&pf_rd_p=f95a41bf-1f82-4fca-9b37-32faaf59dd61&pf_rd_r=7MEYN0HSSZ9FM1XXE3HZ&qid=1602294815&rnid=16225007011&ref=pd_gw_unk">
             <img src="./images/sec4pic2.JPG" class="sec04-box04-image02"><br>
-            <h5>See more</h5>
+            See more
             </a>
         </div>
 
         <div id="sec04box03" class="section04-basic-setting">
-            <h4><b>Explore home bedding</b></h4>
+            <h3>Explore home bedding</h3>
             <a href="https://www.amazon.com/s?k=Home+bedding&i=kitchen-intl-ship&pd_rd_r=ef6a64fa-7b9b-41b8-9d0c-8f2f39640163&pd_rd_w=poZKb&pd_rd_wg=aHEoz&pf_rd_p=16ffc777-bfb6-4b2f-a079-eed4114eff9e&pf_rd_r=7MEYN0HSSZ9FM1XXE3HZ&ref=pd_gw_unk">
             <img src="./images/sec4pic3.JPG" class="sec04-box04-image02"><br>
-            <h5>See more</h5>
+            See more
             </a>
         </div>
 
         <div id="sec04box04" class="section04-basic-setting">
-            <h4><b>Create with strip lights</b></h4>
+            <h3>Create with strip lights</h3>
             <a href="https://www.amazon.com/s?k=strip+lighting&pd_rd_r=ef6a64fa-7b9b-41b8-9d0c-8f2f39640163&pd_rd_w=nvULw&pd_rd_wg=aHEoz&pf_rd_p=38228efa-5278-4c08-9c74-2a33c1be7ce5&pf_rd_r=7MEYN0HSSZ9FM1XXE3HZ&ref=pd_gw_unk">
             <img src="./images/sec4pic4.JPG" class="sec04-box04-image02"><br>
-            <h5>Shop Now</h5>
+            Shop Now
             </a>
         </div>
         &nbsp;&nbsp;
     </div>
 </div>
 
+
 <!-- FOOTER, SECTION 1 ~ 4  -->
 <footer class="footer">
     <font color="white">
-    <div id="backToTop" class="btn backToTop">
-        <a style="color: white;">
-        <b> Back to top </b></a>
-    </div>
-
-<!--     
-    <div id="bgcolor1">
-        <a>
-            <img src="./images/bgcolor1.PNG" id="bgcolor1-image">
-        </a>
-    </div> -->
-
+        <div id="backToTop" class="btn backToTop" onclick="window.scrollTo(0,0);">
+            <a style="color: white;">
+            <b> Back to top </b></a>
+        </div>
     <div class="footer-section01">
         <div id="fs01-01">
             <br><b>Get to Know Us</b><br><br>
@@ -643,8 +609,8 @@
 
         <div id="fs01-03">
         
-            <br><b>Amazon Payment Products</b><br>
-        
+        <br><b>Amazon Payment Products</b><br><br>
+    
 
         <a style="color: white;" href="https://www.amazon.com/dp/B07984JN3L?plattr=ACOMFO&ie=UTF-8">
             Amazon Business Card<br>
@@ -664,7 +630,7 @@
         </div>
 
         <div id="fs01-04">
-        <br><b>Let Us Help You</b><br>
+        <br><b>Let Us Help You</b><br><br>
 
         <a style="color: white;" href="https://www.amazon.com/gp/help/customer/display.html?nodeId=GDFU3JS5AL6SYHRD&ref_=footer_covid">
             Amazon and COVID-19<br>
