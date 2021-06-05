@@ -56,7 +56,7 @@ header{
 }
 
 #logo{
-	margin-top: -15px;
+	margin-top: -35px;
 	display: inline-block;
 	vertical-align: middle;
 }
@@ -73,22 +73,23 @@ header{
 }
 
 #locationImage{
-	width:22;
-	height:30;
+	margin-top: -15px;
+	width: 22;
+	height: 30;
 	vertical-align:middle;
 }
 
 #delivery_section_in_header{
-	padding: 5px;
+	padding-top: 10px;
 	display: inline-block;
-	margin-top: 15px;
+	margin-top: 10px;
 }
 
 #delivery{
 	display: inline-block;
 	position: relative;
 	font-size: 13px;
-	line-height: 20%;
+	line-height: 65%;
 }
 
 #language_chosen{
@@ -97,7 +98,7 @@ header{
 
 #searchbox{
 	position: relative;
-	margin-top: -45px;
+	margin-top: -47px;
 	margin-left: 30px;
 	left: 10px;
 }
