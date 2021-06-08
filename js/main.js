@@ -9,7 +9,6 @@ new Swiper('.myswiper', {
 	},
 });
 
-// 슬라이드를 사용하기 위해 myswiper을 초기화한다
 new Swiper('.myswiper2', {
 	infinite : true, 
 	navigation : {
@@ -30,7 +29,6 @@ var mouseover = document.getElementById('whereto');
 mouseover.mouseover = function() {
 }
 
-
 // 사이드바 func 지정(여닫기)
 function openNav() {
 	document.getElementById("mySidenav").style.width = "300px";
@@ -40,7 +38,7 @@ function closeNav() {
 	document.getElementById("mySidenav").style.width = "0";
 }
 
-// 두번째 슬라이드
+// 아이콘 슬라이드 설정
 var swiper = new Swiper('.swiper-container2', {
 	slidesPerView: 5,
 	navigation : {
@@ -49,29 +47,7 @@ var swiper = new Swiper('.swiper-container2', {
 	},
 	});
 
-
-// 백투탑 (scroll to Top)버튼 속성 지정
-const $backToTop = document.querySelector(".backToTop");
-
-$backToTop.addEventListener("click", function () {
-	window.scroll({
-	  top: 0,
-	  left: 0,
-	  behavior: "smooth",
-	});
-  });
-
-// 클릭하면 등장하는 div No.1
-function view(opt) {
-	if(opt) {
-		hidden_div.style.display = "block";
-	}
-	else {
-		hidden_div.style.display = "none";
-	}
-  }
-
-// 클릭하면 등장하는 div (언어)
+// 헤더 상단의 미국 국기 마우스오버시 숨겨졌던 DIV 등장
 function view_language(opt) {
 	if(opt) {
 		hidden_div_language.style.display = "block";
@@ -81,21 +57,15 @@ function view_language(opt) {
 	}
 }
 
-// html dom 이 다 로딩된 후 실행된다.
-$(document).ready(function(){
-
-	// memu 클래스 바로 하위에 있는 a 태그를 클릭했을때
-	$(".menu>a").click(function(){
-		
-		// 클릭되었을 때가 아니면 숨기기
-		$(this).next("ul").toggleClass("hide");
-	});
-});
-
-// 페이드인 효과
-$( document ).ready( function() {
-	$( 'div.fi' ).fadeIn( 2000 );
-  } );
+// 헤더 상단의 hello, sign in 마우스오버시 숨겨졌던 DIV 등장
+function view_sign(opt) {
+	if(opt) {
+		hidden_div_sign.style.display = "block";
+	}
+	else {
+		hidden_div_sign.style.display = "none";
+	}
+  }
 
 // div 클릭하면 회원가입 섹션 등장
 function ClickFunction(idMyDiv){
@@ -108,17 +78,15 @@ input.oninput = function() {
 	result.innerHTML = "put an exact value";
 };
 
-// 첨가
+// zip code input 박스에 무엇인가 입력하면 글자 등장
 function printName()  {
-	const btn_view_03 = document.getElementById('btn_view_03').value;
-	document.getElementById("result").innerText = "! Please enter a valid US zip code";
-  }
+	const enter_code = document.getElementById('enter_code').value;
+	document.getElementById("code_alert").innerText = "! Please enter a valid US zip code";
+}
 
-  function language_function(e) {
-	// 선택된 데이터 가져오기
-	const value = e.value;
-	
-	// 데이터 출력
-	document.getElementById('language_chosen').innerText
-	  = value;
-  }
+// 체크박스에서 선택된 location를 헤더 상단에 표시
+function location_function(e) {
+const value = e.value;
+document.getElementById('location_chosen').innerText
+	= value;
+}

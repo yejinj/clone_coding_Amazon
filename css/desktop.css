@@ -175,7 +175,7 @@ header{
 	background-color: white;
 	overflow: hidden;
 	transition: 0.5s;
-	padding-top: 30px;
+	padding: 30px 0px 0px 0px;
 }
 
 .sidenav .closebtn {
@@ -213,7 +213,13 @@ li {
 	background-color: #232F3E;
 	color: white;
 	height: 80px;
-	margin-top: -50px;
+	margin-top: -30px;
+}
+
+#menu-sign-in-img{
+	vertical-align: middle;
+	width: 45px;
+	height: 40px;
 }
 
 #menu-sign-in-2{
@@ -239,8 +245,8 @@ li {
 }
 
 #notsideBar{
-	display:flex; /* 내용을 중앙정렬 하기위해 flex 사용 */
-	align-items:center; /* 위아래 기준 중앙정렬 */
+	display: flex;
+	align-items: center;
 	margin-left: 70px;
 	padding-top: 3px;
 }
@@ -248,6 +254,9 @@ li {
 #amazonsResponse{
 	margin-top: -20px;
 	float: right;
+	margin-right: 10px;
+	float: right;
+	text-align: center;
 }
 
 select {
@@ -260,99 +269,6 @@ button {
 	padding: 6px 12px;
 	background: transparent;
 	border: none;
-}
-
-#amazonsResponse{
-	margin-right: 10px;
-	float: right;
-	text-align: center;
-}
-
-/* 회원가입 탭에 마우스오버시 숨겨졌던 div 등장 */
-
-#hidden_div{
-	font-family: "amazon-font";
-	position: absolute;
-	z-index:2;
-	display:none;
-	margin: -32px 0px 0px 850px;
-}
-
-#hidden_div_lower_level{
-	text-align: center;
-	border-radius: 5px;
-	width: 500px;
-	height: 350px;
-	background:white;
-	font: black;
-}
-
-#hidden_div_button{
-	background-color: #F0C454;
-	border-radius: 3px;
-	width: 270px;
-	margin-top: 20px;
-}
-
-#hidden_div_button_a{
-	color: black;
-	text-decoration: none;
-}
-
-#hidden_div_lower_level_left{
-	float: left;
-	margin-left: 30px;
-}
-
-#hidden_div_lower_level_right{
-	float: right;
-	margin-right: 30px;
-}
-
-
-.hidden_div_lower_level_font{
-	font-size: 15x;
-}
-
-#hidden_div_language{
-	line-height: 170%;
-	font-family: "amazon-font";
-	position: absolute;
-	z-index:2;
-	display:none;
-	margin: -32px 0px 0px 1150px;
-}
-
-#hidden_div_language_lower_level{
-	padding: 20px 0px 0px 10px;
-	border-radius: 5px;
-	width: 250px;
-	height: 500px;
-	background:white;
-	font: black;
-	font-size: 15px;
-	border: 1px;
-}
-
-.hidden_language_font{
-	color: #405096;
-	font-size: 11px;
-}
-
-.hidden_language_font_2{
-	color: #405096;
-	font-size: 12px;
-}
-
-#us_logo{
-	width:30px;
-	height:30px;
-	margin-left: -10px
-}
-
-.hidden_language_font_3{
-	color: rgb(59, 59, 117);
-	font-size: smaller;
 }
 
 /* 레이아웃*/
@@ -536,6 +452,197 @@ a{
 	height: 330px;
 }
 
+/* HIDDEN DIV */
+/* 클릭이나 마우스오버를 해야 보이는 DIV들에 대한 코드 */
+
+/* deliver DIV를 클릭했을 때 보이는 나오는 DIV 설정 */
+.hidden_div{
+	font-family: "amazon-font";
+}
+
+.hidden_div_deliver{
+	margin: -200px 0px 0px 570px;
+	line-height: 170%;
+	box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.5);
+	overflow: hidden;
+	border-radius: 10px;
+	padding: 10px 20px 20px 20px;
+	z-index: 9998;
+	position: absolute;
+	width: 300px;
+	height: 400px;
+	background-color: white;
+	display: none;
+}
+
+#deliver_hidden_font{
+	font-size: 20px;
+	overflow: hidden;
+	margin: -40px 0px 0px -20px;
+	padding: 0px 0px 20px 20px;
+	width: 350px;
+	height: 70px;
+	background-color: #F0F0F0;
+}
+
+#sign_in{
+	font-size: 15px;
+	border-radius: 5px;
+	background-color: #F0C454;
+	width: 300px;
+	height: 30px;
+}
+
+.or_enter {
+	display: flex;
+	flex-basis: 100%;
+	align-items: center;
+	color: rgba(0, 0, 0, 0.35);
+	font-size: 12px;
+	margin: 8px 0px;
+  }
+
+.or_enter::before, .or_enter::after {
+	content: "";
+	flex-grow: 1;
+	background: rgba(0, 0, 0, 0.35);
+	height: 1px;
+	font-size: 0px;
+	line-height: 0px;
+	margin: 0px 16px;
+  }
+
+#enter_code{
+	margin-top: 2px;
+	width: 200px;
+	float: left;
+}
+
+#code_alert{
+	color: #CC1C39
+}
+
+#apply{
+	float: left;
+	width: 80px;
+	margin: 0px 0px 0px 10px;
+	padding: 0x 15px 0px 15px;
+	box-shadow: 0 1px 1px 0 rgba(141, 141, 141, 0.5);
+	background-color: #E3E6E6;
+	border-radius: 3px;
+}
+
+#ship_outside{
+	border: 1px solid rgb(146, 146, 146);
+	width: 294px;
+	height: 50px;
+}
+
+#delivery_options{
+	color: gray;
+	font-size: 12px;
+}
+
+#deliver_button_font_2{
+	color: rgb(173, 29, 29);
+	font-size: 14px;
+}
+
+#done{
+	width: 80px;
+	margin: 10px 0px 0px 214px;
+	padding: 10px 10px 10px 10px;
+	box-shadow: 0 2px 2px 0 rgba(141, 141, 141, 0.5);
+	background-color: #F0C454;
+	border-radius: 3px;
+}
+
+/* 헤더 상단의 미국 국기 마우스오버시 숨겨졌던 DIV 등장 */
+#hidden_div_language{
+	line-height: 170%;
+	font-family: "amazon-font";
+	position: absolute;
+	z-index:2;
+	display:none;
+	margin: -290px 0px 0px 1130px;
+}
+
+#hidden_div_language_lower_level{
+	padding: 20px 0px 0px 10px;
+	border-radius: 5px;
+	width: 250px;
+	height: 500px;
+	background:white;
+	font: black;
+	font-size: 15px;
+	border: 1px;
+}
+
+.hidden_language_font{
+	color: #405096;
+	font-size: 11px;
+}
+
+.hidden_language_font_2{
+	color: #405096;
+	font-size: 12px;
+}
+
+#us_logo{
+	width:30px;
+	height:30px;
+	margin-left: -10px
+}
+
+.hidden_language_font_3{
+	color: rgb(59, 59, 117);
+	font-size: smaller;
+}
+
+/* 헤더 상단의 hello, sign in 마우스오버시 숨겨졌던 DIV 등장 */
+#hidden_div_sign{
+	margin: -290px 0px 0px 850px;
+	font-family: "amazon-font";
+	position: absolute;
+	z-index: 2;
+	display: none;
+}
+
+#hidden_div_sign_lower_level{
+	text-align: center;
+	border-radius: 5px;
+	width: 500px;
+	height: 350px;
+	background:white;
+	font: black;
+}
+
+#sign_in_btn{
+	background-color: #F0C454;
+	border-radius: 3px;
+	width: 270px;
+	margin-top: 20px;
+	color: black;
+	text-decoration: none;
+}
+
+#sign_hidden_left{
+	padding-top: 30px;
+	float: left;
+	margin-left: 30px;
+}
+
+#sign_hidden_right{
+	padding-top: 30px;
+	float: right;
+	margin-right: 30px;
+}
+
+
+.sign_hidden_font{
+	font-size: 15px;
+}
+
 
 /* FOOTER */
 
@@ -634,144 +741,4 @@ a{
 
 .fs04_set{
 	margin: 0px 30px 0px 30px;
-}
-
-/* 첨가 */
-div.fi{	
-	display: none;
-	/* font-family: "amazon-font";
-	padding: 15px;
-	padding-left: 10px;
-	padding-right: 10px;
-	text-align: center;
-	background-color: white;
-	position: absolute;
-	margin-left: 1200px;
-	margin-top: -35px;
-	font-size: 12px;
-	box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.5);
- */
-}
-
-.fi:after {
-	border-top:0px solid transparent;
-	border-left: 10px solid transparent;
-	border-right: 10px solid transparent;
-	border-bottom: 10px solid white;
-	content:"";
-	position: absolute;
-	top:-10px;
-	left:70px;
-}
-
-
-#fi-btn{
-	font-size: 15px;
-	border-radius: 5px;
-	background-color: #F0C454;
-	width: 100px;
-	height: 30px;
-}
-
-.hidden_div_1 {
-	overflow: scroll;
-	font-family: "amazon-font";
-	line-height: 170%;
-	box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.5);
-	overflow: hidden;
-	border-radius: 10px;
-	padding: 20px;
-	z-index: 9998;
-	position: absolute;
-	width: 300px;
-	height: 400px;
-	background-color: white;
-	margin: 10px 0px 0px 570px;
-	display: none;
-}
-
-#hidden_div_1_font{
-	font-size: 20px;
-	overflow: hidden;
-	margin: -40px 0px 0px -20px;
-	padding: 0px 0px 20px 20px;
-	width: 350px;
-	height: 70px;
-	background-color: #F0F0F0;
-}
-
-#btn_view_02{
-	font-size: 15px;
-	border-radius: 5px;
-	background-color: #F0C454;
-	width: 300px;
-	height: 30px;
-}
-
-.hr-sect {
-	display: flex;
-	flex-basis: 100%;
-	align-items: center;
-	color: rgba(0, 0, 0, 0.35);
-	font-size: 12px;
-	margin: 8px 0px;
-  }
-
-.hr-sect::before, .hr-sect::after {
-	content: "";
-	flex-grow: 1;
-	background: rgba(0, 0, 0, 0.35);
-	height: 1px;
-	font-size: 0px;
-	line-height: 0px;
-	margin: 0px 16px;
-  }
-
-#btn_view_03{
-	margin-top: 2px;
-	width: 200px;
-	float: left;
-}
-
-#btn_view_03::placeholder{
-	color: #bbbbbb;
-}
-
-#result{
-	color: #CC1C39
-}
-
-#apply{
-	float: left;
-	width: 80px;
-	margin: 0px 0px 0px 10px;
-	padding: 0x 15px 0px 15px;
-	box-shadow: 0 1px 1px 0 rgba(141, 141, 141, 0.5);
-	background-color: #E3E6E6;
-	border-radius: 3px;
-}
-
-#btn_view_04{
-	border: 1px solid rgb(146, 146, 146);
-	width: 294px;
-	height: 50px;
-}
-
-#deliver_button_font{
-	color: gray;
-	font-size: 12px;
-}
-
-#deliver_button_font_2{
-	color: rgb(173, 29, 29);
-	font-size: 14px;
-}
-
-#done{
-	width: 80px;
-	margin: 10px 0px 0px 214px;
-	padding: 10px 10px 10px 10px;
-	box-shadow: 0 2px 2px 0 rgba(141, 141, 141, 0.5);
-	background-color: #F0C454;
-	border-radius: 3px;
 }

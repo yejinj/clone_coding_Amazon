@@ -36,7 +36,7 @@
                 </div>
                 <div id="delivery_txt">
                     Deliver to<br>
-                    <b><div id="language_chosen"> Republic of Korea </div></b><br>
+                    <b><div id="location_chosen"> Republic of Korea </div></b><br>
                 </div>
             </div>
 
@@ -85,7 +85,7 @@
             </div>
 
             <!-- 5. Account & Lists -->
-            <div id="account_list" class="hovereffect" onmouseover="view(true)" onmouseout="view(false)" onclick="location.href='https://www.amazon.com/gp/customer-preferences/select-language/ref=topnav_lang_ais?preferencesReturnUrl=%2Fref%3Dnav_logo'">
+            <div id="account_list" class="hovereffect" onmouseover="view_sign(true)" onmouseout="view_sign(false)" onclick="location.href='https://www.amazon.com/gp/customer-preferences/select-language/ref=topnav_lang_ais?preferencesReturnUrl=%2Fref%3Dnav_logo'">
                     <a href="https://www.amazon.com/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3Fref_%3Dnav_ya_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&" style="color: white;">
                     </a>
                     Hello, Sign in<br>
@@ -124,7 +124,7 @@
                     <div id="mySidenav" class="sidenav" style="overflow: scroll;">
                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                     <div class="menu-sign-in"><b><br>
-                        <img src="./images/sign-in.JPG">
+                        <img src="./images/sign-in.JPG" id="menu-sign-in-img">
                         Hello, Sign In <br><br></b>
                     </div><br>
                         <div id="menu-sign-in-2">
@@ -156,7 +156,7 @@
                         English<br>
                         United States<br>
                         Customer Service<br>
-                        Sign In<br>
+                        Sign In<br><br>
                         </div>
                 </div>
                 
@@ -179,124 +179,6 @@
         </div>
     </font>
 </header>
-
-<!-- HIDDEN DIV, 1 ~ 4 -->
-<div class="hiddenDiv">
-    <div class="hidden_div_1" id="deliver_button">
-        <div id="hidden_div_1_font">
-        <h4> <b><br>  Choose your location </b></h4><br><br>
-        </div>
-
-        <font id="deliver_button_font"> Delivery options and delivery speeds may vary for different locations </font><br>
-
-        <button id="btn_view_02" onclick="location.href='https://www.amazon.com/ap/signin?_encoding=UTF8&openid.assoc_handle=usflex&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3F_encoding%3DUTF8%26path%3D%252F%26useRedirectOnSuccess%3D1'">
-            Sign in to see your addresses
-        </button><br>
-
-        <div class="hr-sect"> or enter a US zip code </div>
-
-        <input id="btn_view_03" placeholder="Enter zip code" onkeyup="printName()" autocomplete="off"> <button id="apply"> Apply </button>
-        <div id="result"></div>
-
-        <div class="hr-sect"> or </div>
-
-        <select id="btn_view_04" onchange="language_function(this)">
-            <option disabled> Ship outside the US </option>
-            <option> Republic of Korea </option>
-            <option> Argentina </option>
-            <option> Australia </option>
-            <option> Canada </option>
-            <option> China </option>
-            <option> Japan </option>
-            <option> Mexico </option>
-            <option> Singapore </option>
-            <option> United Kingdom </option>
-            <option> Afghanistan </option>
-            <option> Aland Islands </option>
-        </select>
-
-        <font style="color: brown;"> Try to Change Location </font>
-
-        <button id="done" onclick="this.parentElement.style.display='none'"> Done </button>
-    </div>
-
-    <!-- 마우스오버시 숨겨졌던 div 1 등장 -->
-    <div id="hidden_div">
-        <div id="hidden_div_lower_level">
-            <div>
-                <button id="hidden_div_button">
-                    <a id="hidden_div_button_a">
-                    Sign In</a> </button><br>
-                    new customer?
-                    <font style="color: rgb(134, 134, 190);"> start here </font><br>
-                        <div id="hidden_div_lower_level_left">
-                            <font class="hidden_div_lower_level_font"><b>Your Lists</b></font><br>
-                            Create a List<br>
-                            Find a List or Registry<br>
-                            AmazonSmile Charity Lists
-                        </div>
-                        <div id="hidden_div_lower_level_right">
-                            <font class="hidden_div_lower_level_font"><b>Your Account</b></font><br>
-                            Account<br>
-                            Orders<br>
-                            Recommendations<br>
-                            Browsing History<br>
-                            Watchlist<br>
-                            Video Purchases & Rentals<br>
-                            Kindle Unlimited<br>
-                            Content & Devices<br>
-                            Subscribe & Save Items<br>
-                            Memberships & Subscriptions<br>
-                            Music Library
-                        </div>
-                </div>
-        </div>
-    </div>
-
-    <!-- 마우스오버시 숨겨졌던 div 2 등장 -->
-    <div id="hidden_div_language">
-        <div id="hidden_div_language_lower_level">
-                Change Language
-                <font class="hidden_language_font"> Learn more </font><br>
-                <input type="checkbox">
-                English - EN
-                <hr style="color: black; border: 5;">
-                <input type="checkbox">
-                Español - ES <br>
-                <input type="checkbox">
-                简体中文 - ZH <br>
-                <input type="checkbox">
-                Deutsch - DE <br>
-                <input type="checkbox">
-                Português - PT <br>
-                <input type="checkbox">
-                繁體中文 - ZH <br>
-                <input type="checkbox">
-                한국어 - KO <br>
-                <input type="checkbox">
-                עברית - HE <br>
-                <input type="checkbox">
-                اللغة العربية - AR
-                <hr style="color: black;">
-                Change currency
-                <font class="hidden_language_font"> Learn more </font><br>
-                <hr style="color: black;">
-                $ - USD - U.S. Dollar
-                <font class="hidden_language_font_2"> Change </font> <br>
-                <img src="./images/us_logo.JPG" id="us_logo">
-                <font class="hidden_language_font_3">You are shopping on Amazon.com.</font><br>
-                <font class="hidden_language_font_4">Change country/region.</font>
-        </div>
-    </div>
-
-    <div class="fi">
-        <button id="fi-btn" onclick="location.href='https://www.amazon.com/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3Fref_%3Dnav_custrec_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&' ">
-        Sign in </button><br> 
-        New customer?
-
-        <a href="https://www.amazon.com/ap/register?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3F_encoding%3DUTF8%26ref_%3Dnav_custrec_newcust&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&">
-        <font style="color: #3da7d1;">Start here.</font></a></div>
-</div>
 
 <!-- LAYOUT, SECTION 1 ~ 4 -->
 <div class="layout">
@@ -536,6 +418,139 @@
             </a>
         </div>
         &nbsp;&nbsp;
+    </div>
+</div>
+
+<!-- HIDDEN DIV, 1 ~ 3 -->
+<div class="hidden_div">
+    <!-- 클릭이나 마우스오버를 해야 보이는 DIV들에 대한 코드 -->
+
+    <!-- deliver DIV를 클릭했을 때 보이는 나오는 DIV 설정 -->
+    <div class="hidden_div_deliver" id="deliver_button">
+        <div id="deliver_hidden_font">
+            <h4><b><br> Choose your location </b></h4><br><br>
+        </div>
+
+        <font id="delivery_options">
+            Delivery options and delivery speeds may vary for different locations
+        </font><br>
+
+        <button id="sign_in" onclick="location.href='https://www.amazon.com/ap/signin?_encoding=UTF8&openid.assoc_handle=usflex&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3F_encoding%3DUTF8%26path%3D%252F%26useRedirectOnSuccess%3D1'">
+            Sign in to see your addresses
+        </button><br>
+
+        <div class="or_enter">
+            or enter a US zip code
+        </div>
+
+        <input id="enter_code" onkeyup="printName()" autocomplete="off">
+
+        <button id="apply">
+            Apply
+        </button>
+
+        <!-- input 박스에 입력을 시작하면 경고 문자가 뜸 -->
+        <div id="code_alert"></div>
+
+        <!-- 지역을 선택하면, 헤더 상단의 지역명이 선택한 지역으로 변화 -->
+        <select id="ship_outside" onchange="location_function(this)">
+            <option disabled> Ship outside the US </option>
+            <option> Republic of Korea </option>
+            <option> Argentina </option>
+            <option> Australia </option>
+            <option> Canada </option>
+            <option> China </option>
+            <option> Japan </option>
+            <option> Mexico </option>
+            <option> Singapore </option>
+            <option> United Kingdom </option>
+            <option> Afghanistan </option>
+            <option> Aland Islands </option>
+        </select>
+
+        <font style="color: brown;"> Try to Change Location </font>
+
+        <!-- done 버튼을 누르면 div가 닫히게 설정 -->
+        <button id="done" onclick="this.parentElement.style.display='none'"> Done </button>
+    </div>
+
+    <!-- 헤더 상단의 미국 국기 마우스오버시 숨겨졌던 DIV 등장 -->
+    <div id="hidden_div_language">
+        <div id="hidden_div_language_lower_level">
+                Change Language
+                <font class="hidden_language_font">
+                    Learn more
+                </font><br>
+                <input type="checkbox">
+                English - EN
+                <hr style="color: black; border: 5;">
+                <input type="checkbox">
+                Español - ES <br>
+                <input type="checkbox">
+                简体中文 - ZH <br>
+                <input type="checkbox">
+                Deutsch - DE <br>
+                <input type="checkbox">
+                Português - PT <br>
+                <input type="checkbox">
+                繁體中文 - ZH <br>
+                <input type="checkbox">
+                한국어 - KO <br>
+                <input type="checkbox">
+                עברית - HE <br>
+                <input type="checkbox">
+                اللغة العربية - AR
+                <hr style="color: black;">
+                Change currency
+                <font class="hidden_language_font"> Learn more </font><br>
+                <hr style="color: black;">
+                $ - USD - U.S. Dollar
+                <font class="hidden_language_font_2"> Change </font> <br>
+                <img src="./images/us_logo.JPG" id="us_logo">
+                <font class="hidden_language_font_3">You are shopping on Amazon.com.</font><br>
+                <font class="hidden_language_font_4">Change country/region.</font>
+        </div>
+    </div>
+
+    <!-- 헤더 상단의 hello, sign in 마우스오버시 숨겨졌던 DIV 등장 -->
+    <div id="hidden_div_sign">
+        <div id="hidden_div_sign_lower_level">
+                <button id="sign_in_btn">
+                    Sign In
+                </button><br>
+                
+                new customer?
+                
+                <font style="color: rgb(134, 134, 190);">
+                    start here
+                </font><br>
+
+                <div id="sign_hidden_left">
+                    <font class="sign_hidden_font">
+                        <b>Your Lists</b>
+                    </font><br>
+                    Create a List<br>
+                    Find a List or Registry<br>
+                    AmazonSmile Charity Lists
+                </div>
+
+                <div id="sign_hidden_right">
+                    <font class="sign_hidden_font">
+                        <b>Your Account</b>
+                    </font><br>
+                    Account<br>
+                    Orders<br>
+                    Recommendations<br>
+                    Browsing History<br>
+                    Watchlist<br>
+                    Video Purchases & Rentals<br>
+                    Kindle Unlimited<br>
+                    Content & Devices<br>
+                    Subscribe & Save Items<br>
+                    Memberships & Subscriptions<br>
+                    Music Library
+                </div>
+        </div>
     </div>
 </div>
 
