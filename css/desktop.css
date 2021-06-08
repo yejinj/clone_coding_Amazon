@@ -16,25 +16,6 @@
 	cursor: pointer;
 }
 
-.hovereffect2:hover{
-	color:#B77A1C;
-	text-decoration: none;
-}
-
-.hovereffect3:hover{
-	border: #F0C454 2px;
-}
-
-/* 인쇄를 누르면 흑백으로 */
-@media print {
-    body {
-        background-color: beige;
-    }
-    h1 {
-        color: black
-    }
-}
-
 body{
 	background-color: #EAEDED;
 	font-family: "amazon-font"
@@ -56,6 +37,7 @@ header{
 	font : white;
 }
 
+/* 상단의 요소들을 같은 간격으로 배열 위해 마진을 동일하게 준다 */
 #logo{
 	margin: 10px 15px 0px 10px;
 	float: left;
