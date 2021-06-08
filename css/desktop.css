@@ -66,22 +66,19 @@ header{
 	height: 47px;
 }
 
-#delivery_section_in_header{
+#delivery{
+	margin: 10px 15px 0px 10px;
 	height: 47px;
 	float: left;
-	margin: 10px 15px 0px 10px;
 }
 
-#location{
+#delivery_img{
 	display: inline-block;
+	width: 22px;
+	height: 30px;
 }
 
-#locationImage{
-	width: 22;
-	height: 30;
-}
-
-#delivery{
+#delivery_txt{
 	display: inline-block;
 	position: relative;
 	font-size: 13px;
@@ -132,12 +129,12 @@ header{
 	float: left;
 }
 
-#language-image{
+#language_img{
 	height: 40px;
 	width: 40px;
 }
 
-#whereto{
+#account_list{
 	margin: 10px 15px 0px 10px;
 	float: left;
 	height: 45px;
@@ -145,7 +142,7 @@ header{
 	line-height:120%;
 }
 
-#returnsAndOrders{
+#return_order{
 	margin: 10px 15px 0px 10px;
 	float: left;
 	height: 45px;
@@ -162,7 +159,7 @@ header{
 	height: 45px;
 }
 
-#cart-image{
+#cart_img{
 	float: left;
 	width: 30px; 
 	height: 30px;
@@ -562,7 +559,8 @@ a{
 
 
 /* SECTION01 */
-.footer{
+footer{
+	color: white;
 	overflow: hidden;
 	width: 1520px;
 	height: max-content;
@@ -571,7 +569,11 @@ a{
 	font-family: "amazon-font"
 }
 
-#backToTop{
+a{
+	color: white
+}
+
+#back_to_top{
 	background-color: #485769;
 	text-align:center;
 	padding: 20px 0px 20px 0px;
@@ -603,6 +605,7 @@ a{
 	padding-top: 30px;
 	margin-right: 100px;
 	width: 1520px;
+	padding-bottom: 150px;
 }
 
 #footer-sec2-hr{
@@ -644,7 +647,11 @@ a{
 /* SECTION 04 */
 .footer-section04{
 	background: #131A22;
-	padding: 30px 0px 30px 0px;
+	padding: 30px 0px 50px 0px;
+}
+
+.fs04_set{
+	margin: 0px 30px 0px 30px;
 }
 
 /* 첨가 */
