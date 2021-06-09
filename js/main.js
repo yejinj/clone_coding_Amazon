@@ -1,3 +1,18 @@
+// 페이지 로딩 시 처음으로 등장하는 DIV
+// 헤더 상단 Hello, Sign in 글자 밑에 등장했다 소멸
+document.addEventListener("DOMContentLoaded", function(){
+	setTimeout(function(){
+	  showImage();
+	  setInterval(hideImage, 4000); //4초 뒤에 소멸
+	}, 500); //새로고침 후 0.5초 뒤에 등장
+});
+function hideImage(){
+	document.getElementById( "div_appear" ).style.display = "none" ;
+}
+function showImage(){
+	document.getElementById( "div_appear" ).style.display = "block" ;
+}
+
 // 슬라이드 1, 2, 3 기본 설정
 new Swiper('.myswiper', {
 	infinite : true, 

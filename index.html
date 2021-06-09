@@ -530,9 +530,8 @@
 </div>
 
 <!-- HIDDEN DIV, 1 ~ 3 -->
+<!-- 클릭이나 마우스오버를 해야 보이는 DIV들에 대한 코드 -->
 <div class="hidden_div">
-    <!-- 클릭이나 마우스오버를 해야 보이는 DIV들에 대한 코드 -->
-
     <!-- deliver DIV를 클릭했을 때 보이는 나오는 DIV 설정 -->
     <div class="hidden_div_deliver" id="deliver_button">
         <div id="deliver_hidden_font">
@@ -628,51 +627,63 @@
     <!-- 헤더 상단의 hello, sign in 마우스오버시 숨겨졌던 DIV 등장 -->
     <div id="hidden_div_sign">
         <div id="hidden_div_sign_lower_level">
-                <button id="sign_in_btn">
-                    Sign In
-                </button><br>
-                
-                new customer?
-                
-                <font style="color: rgb(134, 134, 190);">
-                    start here
+            <button id="sign_in_btn">
+                Sign In
+            </button><br>
+            
+            new customer?
+            
+            <font style="color: rgb(134, 134, 190);">
+                start here
+            </font><br>
+
+            <div id="sign_hidden_left">
+                <font class="sign_hidden_font">
+                    <b>Your Lists</b>
                 </font><br>
+                Create a List<br>
+                Find a List or Registry<br>
+                AmazonSmile Charity Lists
+            </div>
 
-                <div id="sign_hidden_left">
-                    <font class="sign_hidden_font">
-                        <b>Your Lists</b>
-                    </font><br>
-                    Create a List<br>
-                    Find a List or Registry<br>
-                    AmazonSmile Charity Lists
-                </div>
-
-                <div id="sign_hidden_right">
-                    <font class="sign_hidden_font">
-                        <b>Your Account</b>
-                    </font><br>
-                    Account<br>
-                    Orders<br>
-                    Recommendations<br>
-                    Browsing History<br>
-                    Watchlist<br>
-                    Video Purchases & Rentals<br>
-                    Kindle Unlimited<br>
-                    Content & Devices<br>
-                    Subscribe & Save Items<br>
-                    Memberships & Subscriptions<br>
-                    Music Library
-                </div>
+            <div id="sign_hidden_right">
+                <font class="sign_hidden_font">
+                    <b>Your Account</b>
+                </font><br>
+                Account<br>
+                Orders<br>
+                Recommendations<br>
+                Browsing History<br>
+                Watchlist<br>
+                Video Purchases & Rentals<br>
+                Kindle Unlimited<br>
+                Content & Devices<br>
+                Subscribe & Save Items<br>
+                Memberships & Subscriptions<br>
+                Music Library
+            </div>
         </div>
     </div>
-
-
     
+    <!-- 헤더 상단의 hello, sign in 아래 일정한 초가 지나면 사라지는 DIV -->
+    <div class="hidden_div_appear" id="div_appear">
+        <button id="hidden_div_appear_btn">
+            <a href="https://www.amazon.com/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3Fref_%3Dnav_custrec_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&" style="color: black;">
+                Sign In
+            </a>
+        </button><br>
+        
+        New customer?
+
+        <a href="https://www.amazon.com/ap/register?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3F_encoding%3DUTF8%26ref_%3Dnav_custrec_newcust&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&" style="color: rgb(84, 81, 241);">
+            start here
+        </a>
+    </div>
 </div>
 
 <!-- FOOTER, SECTION 1 ~ 4  -->
 <footer>
-
+    <!-- sign in section -->
     <div id="footer_sign_in">
         <button id="footer_sign_in_btn">
             <a href="https://www.amazon.com/ap/signin?_encoding=UTF8&ignoreAuthState=1&openid.assoc_handle=usflex&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fgp%2Fyourstore%2Fhome%3Fie%3DUTF8%26ref_%3Drhf_custrec_signin&switch_account=" style="color: black;">
@@ -680,7 +691,6 @@
             </a>
         </button>
     </div>
-
     <!-- back to top -->
     <div id="back_to_top" onclick="window.scrollTo(0,0);">
         <a style="color: white;">
