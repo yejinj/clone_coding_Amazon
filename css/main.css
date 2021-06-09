@@ -4,14 +4,28 @@
     font-family: "amazon-font"
 }
 
-/* 전 지역에서 통용되는 호버이펙트 설정 */
+/* 호버이펙트 설정 */
 .hovereffect:hover{
-	border: white 1px solid; 
+	border: white 0.1ex solid; 
 	text-decoration: none;
 	cursor: pointer;
 }
 
 .hovereffect{
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.sidebar_hovereffect:hover{
+	border: white 0.1ex solid; 
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.sidebar_hovereffect{
+	margin: 0px 5px 0px 5px;
+	color:white;
+	padding: 2px;
 	text-decoration: none;
 	cursor: pointer;
 }
@@ -23,6 +37,8 @@ body{
 
 /* 헤더 */
 header{
+	background:#232F3E;
+	height: 100px;
 	overflow: hidden;
 	font-family: "amazon-font"
 }
@@ -152,28 +168,26 @@ header{
 .bottom_box {
 	height: 40px;
 	font : white;
-	background: #232F3E;
 	font-size: 15px;
 }
 
 #sidebar{
 	position: absolute;
 	text-decoration-line: none;
-	margin-left: 10px;
-	display:inline-block;
+	margin: 0px 0px 0px 10px;
 }
 
 .sidenav {
-	color: black;
-	list-style:none;
 	height: 100%;
 	width: 0;
+	overflow: scroll;
+	color: black;
+	list-style:none;
 	position: fixed;
 	z-index: 9999;
 	top: 0;
 	left: 0;
 	background-color: white;
-	overflow: hidden;
 	transition: 0.5s;
 	padding: 30px 0px 0px 0px;
 }
@@ -208,7 +222,7 @@ li {
 .menu .hide{
 	display:none;
 }
-.menu-sign-in{
+.sidebar_sign{
 	font-size: 20px;
 	background-color: #232F3E;
 	color: white;
@@ -222,12 +236,12 @@ li {
 	height: 40px;
 }
 
-#menu-sign-in-2{
+#sidebar_content{
 	margin-left: 35px;
 	line-height: 270%;
 }
 
-.sidebar-hr-margin{
+.sidebar_hr_margin{
 	margin-left: -100px;
 }
 
@@ -236,7 +250,7 @@ li {
 	cursor:pointer
 }
 
-.menu-title{
+.sidebar_font{
 	font-size: 17px;
 }
 
@@ -244,19 +258,15 @@ li {
 	list-style: none;
 }
 
-#notsideBar{
-	display: flex;
+#header_bottom_mid{
+	margin: 25px 0px 0px 60px;
+	float: left;
 	align-items: center;
-	margin-left: 70px;
-	padding-top: 3px;
 }
 
-#amazonsResponse{
-	margin-top: -20px;
+#header_bottom_rt{
+	margin-top: 25px;
 	float: right;
-	margin-right: 10px;
-	float: right;
-	text-align: center;
 }
 
 select {
