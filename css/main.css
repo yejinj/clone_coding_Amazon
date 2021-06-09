@@ -397,8 +397,6 @@ a{
 
 
 /* SECTION 03 */
-
-
 #section03{
 	margin: 15px 50px 30px 20px;
 	float: left;
@@ -423,6 +421,39 @@ a{
 	padding-left: -150px;
 	width: 200px;
 	height: 200px;
+	box-shadow: none;
+}
+
+
+#section03-02{
+	margin: 15px 50px 30px 20px;
+	float: left;
+	padding-left: 10px;
+	font-family: "amazon-font";
+	background-color: white;
+	overflow: hidden;
+	width: 1470px;
+}
+
+.swiper-container3 {
+	margin-left: -50px;
+	background: white;
+	text-align: center;
+	width: 300px;
+	height: 230px;
+	border: 0px;
+	float: left;
+}
+
+#icon_slide_07{
+	width: 190px;
+	height: 190px;
+	box-shadow: none;
+}
+
+#icon_slide_08, #icon_slide_09, #icon_slide_10, #icon_slide_11, #icon_slide_12, #icon_slide_13, #icon_slide_14, #icon_slide_15, #icon_slide_16, #icon_slide_17, #icon_slide_18, #icon_slide_19, #icon_slide_20{
+	width: 190px;
+	height: 190px;
 	box-shadow: none;
 }
 
@@ -493,6 +524,7 @@ a{
 	height: 30px;
 }
 
+/* 글자 옆 구분선 지정 */
 .or_enter {
 	display: flex;
 	flex-basis: 100%;
@@ -500,7 +532,7 @@ a{
 	color: rgba(0, 0, 0, 0.35);
 	font-size: 12px;
 	margin: 8px 0px;
-  }
+}
 
 .or_enter::before, .or_enter::after {
 	content: "";
@@ -510,12 +542,31 @@ a{
 	font-size: 0px;
 	line-height: 0px;
 	margin: 0px 16px;
-  }
+}
 
 #enter_code{
 	margin-top: 2px;
 	width: 200px;
 	float: left;
+}
+
+.or{
+	display: flex;
+	flex-basis: 100%;
+	align-items: center;
+	color: rgba(0, 0, 0, 0.35);
+	font-size: 12px;
+	margin: 8px 0px;	
+}
+
+.or::before, .or::after {
+	content: "";
+	flex-grow: 1;
+	background: rgba(0, 0, 0, 0.35);
+	height: 1px;
+	font-size: 0px;
+	line-height: 0px;
+	margin: 0px 16px;
 }
 
 #code_alert{
@@ -655,11 +706,25 @@ footer{
 	height: max-content;
 	text-align: center;
 	background-color: #232F3E;
-	font-family: "amazon-font"
+	font-family: "amazon-font";
 }
 
 a{
 	color: white
+}
+
+#footer_sign_in{
+	background-color: white;
+}
+
+#footer_sign_in_btn{
+	color: black;
+	font-family: "amazon-font";
+	margin: 50px 0px 50px 0px;
+	background-color: #F1C454;
+	border-radius: 2px;
+	border: 1px solid black;
+
 }
 
 #back_to_top{

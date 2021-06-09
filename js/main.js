@@ -1,4 +1,3 @@
-// 슬라이드를 사용하기 위해 myswiper을 초기화한다
 new Swiper('.myswiper', {
 	infinite : true, 
 	autoplay : true,
@@ -12,10 +11,19 @@ new Swiper('.myswiper', {
 new Swiper('.myswiper2', {
 	infinite : true, 
 	navigation : {
-		nextEl : '.swiper-button-next', // 다음 버튼 클래스명
-		prevEl : '.swiper-button-prev', // 이번 버튼 클래스명
+		nextEl : '.swiper-button-next',
+		prevEl : '.swiper-button-prev',
 	},
 });
+
+new Swiper('.myswiper3', {
+	infinite : true, 
+	navigation : {
+		nextEl : '.swiper-button-next',
+		prevEl : '.swiper-button-prev',
+	},
+});
+
 
 // 검색창에 무언가를 검색했을 때 문구가 등장
 var btn = document.getElementById('input-group-addon-button');
@@ -38,14 +46,23 @@ function closeNav() {
 	document.getElementById("mySidenav").style.width = "0";
 }
 
-// 아이콘 슬라이드 설정
+// 첫 번째 아이콘 슬라이드 설정
 var swiper = new Swiper('.swiper-container2', {
 	slidesPerView: 5,
 	navigation : {
-		nextEl : '.swiper-button-next', // 다음 버튼 클래스명
-		prevEl : '.swiper-button-prev', // 이번 버튼 클래스명
+		nextEl : '.swiper-button-next',
+		prevEl : '.swiper-button-prev',
 	},
-	});
+});
+
+// 두 번째 아이콘 슬라이드 설정
+var swiper = new Swiper('.swiper-container3', {
+	slidesPerView: 5,
+	navigation : {
+		nextEl : '.swiper-button-next',
+		prevEl : '.swiper-button-prev',
+	},
+});
 
 // 헤더 상단의 미국 국기 마우스오버시 숨겨졌던 DIV 등장
 function view_language(opt) {
