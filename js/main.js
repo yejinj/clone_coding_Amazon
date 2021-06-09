@@ -1,3 +1,4 @@
+// 슬라이드 1, 2, 3 기본 설정
 new Swiper('.myswiper', {
 	infinite : true, 
 	autoplay : true,
@@ -24,16 +25,7 @@ new Swiper('.myswiper3', {
 	},
 });
 
-
-// 검색창에 무언가를 검색했을 때 문구가 등장
-var btn = document.getElementById('input-group-addon-button');
-
-btn.onclick = function() {
-  alert('사이트에 방문해보세요');
-}
-
-var mouseover = document.getElementById('whereto');
-
+// 슬라이드 항목들을 드래그 가능하게
 mouseover.mouseover = function() {
 }
 
@@ -82,7 +74,7 @@ function view_sign(opt) {
 	else {
 		hidden_div_sign.style.display = "none";
 	}
-  }
+}
 
 // div 클릭하면 회원가입 섹션 등장
 function ClickFunction(idMyDiv){

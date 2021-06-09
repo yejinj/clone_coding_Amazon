@@ -37,7 +37,7 @@ header{
 	font : white;
 }
 
-/* 상단의 요소들을 같은 간격으로 배열 위해 마진을 동일하게 준다 */
+/* 헤더 상단의 요소들을 float:left를 이용해서 가로로 정렬 후 마진을 동일하게 주어 단정하게 */
 #logo{
 	margin: 10px 15px 0px 10px;
 	float: left;
