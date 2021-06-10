@@ -43,7 +43,8 @@ header{
 	font-family: "amazon-font"
 }
 
-/* 헤더의 상단 */
+/* 헤더 상단 */
+/* 상단의 items들은 left로 정렬한 후 동일한 margin을 주어서 레이아웃을 단정히 */
 .top_box {
 	width: 100%;
 	height: 63px;
@@ -53,36 +54,38 @@ header{
 	font : white;
 }
 
-/* 헤더 상단의 요소들을 float:left를 이용해서 가로로 정렬 후 마진을 동일하게 주어 단정하게 */
-#logo{
+/* 헤더 상단 1번째 구역 */
+#tb_1{
 	margin: 10px 15px 0px 10px;
 	float: left;
 }
 
-#logoImage{
+#tb_1_img{
 	width: 110px;
 	height: 47px;
 }
 
-#delivery{
+/* 헤더 상단 2번째 구역 */
+#tb_2{
 	margin: 10px 15px 0px 10px;
 	height: 47px;
 	float: left;
 }
 
-#delivery_img{
+#tb_2_img{
 	display: inline-block;
 	width: 22px;
 	height: 30px;
 }
 
-#delivery_txt{
+#tb_2_txt{
 	display: inline-block;
 	position: relative;
 	font-size: 13px;
 }
 
-#searchbox{
+/* 헤더 상단 3번째 구역 */
+#tb_3{
 	margin: 10px 15px 0px 10px;
 	float: left;
 	position:relative;
@@ -95,7 +98,7 @@ header{
 	border: 1px solid rgb(204, 204, 204);
 }
 
-#searchbox_select{
+#tb_3_select{
 	float: left;
 	background: #F3F3F3;
 	height: 36px;
@@ -103,12 +106,7 @@ header{
 	border: 1px black;
 }
 
-#searchbox_btn{
-	margin: -10px 0px 0px 10px;
-	width: 41px;
-}
-
-#searchbox_input{
+#tb_3_input{
 	float: left;
 	width: 700px;
 	height: 35px;
@@ -116,23 +114,30 @@ header{
 	margin-right: -10px;
 }
 
-#searchbox_btn_img{
+#tb_3_btn{
+	margin: -10px 0px 0px 10px;
+	width: 41px;
+}
+
+#tb_3_btn_img{
 	width: 45px;
 	height: 45px;
 	margin-left: -12px;
 }
 
-#language{
+/* 헤더 상단 4번째 구역 */
+#tb_4{
 	margin: 10px 15px 0px 10px;
 	float: left;
 }
 
-#language_img{
+#tb_4_img{
 	height: 40px;
 	width: 40px;
 }
 
-#account_list{
+/* 헤더 상단 5번째 구역 */
+#tb_5{
 	margin: 10px 15px 0px 10px;
 	float: left;
 	height: 45px;
@@ -140,7 +145,8 @@ header{
 	line-height:120%;
 }
 
-#return_order{
+/* 헤더 상단 6번째 구역 */
+#tb_6{
 	margin: 10px 15px 0px 10px;
 	float: left;
 	height: 45px;
@@ -148,7 +154,8 @@ header{
 	line-height: 120%;
 }
 
-#carts{
+/* 헤더 상단 7번째 구역 */
+#tb_7{
 	margin-top: -5px;
 	display: flex;
 	align-items:center;
@@ -157,27 +164,28 @@ header{
 	height: 45px;
 }
 
-#cart_img{
+#tb_7_img{
 	float: left;
 	width: 30px; 
 	height: 30px;
 }
 
 
-/* 헤더의 하단 */
+/* 헤더 하단 */
 .bottom_box {
 	height: 40px;
 	font : white;
 	font-size: 15px;
 }
 
-#sidebar{
+/* 헤더 하단 1번째 구역 */
+#bb_1{
 	position: absolute;
 	text-decoration-line: none;
 	margin: 0px 0px 0px 10px;
 }
 
-.sidenav {
+#bb_1_open {
 	height: 100%;
 	width: 0;
 	overflow: scroll;
@@ -192,7 +200,7 @@ header{
 	padding: 30px 0px 0px 0px;
 }
 
-.sidenav .closebtn {
+#bb_1_open .closebtn {
 	position: absolute;
 	top: 0;
 	right: 25px;
@@ -201,28 +209,7 @@ header{
 	color: white;
 }
 
-li {
-	list-style: none;
-	padding: 2px 2px 2px 25px;
-	text-decoration: none;
-	font-size: 13px;
-	color: black;
-	display: block;
-	margin-left: -40px;
-	
-}
-
-.menu a{
-	text-decoration: none;
-	color: black;
-	cursor:pointer;
-	font-size: 16px;
-}
-
-.menu .hide{
-	display:none;
-}
-.sidebar_sign{
+.bb_1_content_1{
 	font-size: 20px;
 	background-color: #232F3E;
 	color: white;
@@ -230,41 +217,39 @@ li {
 	margin-top: -30px;
 }
 
-#menu-sign-in-img{
+#bb_1_img{
 	vertical-align: middle;
 	width: 45px;
 	height: 40px;
 }
 
-#sidebar_content{
+#bb_1_content_2{
 	margin-left: 35px;
 	line-height: 270%;
 }
 
-.sidebar_hr_margin{
+.bb_1_hr_margin{
 	margin-left: -100px;
 }
 
-#sidebar-span{
+#bb_1_span{
 	font-size:20px;
 	cursor:pointer
 }
 
-.sidebar_font{
+.bb_1_font{
 	font-size: 17px;
 }
 
-.menu{
-	list-style: none;
-}
-
-#header_bottom_mid{
+/* 헤더 하단 2번째 구역 */
+#bb_2{
 	margin: 25px 0px 0px 60px;
 	float: left;
 	align-items: center;
 }
 
-#header_bottom_rt{
+/* 헤더 하단 3번째 구역 */
+#bb_3{
 	margin-top: 25px;
 	float: right;
 }
@@ -282,9 +267,7 @@ button {
 }
 
 /* 레이아웃*/
-
-
-/* SECTION 01 */
+/* 레이아웃 - SECTION 01 */
 .swiper-container {
 	margin: 0;
 	width: 1520px;;
@@ -312,7 +295,7 @@ button {
 	height: 500px;
 }
 
-/* SECTION 02 */
+/* 레이아웃 - SECTION 02 */
 .section02{
 	font-family: "amazon-font";
 	overflow: hidden;
@@ -370,43 +353,28 @@ button {
 	float: left;
 }
 
-#sec02box08-image{
+.section02_img{
 	width: 280px;
 	height: 330px;
 }
 
-.section02-image{
-	width: 280px;
-	height: 330px;
-}
-
-.section02-image-02{
+.section02_img02{
 	width: 135px;
 	height: 110px;
 }
 
-#sec02box04-02-image{
+#sec02box04_02_img{
 	width: 250px;
 	height: 230px;
 	float: left;
 	margin: 0px 0px 100px 60px;
 }
 
-#sec04box0101, #sec04box0102, #sec04box0103, #sec04box0104{
-	text-align: middle;
-	border: 1px;
-	margin: 0px;
-	background: white;
-	border: 10px;
-	float: left;
-}
-
 a{
 	text-decoration: none;
 }
 
-
-/* SECTION 03 */
+/* 레이아웃 - SECTION 03 */
 #section03-01{
 	margin: 15px 50px 30px 20px;
 	float: left;
@@ -467,7 +435,7 @@ a{
 	box-shadow: none;
 }
 
-/* SECTION 04 */
+/* 레이아웃 - SECTION 04 */
 .section04{
 	font-family: "amazon-font";
 	overflow: hidden;
@@ -478,17 +446,26 @@ a{
 	margin-bottom: 30px;
 }
 
-.section04-basic-setting{
+#sec04box0101, #sec04box0102, #sec04box0103, #sec04box0104{
+	text-align: middle;
+	border: 1px;
+	margin: 0px;
+	background: white;
 	border: 10px;
 	float: left;
 }
 
-.sec04-box04-image{
-	width: 140px;
-	height: 130px;
+.section04_img{
+	width: 135px;
+	height: 110px;
 }
 
-.sec04-box04-image02{
+.section04_basic_setting{
+	border: 10px;
+	float: left;
+}
+
+.section04_img02{
 	width: 280px;
 	height: 330px;
 }
@@ -496,12 +473,12 @@ a{
 /* HIDDEN DIV */
 /* 클릭이나 마우스오버를 해야 보이는 DIV들에 대한 코드 */
 
-/* deliver DIV를 클릭했을 때 보이는 나오는 DIV 설정 */
+/* HIDDEN DIV 1- deliver DIV를 클릭했을 때 보이는 나오는 DIV 설정 */
 .hidden_div{
 	font-family: "amazon-font";
 }
 
-.hidden_div_deliver{
+#hd_1{
 	margin: -200px 0px 0px 570px;
 	line-height: 170%;
 	box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.5);
@@ -516,7 +493,7 @@ a{
 	display: none;
 }
 
-#deliver_hidden_font{
+#hd_1_font{
 	font-size: 20px;
 	overflow: hidden;
 	margin: -40px 0px 0px -20px;
@@ -526,7 +503,12 @@ a{
 	background-color: #F0F0F0;
 }
 
-#sign_in{
+#hd_1_options{
+	color: gray;
+	font-size: 12px;
+}
+
+#hd_1_btn{
 	font-size: 15px;
 	border-radius: 5px;
 	background-color: #F0C454;
@@ -534,8 +516,7 @@ a{
 	height: 30px;
 }
 
-/* 글자 옆 구분선 지정 */
-.or_enter {
+.hd_1_hr {
 	display: flex;
 	flex-basis: 100%;
 	align-items: center;
@@ -544,7 +525,7 @@ a{
 	margin: 8px 0px;
 }
 
-.or_enter::before, .or_enter::after {
+.hd_1_hr::before, .hd_1_hr::after {
 	content: "";
 	flex-grow: 1;
 	background: rgba(0, 0, 0, 0.35);
@@ -554,36 +535,17 @@ a{
 	margin: 0px 16px;
 }
 
-#enter_code{
+#hd_1_input{
 	margin-top: 2px;
 	width: 200px;
 	float: left;
 }
 
-.or{
-	display: flex;
-	flex-basis: 100%;
-	align-items: center;
-	color: rgba(0, 0, 0, 0.35);
-	font-size: 12px;
-	margin: 8px 0px;	
-}
-
-.or::before, .or::after {
-	content: "";
-	flex-grow: 1;
-	background: rgba(0, 0, 0, 0.35);
-	height: 1px;
-	font-size: 0px;
-	line-height: 0px;
-	margin: 0px 16px;
-}
-
-#code_alert{
+#hd_1_alert{
 	color: #CC1C39
 }
 
-#apply{
+#hd_1_btn2{
 	float: left;
 	width: 80px;
 	margin: 0px 0px 0px 10px;
@@ -593,15 +555,29 @@ a{
 	border-radius: 3px;
 }
 
-#ship_outside{
+.hd_1_hr2{
+	display: flex;
+	flex-basis: 100%;
+	align-items: center;
+	color: rgba(0, 0, 0, 0.35);
+	font-size: 12px;
+	margin: 8px 0px;	
+}
+
+.hd_1_hr2::before, .hd_1_hr2::after {
+	content: "";
+	flex-grow: 1;
+	background: rgba(0, 0, 0, 0.35);
+	height: 1px;
+	font-size: 0px;
+	line-height: 0px;
+	margin: 0px 16px;
+}
+
+#hd_1_select{
 	border: 1px solid rgb(146, 146, 146);
 	width: 294px;
 	height: 50px;
-}
-
-#delivery_options{
-	color: gray;
-	font-size: 12px;
 }
 
 #deliver_button_font_2{
@@ -609,7 +585,7 @@ a{
 	font-size: 14px;
 }
 
-#done{
+#hd_1_done{
 	width: 80px;
 	margin: 10px 0px 0px 214px;
 	padding: 10px 10px 10px 10px;
@@ -618,8 +594,8 @@ a{
 	border-radius: 3px;
 }
 
-/* 헤더 상단의 미국 국기 마우스오버시 숨겨졌던 DIV 등장 */
-#hidden_div_language{
+/* HIDDEN DIV 2- 헤더 상단의 미국 국기 마우스오버시 숨겨졌던 DIV 등장 */
+#hd_2{
 	line-height: 170%;
 	font-family: "amazon-font";
 	position: absolute;
@@ -628,7 +604,7 @@ a{
 	margin: -290px 0px 0px 1130px;
 }
 
-#hidden_div_language_lower_level{
+#hd_2_lower{
 	padding: 20px 0px 0px 10px;
 	border-radius: 5px;
 	width: 250px;
@@ -639,29 +615,29 @@ a{
 	border: 1px;
 }
 
-.hidden_language_font{
+.hd_2_font{
 	color: #405096;
 	font-size: 11px;
 }
 
-.hidden_language_font_2{
+.hd_2_font2{
 	color: #405096;
 	font-size: 12px;
 }
 
-#us_logo{
+#hd_2_logo{
 	width:30px;
 	height:30px;
 	margin-left: -10px
 }
 
-.hidden_language_font_3{
+.hd_2_font3{
 	color: rgb(59, 59, 117);
 	font-size: smaller;
 }
 
-/* 헤더 상단의 hello, sign in 마우스오버시 숨겨졌던 DIV 등장 */
-#hidden_div_sign{
+/* HIDDEN DIV 3 -  헤더 상단의 hello, sign in 마우스오버시 숨겨졌던 DIV 등장 */
+#hd_3{
 	margin: -290px 0px 0px 850px;
 	font-family: "amazon-font";
 	position: absolute;
@@ -669,7 +645,7 @@ a{
 	display: none;
 }
 
-#hidden_div_sign_lower_level{
+#hd_3_lower{
 	text-align: center;
 	border-radius: 5px;
 	width: 500px;
@@ -678,7 +654,7 @@ a{
 	font: black;
 }
 
-#sign_in_btn{
+#hd_3_btn{
 	background-color: #F0C454;
 	border-radius: 3px;
 	width: 270px;
@@ -687,25 +663,24 @@ a{
 	text-decoration: none;
 }
 
-#sign_hidden_left{
+#hd_3_left{
 	padding-top: 30px;
 	float: left;
 	margin-left: 30px;
 }
 
-#sign_hidden_right{
+#hd_3_right{
 	padding-top: 30px;
 	float: right;
 	margin-right: 30px;
 }
 
-
-.sign_hidden_font{
+.hd_3_font{
 	font-size: 15px;
 }
 
-/* 헤더 상단의 hello, sign in 아래 등장했다 사라지는 DIV */
-.hidden_div_appear{
+/* HIDDEN DIV 4 - 헤더 상단의 hello, sign in 아래 등장했다 사라지는 DIV */
+#hd_appear{
 	display: none;
 	font-size: 13px;
 	padding: 10px;
@@ -716,14 +691,14 @@ a{
 	text-align: center;
 }
 
-#hidden_div_appear_btn{
+#hd_appear_btn{
 	background-color: #EEBC3E;
 	border-radius: 5px;
 	margin: 10px;
 }
 
 /* FOOTER */
-/* SECTION01 */
+/* FOOTER - SECTION01 */
 footer{
 	color: white;
 	overflow: hidden;
@@ -738,11 +713,11 @@ a{
 	color: white
 }
 
-#footer_sign_in{
+#fs_sign_in{
 	background-color: white;
 }
 
-#footer_sign_in_btn{
+#fs_sign_in_btn{
 	color: black;
 	font-family: "amazon-font";
 	margin: 50px 0px 50px 0px;
@@ -752,7 +727,7 @@ a{
 
 }
 
-#back_to_top{
+#fs_back_to_top{
 	background-color: #485769;
 	text-align:center;
 	padding: 20px 0px 20px 0px;
@@ -778,7 +753,7 @@ a{
 }
 
 
-/* SECTION02 */
+/* FOOTER - SECTION02 */
 .footer-section02{
 	float: none;
 	padding-top: 30px;
@@ -806,7 +781,7 @@ a{
 }
 
 
-/* SECTION03 */
+/* FOOTER - SECTION03 */
 .footer-section03{
 	padding: 30px 0px 30px 140px;
 	float: left;
@@ -823,7 +798,7 @@ a{
 }
 
 
-/* SECTION 04 */
+/* FOOTER - SECTION 04 */
 .footer-section04{
 	background: #131A22;
 	padding: 30px 0px 50px 0px;

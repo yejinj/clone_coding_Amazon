@@ -19,26 +19,26 @@
     <div class="top_box">
         <font color="white">
         <!-- 1. amazon logo -->
-        <div id="logo">
+        <div id="tb_1">
             <a href="./">
-                <img src="./images/logo.JPG" id="logoImage" class="hovereffect" alt="로고">
+                <img src="./images/logo.JPG" id="tb_1_img" class="hovereffect" alt="로고">
             </a>
         </div>
         
         <!-- 2. Deliver to Republic of Korea -->
-        <div id="delivery" class="hovereffect" onclick="ClickFunction('deliver_button'); return false;">
-            <div id="delivery_img">
+        <div id="tb_2" class="hovereffect" onclick="ClickFunction('hd_1'); return false;">
+            <div id="tb_2_img">
                 <img src="./images/location.JPG" alt="위치">
             </div>
-            <div id="delivery_txt">
+            <div id="tb_2_txt">
                 Deliver to<br>
-                <b><div id="location_chosen"> Republic of Korea </div></b><br>
+                <b><div id="tb_2_change"> Republic of Korea </div></b><br>
             </div>
         </div>
 
         <!-- 3. 검색창 -->
-        <div id="searchbox">
-            <select id="searchbox_select">
+        <div id="tb_3">
+            <select id="tb_3_select">
                 <option>All departments</option>
                 <option>Arts & Crafts</option>
                 <option>Automative</option>
@@ -67,21 +67,21 @@
                 <option> Toys & Games </option>
                 <option> Video Games </option>
             </select>
-            <input id="searchbox_input">
-            <button id="searchbox_btn">
-                <img src="./images/searchbar.JPG" id="searchbox_btn_img">
+            <input id="tb_3_input">
+            <button id="tb_3_btn">
+                <img src="./images/searchbar.JPG" id="tb_3_btn_img">
             </button>
         </div>
 
         <!-- 4. 언어 -->
-        <div id="language" class="hovereffect" onmouseover="view_language(true)" onmouseout="view_language(false)" onclick="location.href='https://www.amazon.com/gp/customer-preferences/select-language/ref=topnav_lang_ais?preferencesReturnUrl=%2F'">
+        <div id="tb_4" class="hovereffect" onmouseover="view_language(true)" onmouseout="view_language(false)" onclick="location.href='https://www.amazon.com/gp/customer-preferences/select-language/ref=topnav_lang_ais?preferencesReturnUrl=%2F'">
             <a>
-                <img src="./images/language.JPG" id="language_img">
+                <img src="./images/language.JPG" id="tb_4_img">
             </a>
         </div>
 
         <!-- 5. Account & Lists -->
-        <div id="account_list" class="hovereffect" onmouseover="view_sign(true)" onmouseout="view_sign(false)" onclick="location.href='https://www.amazon.com/gp/customer-preferences/select-language/ref=topnav_lang_ais?preferencesReturnUrl=%2Fref%3Dnav_logo'">
+        <div id="tb_5" class="hovereffect" onmouseover="view_sign(true)" onmouseout="view_sign(false)" onclick="location.href='https://www.amazon.com/gp/customer-preferences/select-language/ref=topnav_lang_ais?preferencesReturnUrl=%2Fref%3Dnav_logo'">
                 <a href="https://www.amazon.com/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3Fref_%3Dnav_ya_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&" style="color: white;">
                 </a>
                 Hello, Sign in<br>
@@ -89,7 +89,7 @@
         </div>
         
         <!--6. Returns & Orders -->
-        <div id="return_order" class="hovereffect">
+        <div id="tb_6" class="hovereffect">
                 <a href="https://www.amazon.com/ap/signin?clientContext=132-9349820-5691738&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fyour-orders%2Forders%2Fref%3Dyo_oh_gp_to_ov%3Fref_%3Dnav_orders_first%26_encoding%3DUTF8&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&marketPlaceId=ATVPDKIKX0DER&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=usflex&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.pape.max_auth_age=900&siteState=clientContext%3D145-0505373-6595463%2CsourceUrl%3Dhttps%253A%252F%252Fwww.amazon.com%252Fyour-orders%252Forders%252Fref%253Dyo_oh_gp_to_ov%253Fref_%253Dnav_orders_first%2526_encoding%253DUTF8%2Csignature%3Do0etbTMxWUKcj6Ck0MUf2NG0WK0j3D">
                 </a>
                 Returns<br>
@@ -97,9 +97,9 @@
         </div>
 
         <!-- 7. Cart -->
-        <div id="carts" class="hovereffect" onclick="location.href='https://www.amazon.com/gp/cart/view.html?ref_=nav_cart'">
+        <div id="tb_7" class="hovereffect" onclick="location.href='https://www.amazon.com/gp/cart/view.html?ref_=nav_cart'">
             <a href="https://www.amazon.com/gp/cart/view.html?ref_=nav_cart">
-                <img src="./images/cart.JPG" id="cart_img">
+                <img src="./images/cart.JPG" id="tb_7_img">
             </a>
             <font size = "4">
                 <b>Cart</b><br>
@@ -112,41 +112,44 @@
     <div class="bottom_box"> &nbsp; 
         <font size="3px" color="white">
         <!-- 1. 하단 왼쪽 > All (사이드바) -->
-        <div id="sidebar" class="sidebar_hovereffect">
-            <div id="mySidenav" class="sidenav">
+        <div id="bb_1" class="sidebar_hovereffect">
+            <!-- open되는 sidebar -->
+            <div id="bb_1_open">
             
             <!-- 사이드바 닫기 버튼 -->
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             
-            <!-- 사이드바 내부 내용 -->
-            <div class="sidebar_sign"><b><br>
-                <img src="./images/sign-in.JPG" id="menu-sign-in-img">
-                Hello, Sign In <br><br></b>
-            </div><br>
-            <div id="sidebar_content">
-                <font class="sidebar_font"><b>Digital Content & Devices</b></font>
+            <!-- 사이드바 내부 내용 (1. 상단의 큰 글자) -->
+            <div class="bb_1_content_1"><b><br>
+                <img src="./images/sign-in.JPG" id="bb_1_img">
+                Hello, Sign In </b><br><br><br>
+            </div>
+
+            <!-- 사이드바 내부 내용 (2. 작은 글자) -->
+            <div id="bb_1_content_2">
+                <font class="bb_1_font"><b>Digital Content & Devices</b></font>
                 <br>
                 Amazon Music<br>
                 Kindle E-readers & Books<br>
                 Appstore for Android<br>
-                <hr class="sidebar_hr_margin">
-                <font class="sidebar_font"><b>Shop By Department</b></font>
+                <hr class="bb_1_hr_margin">
+                <font class="bb_1_font"><b>Shop By Department</b></font>
                 <br>
                 Electronics<br>
                 Computers<br>
                 Smart Home<br>
                 Arts & Crafts<br>
                 See All<br>
-                <hr class="sidebar_hr_margin">
-                <font class="sidebar_font"><b>Programs & Features</b></font>
+                <hr class="bb_1_hr_margin">
+                <font class="bb_1_font"><b>Programs & Features</b></font>
                 <br>
                 Gift Cards<br>
                 #FoundItOnAmazon<br>
                 Amazon Live<br>
                 International Shopping<br>
                 See All<br>
-                <hr class="sidebar_hr_margin">
-                <font class="sidebar_font"><b>Help & Settings</b></font>
+                <hr class="bb_1_hr_margin">
+                <font class="bb_1_font"><b>Help & Settings</b></font>
                 <br>
                 Your Account<br>
                 English<br>
@@ -157,11 +160,11 @@
         </div>
         
         <!-- 클릭하기 전엔 햄버거바, 클릭하면 x표시로 바뀌게 설정 -->
-        <span id="sidebar-span" onclick="openNav()">&#9776;All</span>
+        <span id="bb_1_span" onclick="openNav()"> &#9776; All </span>
         </div>
     
         <!-- 2. 하단 가운데 > 사이드바가 아닌 부분을 묶어 속성을 지정 -->
-        <div id="header_bottom_mid">
+        <div id="bb_2">
             <a class="sidebar_hovereffect" href="https://www.amazon.com/international-sales-offers/b/?ie=UTF8&node=15529609011&ref_=nav_cs_gb_intl_52df97a2eee74206a8343034e85cd058">
                 Today's Deals
             </a>
@@ -180,7 +183,7 @@
         </div>
 
         <!-- 3. 하단 오른쪽 -->
-        <div id="header_bottom_rt">
+        <div id="bb_3">
             <a class="sidebar_hovereffect" href="https://www.aboutamazon.com/company-news/amazons-actions-to-help-employees-communities-and-customers-affected-by-covid-19/?_encoding=UTF8&token=GW&utm_content=COVID-19_roundup&utm_medium=swm&utm_source=gateway&utm_term=gw03162020&ref_=nav_swm_undefined&pf_rd_p=cf6260e5-93a9-45ad-9653-d1fc95751fac&pf_rd_s=nav-sitewide-msg-text-export&pf_rd_t=4201&pf_rd_i=navbar-4201&pf_rd_m=ATVPDKIKX0DER&pf_rd_r=C045QSGNV9P6E7SYVE0S" style="color:white; padding: 3px;">
                 Amazon's response to COVID-19
             </a>
@@ -192,11 +195,12 @@
 <!-- LAYOUT, SECTION 1 ~ 4 -->
 <div class="layout">
     <!-- SECTION 1 -->
+    <!-- 이미지 슬라이드 부분  -->
     <div class="section01"><b>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
 
-        <!-- 슬라이드 이미지와 양옆 버튼 삽입 -->
+        <!-- swiper container wrapper로 감싸고 내부에 이미지 삽입 -->
         <div class="swiper-container myswiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide"><img src="./images/slides/1.jpg"></div>
@@ -206,6 +210,8 @@
                 <div class="swiper-slide"><img src="./images/slides/5.jpg"></div>
                 <div class="swiper-slide"><img src="./images/slides/6.jpg"></div>
             </div>
+
+            <!-- 슬라이드 넘길 수 있는 버튼 설정 -->
             <div class="swiper-button-next swiper-button-black" id="button_next_second"></div>
             <div class="swiper-button-prev swiper-button-black" id="button_prev_second"></div>
         </div>
@@ -214,11 +220,11 @@
 
     <!-- SECTION 2 -->
     <div class="section02">
-        <!-- 8개의 박스 중 4번째 박스는 2개로 분할, 7번째 박스는 4개로 분할되어 있음 -->
+        <!-- 8개의 박스 중 4번째 박스는 2개로 분할, 7번째 박스는 4개로 분할 -->
         <div id="sec02box01">
             <h3>Find your ideal</h3>
             <a style="color: rgb(71, 71, 212);" href="https://www.amazon.com/b?node=16225007011&pf_rd_r=K0EFJMRDV25H536WJ0YS&pf_rd_p=a13f1949-dc1c-4090-9236-ef9627cd9724&pd_rd_r=7c60f949-73aa-4164-931e-41277b403ad3&pd_rd_w=8OUi2&pd_rd_wg=I12Zw&ref_=pd_gw_unk">
-                <img src="./images/sec2pic1.JPG" class="section02-image"><br>
+                <img src="./images/sec2pic1.JPG" class="section02_img"><br>
                 See more
             </a>
         </div>
@@ -226,7 +232,7 @@
         <div id="sec02box02">
             <h3>Computers & Accessories</h3>
             <a style="color: rgb(71, 71, 212);" href="https://www.amazon.com/b?node=16225007011&pf_rd_r=XTXXFF2WHRFJW7RDB25Q&pf_rd_p=a13f1949-dc1c-4090-9236-ef9627cd9724&pd_rd_r=90eab18f-8d6c-4fe0-86d5-d5da15f95cc9&pd_rd_w=VcpXw&pd_rd_wg=fDiSw&ref_=pd_gw_unk">
-                <img src="./images/sec2pic2.JPG" class="section02-image"><br>
+                <img src="./images/sec2pic2.JPG" class="section02_img"><br>
                 See more
             </a>
         </div>
@@ -234,7 +240,7 @@
         <div id="sec02box03">
             <h3>Beauty picks</h3>
             <a style="color: rgb(71, 71, 212);" href="https://www.amazon.com/b/?node=16225006011&pf_rd_r=K0EFJMRDV25H536WJ0YS&pf_rd_p=4a5ac24a-2f14-4296-8a03-0c034c0a7904&pd_rd_r=7c60f949-73aa-4164-931e-41277b403ad3&pd_rd_w=9puqs&pd_rd_wg=I12Zw&ref_=pd_gw_unk">
-                <img src="./images/sec2pic3.JPG" class="section02-image"><br>
+                <img src="./images/sec2pic3.JPG" class="section02_img"><br>
                 See more
             </a>
         </div>
@@ -253,7 +259,7 @@
 
             <div id="sec02box04-02">
                 <a style="color: rgb(71, 71, 212);" href="https://www.amazon.com/b?node=20338496011&pf_rd_r=XTXXFF2WHRFJW7RDB25Q&pf_rd_p=696ad652-44a2-497e-883b-b1ed606f2732&pd_rd_r=90eab18f-8d6c-4fe0-86d5-d5da15f95cc9&pd_rd_w=UGwyp&pd_rd_wg=fDiSw&ref_=pd_gw_unk">
-                    <img src="./images/sec2pic4.JPG" id="sec02box04-02-image"><br>
+                    <img src="./images/sec2pic4.JPG" id="sec02box04_02_img"><br>
                 </a>
             </div>
         </div>
@@ -261,7 +267,7 @@
         <div id="sec02box05">
             <h3>Shop by Category</h3>
             <a style="color: rgb(71, 71, 212);" href="https://www.amazon.com/b?node=16225005011&pf_rd_r=8DX63B2E64MB7D0Q2CBG&pf_rd_p=e5b0c85f-569c-4c90-a58f-0c0a260e45a0&pd_rd_r=7f3ec7f8-d9c0-4da2-8df3-98f286536ee1&pd_rd_w=qDY5I&pd_rd_wg=goFK4&ref_=pd_gw_unk">
-                <img src="./images/sec2pic5.JPG" class="section02-image"><br>
+                <img src="./images/sec2pic5.JPG" class="section02_img"><br>
                 Shop now
             </a>
         </div>
@@ -269,7 +275,7 @@
         <div id="sec02box06">
             <h3>Amazon Basics</h3>
             <a style="color: rgb(71, 71, 212);" href="https://www.amazon.com/s?k=amazonbasics&pd_rd_r=7f3ec7f8-d9c0-4da2-8df3-98f286536ee1&pd_rd_w=Pjsfc&pd_rd_wg=goFK4&pf_rd_p=9349ffb9-3aaa-476f-8532-6a4a5c3da3e7&pf_rd_r=8DX63B2E64MB7D0Q2CBG&ref=pd_gw_unk">
-                <img src="./images/sec2pic6.JPG" class="section02-image"><br>
+                <img src="./images/sec2pic6.JPG" class="section02_img"><br>
                 See more
             </a>
         </div>
@@ -279,25 +285,25 @@
             
             <div id="sec02box0701">
                 <a href="https://www.amazon.com/b?node=16225007011&pf_rd_r=CYYEQ1Q7RXV3KZCM63E6&pf_rd_p=e5b0c85f-569c-4c90-a58f-0c0a260e45a0&pd_rd_r=acb8390d-c811-4d0c-893d-95377f0b4cf8&pd_rd_w=nt8Wu&pd_rd_wg=FZuAt&ref_=pd_gw_unk">
-                <img src="./images/sec2pic7-1.JPG" class="section02-image-02"><br>
+                <img src="./images/sec2pic7-1.JPG" class="section02_img02"><br>
                 </a>
             </div>
             
             <div id="sec02box0702">
                 <a href="https://www.amazon.com/b?node=16225016011&pf_rd_r=CYYEQ1Q7RXV3KZCM63E6&pf_rd_p=e5b0c85f-569c-4c90-a58f-0c0a260e45a0&pd_rd_r=acb8390d-c811-4d0c-893d-95377f0b4cf8&pd_rd_w=nt8Wu&pd_rd_wg=FZuAt&ref_=pd_gw_unk">
-                <img src="./images/sec2pic7-2.JPG" class="section02-image-02"><br>
+                <img src="./images/sec2pic7-2.JPG" class="section02_img02"><br>
                 </a>
             </div>
             
             <div id="sec02box0703">
                 <a href="https://www.amazon.com/b?node=16225005011&pf_rd_r=CYYEQ1Q7RXV3KZCM63E6&pf_rd_p=e5b0c85f-569c-4c90-a58f-0c0a260e45a0&pd_rd_r=acb8390d-c811-4d0c-893d-95377f0b4cf8&pd_rd_w=nt8Wu&pd_rd_wg=FZuAt&ref_=pd_gw_unk">
-                <img src="./images/sec2pic7-3.JPG" class="section02-image-02"><br>
+                <img src="./images/sec2pic7-3.JPG" class="section02_img02"><br>
                 </a>
             </div>
             
             <div id="sec02box0704">
                 <a href="https://www.amazon.com/b?node=16225015011&pf_rd_r=CYYEQ1Q7RXV3KZCM63E6&pf_rd_p=e5b0c85f-569c-4c90-a58f-0c0a260e45a0&pd_rd_r=acb8390d-c811-4d0c-893d-95377f0b4cf8&pd_rd_w=nt8Wu&pd_rd_wg=FZuAt&ref_=pd_gw_unk">
-                <img src="./images/sec2pic7-4.JPG" class="section02-image-02"><br>
+                <img src="./images/sec2pic7-4.JPG" class="section02_img02"><br>
                 </a>
             </div>
 
@@ -310,7 +316,7 @@
             <h3>Get fit at home</h3>
 
             <a style="color: rgb(71, 71, 212);" href="https://www.amazon.com/b?node=16225014011&pf_rd_r=2VDPNW7ZD0W6K8BW8H3S&pf_rd_p=152091c3-ff04-4c57-8721-f1423f1e428d&pd_rd_r=43eac8c5-9926-4a59-8664-a38b0024b9b3&pd_rd_w=ZJEbm&pd_rd_wg=aU9i0&ref_=pd_gw_unk">
-                <img src="./images/sec2pic8.JPG" class="section02-image"><br>
+                <img src="./images/sec2pic8.JPG" class="section02_img"><br>
                 Explore now
             </a>
         </div>
@@ -330,7 +336,8 @@
             </a>
             <br>&nbsp;<br>
 
-            <!-- jquery 라이브러리를 이용해 swiper로 감싼 안쪽을 wrapper로 지정, 그 안에 이미지를 삽입 -->
+            <!-- 2번째 아이콘 슬라이드 -->
+            <!-- swiper container wrapper로 감싸고 내부에 이미지 삽입 -->
             <div class="swiper-container2 myswiper2">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide swiper-slide-active">
@@ -369,9 +376,10 @@
                         </a>
                     </div>
                 </div>
+
+                <!-- 슬라이드 양옆으로 넘기기 버튼 -->
                 <div class="swiper-button-next swiper-button-black" style="margin-top: 1140px;"></div>
                 <div class="swiper-button-prev swiper-button-black" style="margin-top: 1140px;"></div>
-            
             </div>
         </div>
 
@@ -385,7 +393,8 @@
         </a>
         <br>&nbsp;<br>
 
-        <!-- jquery 라이브러리를 이용해 swiper로 감싼 안쪽을 wrapper로 지정, 그 안에 이미지를 삽입 -->
+        <!-- 3번째 아이콘 슬라이드 -->
+        <!-- swiper wrapper로 감싸고 그 안에 이미지를 삽입 -->
         <div class="swiper-container3 myswiper3">
             <div class="swiper-wrapper">
                 <div class="swiper-slide swiper-slide-active">
@@ -472,6 +481,8 @@
                     </a>
                 </div>
             </div>
+
+            <!-- 슬라이드 양옆 넘기기 버튼 삽입 -->
             <div class="swiper-button-next swiper-button-blue" style="margin-top: 1490px;"></div>
             <div class="swiper-button-prev swiper-button-blue" style="margin-top: 1490px;"></div>
         </div>
@@ -480,31 +491,31 @@
 
     <!-- SECTION 4 -->
     <div class="section04">
-        <!-- 4개의 박스 중 첫 번째 박스는 다시 3개로 나누어짐 -->
+        <!-- 4개의 박스 중 첫 번째 박스는 다시 3개로 분할 -->
         <div id="sec04box01">
             <h3> Comfy styles for her </h3>
             
-            <div id="sec04box0101" class="section04-basic-setting">
+            <div id="sec04box0101" class="section04_basic_setting">
                 <a href="https://www.amazon.com/s?k=sweatshirts&i=fashion-womens-intl-ship&pd_rd_r=a3b9205b-cc8b-4a75-b421-4daf2620eda4&pd_rd_w=ktOTU&pd_rd_wg=tNKS8&pf_rd_p=1db13ac4-e486-438e-a9a5-dd6867e4ea95&pf_rd_r=4MAVE29V3W1KHPQ0W6PW&ref=pd_gw_unk">
-                <img src="./images/sec4pic1-1.JPG" class="section02-image-02"><br>
+                <img src="./images/sec4pic1-1.JPG" class="section04_img"><br>
                 </a>
             </div>
             
-            <div id="sec04box0102" class="section04-basic-setting">
+            <div id="sec04box0102" class="section04_basic_setting">
                 <a href="https://www.amazon.com/s?k=joggers&i=fashion-womens-intl-ship&pd_rd_r=a3b9205b-cc8b-4a75-b421-4daf2620eda4&pd_rd_w=ktOTU&pd_rd_wg=tNKS8&pf_rd_p=1db13ac4-e486-438e-a9a5-dd6867e4ea95&pf_rd_r=4MAVE29V3W1KHPQ0W6PW&ref=pd_gw_unk">
-                <img src="./images/sec4pic1-2.JPG" class="section02-image-02"><br>
+                <img src="./images/sec4pic1-2.JPG" class="section04_img"><br>
                 </a>
             </div>
             
-            <div id="sec04box0103" class="section04-basic-setting">
+            <div id="sec04box0103" class="section04_basic_setting">
                 <a href="https://www.amazon.com/s?k=cardigans&i=fashion-womens-intl-ship&pd_rd_r=a3b9205b-cc8b-4a75-b421-4daf2620eda4&pd_rd_w=ktOTU&pd_rd_wg=tNKS8&pf_rd_p=1db13ac4-e486-438e-a9a5-dd6867e4ea95&pf_rd_r=4MAVE29V3W1KHPQ0W6PW&ref=pd_gw_unk">
-                <img src="./images/sec4pic1-3.JPG" class="section02-image-02"><br>
+                <img src="./images/sec4pic1-3.JPG" class="section04_img"><br>
                 </a>
             </div>
             
-            <div id="sec04box0104" class="section04-basic-setting">
+            <div id="sec04box0104" class="section04_basic_setting">
                 <a  href="https://www.amazon.com/s?k=tees&i=fashion-womens-intl-ship&pd_rd_r=a3b9205b-cc8b-4a75-b421-4daf2620eda4&pd_rd_w=ktOTU&pd_rd_wg=tNKS8&pf_rd_p=1db13ac4-e486-438e-a9a5-dd6867e4ea95&pf_rd_r=4MAVE29V3W1KHPQ0W6PW&ref=pd_gw_unk">
-                <img src="./images/sec4pic1-4.JPG" class="section02-image-02"><br>
+                <img src="./images/sec4pic1-4.JPG" class="section04_img"><br>
                 </a>
             </div>
             <a style="color: rgb(71, 71, 212);" href="https://www.amazon.com/gp/browse.html?node=16225018011&pf_rd_r=4MAVE29V3W1KHPQ0W6PW&pf_rd_p=1db13ac4-e486-438e-a9a5-dd6867e4ea95&pd_rd_r=a3b9205b-cc8b-4a75-b421-4daf2620eda4&pd_rd_w=ktOTU&pd_rd_wg=tNKS8&ref_=pd_gw_unk">
@@ -512,69 +523,68 @@
             </a>
         </div>
 
-        <div id="sec04box02" class="section04-basic-setting">
+        <div id="sec04box02" class="section04_basic_setting">
             <h3> Shop Laptops & Tablet </h3>
             <a style="color: rgb(71, 71, 212);" href="https://www.amazon.com/s?bbn=16225007011&rh=n%3A16225007011%2Cn%3A13896617011&dc&fst=as%3Aoff&pd_rd_r=ef6a64fa-7b9b-41b8-9d0c-8f2f39640163&pd_rd_w=fYopd&pd_rd_wg=aHEoz&pf_rd_p=f95a41bf-1f82-4fca-9b37-32faaf59dd61&pf_rd_r=7MEYN0HSSZ9FM1XXE3HZ&qid=1602294815&rnid=16225007011&ref=pd_gw_unk">
-                <img src="./images/sec4pic2.JPG" class="sec04-box04-image02"><br>
+                <img src="./images/sec4pic2.JPG" class="section04_img02"><br>
                 See more
             </a>
         </div>
 
-        <div id="sec04box03" class="section04-basic-setting">
+        <div id="sec04box03" class="section04_basic_setting">
             <h3> Explore home bedding </h3>
             <a style="color: rgb(71, 71, 212);" href="https://www.amazon.com/s?k=Home+bedding&i=kitchen-intl-ship&pd_rd_r=ef6a64fa-7b9b-41b8-9d0c-8f2f39640163&pd_rd_w=poZKb&pd_rd_wg=aHEoz&pf_rd_p=16ffc777-bfb6-4b2f-a079-eed4114eff9e&pf_rd_r=7MEYN0HSSZ9FM1XXE3HZ&ref=pd_gw_unk">
-                <img src="./images/sec4pic3.JPG" class="sec04-box04-image02"><br>
+                <img src="./images/sec4pic3.JPG" class="section04_img02"><br>
                 See more
             </a>
         </div>
 
-        <div id="sec04box04" class="section04-basic-setting">
+        <div id="sec04box04" class="section04_basic_setting">
             <h3> Create with strip lights </h3>
             <a style="color: rgb(71, 71, 212);" href="https://www.amazon.com/s?k=strip+lighting&pd_rd_r=ef6a64fa-7b9b-41b8-9d0c-8f2f39640163&pd_rd_w=nvULw&pd_rd_wg=aHEoz&pf_rd_p=38228efa-5278-4c08-9c74-2a33c1be7ce5&pf_rd_r=7MEYN0HSSZ9FM1XXE3HZ&ref=pd_gw_unk">
-                <img src="./images/sec4pic4.JPG" class="sec04-box04-image02"><br>
+                <img src="./images/sec4pic4.JPG" class="section04_img02"><br>
                 Shop Now
             </a>
         </div> &nbsp;&nbsp;
     </div>
 </div>
 
-<!-- HIDDEN DIV -->
+<!-- HIDDEN DIV, 1 ~ 4 -->
 <!-- 클릭해야 보이는 DIV, 마우스를 갖다대야 보이는 DIV, 사라지는 DIV -->
 <div class="hidden_div">
-    <!-- deliver DIV를 클릭했을 때 보이는 나오는 DIV 설정 -->
-    <div class="hidden_div_deliver" id="deliver_button">
-        <div id="deliver_hidden_font">
+    <!-- 1. deliver DIV를 클릭했을 때 보이는 나오는 DIV 설정 -->
+    <div id="hd_1">
+        <div id="hd_1_font">
             <h4><b><br> Choose your location </b></h4><br><br>
         </div>
 
-        <font id="delivery_options">
+        <font id="hd_1_options">
             Delivery options and delivery speeds may vary for different locations
         </font><br>
 
-        <button id="sign_in" onclick="location.href='https://www.amazon.com/ap/signin?_encoding=UTF8&openid.assoc_handle=usflex&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3F_encoding%3DUTF8%26path%3D%252F%26useRedirectOnSuccess%3D1'">
+        <button id="hd_1_btn" onclick="location.href='https://www.amazon.com/ap/signin?_encoding=UTF8&openid.assoc_handle=usflex&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3F_encoding%3DUTF8%26path%3D%252F%26useRedirectOnSuccess%3D1'">
             Sign in to see your addresses
         </button><br>
 
-        <div class="or_enter">
+        <div class="hd_1_hr">
             or enter a US zip code
         </div>
 
-        <input id="enter_code" onkeyup="printName()" autocomplete="off">
+        <input id="hd_1_input" onkeyup="printName()" autocomplete="off">
 
-        <button id="apply">
+        <button id="hd_1_btn2">
             Apply
         </button><br>
 
         <!-- input 박스에 입력을 시작하면 경고 문자가 뜸 -->
-        <div id="code_alert"></div>
+        <div id="hd_1_alert"></div>
 
-        <div class="or">
+        <div class="hd_1_hr2">
             or
         </div>
 
-
         <!-- 지역을 선택하면, 헤더 상단의 지역명이 선택한 지역으로 변화 -->
-        <select id="ship_outside" onchange="location_function(this)">
+        <select id="hd_1_select" onchange="location_function(this)">
             <option disabled> Ship outside the US </option>
             <option> Republic of Korea </option>
             <option> Argentina </option>
@@ -592,67 +602,68 @@
         <font style="color: brown;"> Try to Change Location </font>
 
         <!-- done 버튼을 누르면 div가 닫히게 설정 -->
-        <button id="done" onclick="this.parentElement.style.display='none'"> Done </button>
+        <button id="hd_1_done" onclick="this.parentElement.style.display='none'"> Done </button>
     </div>
 
-    <!-- 헤더 상단의 미국 국기 마우스오버시 숨겨졌던 DIV 등장 -->
-    <div id="hidden_div_language">
-        <div id="hidden_div_language_lower_level">
-                Change Language
+    <!-- 2. 헤더 상단의 미국 국기 마우스오버시 숨겨졌던 DIV 등장 -->
+    <div id="hd_2">
+        <div id="hd_2_lower">
+            Change Language
 
-                <font class="hidden_language_font">
-                    Learn more
-                </font><br>
+            <font class="hd_2_font">
+                Learn more
+            </font><br>
 
-                <input type="checkbox">
-                EngliSh - EN
-                <hr style="color: black; border: 5;">
-                <input type="checkbox">
-                Español - ES <br>
-                <input type="checkbox">
-                简体中文 - ZH <br>
-                <input type="checkbox">
-                Deutsch - DE <br>
-                <input type="checkbox">
-                Português - PT <br>
-                <input type="checkbox">
-                繁體中文 - ZH <br>
-                <input type="checkbox">
-                한국어 - KO <br>
-                <input type="checkbox">
-                עברית - HE <br>
-                <input type="checkbox">
-                اللغة العربية - AR
-                <hr style="color: black;">
-                Change currency
+            <input type="checkbox">
+            EngliSh - EN
+            <hr style="color: black; border: 5;">
+            <input type="checkbox">
+            Español - ES <br>
+            <input type="checkbox">
+            简体中文 - ZH <br>
+            <input type="checkbox">
+            Deutsch - DE <br>
+            <input type="checkbox">
+            Português - PT <br>
+            <input type="checkbox">
+            繁體中文 - ZH <br>
+            <input type="checkbox">
+            한국어 - KO <br>
+            <input type="checkbox">
+            עברית - HE <br>
+            <input type="checkbox">
+            اللغة العربية - AR
 
-                <font class="hidden_language_font">
-                    Learn more
-                </font><br>
+            <hr style="color: black;">
+            Change currency
 
-                <hr style="color: black;">
-                $ - USD - U.S. Dollar
+            <font class="hd_2_font">
+                Learn more
+            </font><br>
 
-                <font class="hidden_language_font_2">
-                    Change
-                </font> <br>
+            <hr style="color: black;">
+            $ - USD - U.S. Dollar
 
-                <img src="./images/us_logo.JPG" id="us_logo">
+            <font class="hd_2_font2">
+                Change
+            </font> <br>
 
-                <font class="hidden_language_font_3">
-                    You are shopping on Amazon.com.
-                </font><br>
+            <img src="./images/us_logo.JPG" id="hd_2_logo">
 
-                <font class="hidden_language_font_4">
-                    Change country/region.
-                </font>
+            <font class="hd_2_font3">
+                You are shopping on Amazon.com.
+            </font><br>
+
+            <font class="hd_2_font4">
+                Change country/region.
+            </font>
         </div>
     </div>
 
-    <!-- 헤더 상단의 hello, sign in 마우스오버시 숨겨졌던 DIV 등장 -->
-    <div id="hidden_div_sign">
-        <div id="hidden_div_sign_lower_level">
-            <button id="sign_in_btn">
+    <!-- 3. 헤더 상단의 hello, sign in 마우스오버시 숨겨졌던 DIV 등장 -->
+    <div id="hd_3">
+        <div id="hd_3_lower">
+            <button id="hd_3_btn">
                 Sign In
             </button><br>
             
@@ -662,8 +673,8 @@
                 start here
             </font><br>
 
-            <div id="sign_hidden_left">
-                <font class="sign_hidden_font">
+            <div id="hd_3_left">
+                <font class="hd_3_font">
                     <b>Your Lists</b>
                 </font><br>
                 Create a List<br>
@@ -671,8 +682,8 @@
                 AmazonSmile Charity Lists
             </div>
 
-            <div id="sign_hidden_right">
-                <font class="sign_hidden_font">
+            <div id="hd_3_right">
+                <font class="hd_3_font">
                     <b>Your Account</b>
                 </font><br>
                 Account<br>
@@ -690,9 +701,9 @@
         </div>
     </div>
     
-    <!-- 헤더 상단의 hello, sign in 아래 위치한 일정한 초가 지나면 사라지는 DIV -->
-    <div class="hidden_div_appear" id="div_appear">
-        <button id="hidden_div_appear_btn">
+    <!-- 4. 헤더 상단의 hello, sign in 아래 위치한 일정한 초가 지나면 사라지는 DIV -->
+    <div id="hd_appear">
+        <button id="hd_appear_btn">
             <a href="https://www.amazon.com/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3Fref_%3Dnav_custrec_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&" style="color: black;">
                 Sign In
             </a>
@@ -710,15 +721,15 @@
 <!-- Sign in과 back to top DIV 아래를 4개의 구역으로 나눔 -->
 <footer>
     <!-- sign in section -->
-    <div id="footer_sign_in">
-        <button id="footer_sign_in_btn">
+    <div id="fs_sign_in">
+        <button id="fs_sign_in_btn">
             <a href="https://www.amazon.com/ap/signin?_encoding=UTF8&ignoreAuthState=1&openid.assoc_handle=usflex&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fgp%2Fyourstore%2Fhome%3Fie%3DUTF8%26ref_%3Drhf_custrec_signin&switch_account=" style="color: black;">
                 Sign in to see personal recommendation
             </a>
         </button>
     </div>
     <!-- back to top -->
-    <div id="back_to_top" onclick="window.scrollTo(0,0);">
+    <div id="fs_back_to_top" onclick="window.scrollTo(0,0);">
         <a style="color: white;">
             Back to top
         </a>
@@ -755,7 +766,7 @@
             </a>
         </div>
 
-        <div id="fs01-02">
+        <div id="fs01-">
             <br><b>Make Money with Us</b><br><br>
 
             <a href="https://sell.amazon.com/sell.html">
