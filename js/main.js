@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function(){
 	  setInterval(hideImage, 4000); //0.5초 뒤에 등장 후 4초 뒤에 소멸
 	}, 500);
 });
+
 function hideImage(){
 	document.getElementById( "hd_appear" ).style.display = "none" ;
 }
@@ -44,18 +45,18 @@ new Swiper('.myswiper3', {
 mouseover.mouseover = function() {
 }
 
-// 사이드바 func 지정(여닫기)
-function openNav() {
+// 사이드바 기능 지정(여닫기)
+function openNav() { // 열기
 	document.getElementById("bb_1_open").style.width = "300px";
 }
 
-function closeNav() {
+function closeNav() { // 닫기
 	document.getElementById("bb_1_open").style.width = "0";
 }
 
 // 첫 번째 아이콘 슬라이드 설정
 var swiper = new Swiper('.swiper-container2', {
-	slidesPerView: 5, // 5개의 아이콘이 보임
+	slidesPerView: 5, // 5개의 아이콘이 보이도록
 	navigation : {
 		nextEl : '.swiper-button-next',
 		prevEl : '.swiper-button-prev',
