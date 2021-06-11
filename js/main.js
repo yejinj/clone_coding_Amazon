@@ -16,7 +16,7 @@ function showImage(){
 
 // 슬라이드 1, 2, 3 기본 설정
 new Swiper('.myswiper', {
-	infinite : true,  // 무한 + 자동 재생
+	infinite : true,
 	autoplay : true,
 	autoplaySpeed: 12000, // 넘기기 속도
 	navigation : {
